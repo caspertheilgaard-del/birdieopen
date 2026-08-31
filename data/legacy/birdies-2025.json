@@ -1,0 +1,1103 @@
+[
+  {
+    "place": 1,
+    "playerName": "Andreas Opstrup",
+    "count": 33,
+    "keySum": 327,
+    "pointSum": 94,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hammel 2020",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Hammel 2020",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Hammel 2020",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Eagle"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Harre Vig 2025",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Harre Vig 2025",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Harre Vig 2025",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Harre Vig 2025",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Harre Vig 2025",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Harre Vig 2025",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Harre Vig 2025",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Skive 2025",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Skive 2025",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Skive 2025",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Casper Theilgaard",
+    "count": 26,
+    "keySum": 184,
+    "pointSum": 73,
+    "details": [
+      {
+        "hole": 4,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 1,
+        "points": 5,
+        "type": "Eagle"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2025",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Ikast 2025",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 11,
+        "points": 4,
+        "type": "Eagle"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Harre Vig 2025",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Harre Vig 2025",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Harre Vig 2025",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Skive 2025",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Skive 2025",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Skive 2025",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Peter Meincke",
+    "count": 17,
+    "keySum": 148,
+    "pointSum": 50,
+    "details": [
+      {
+        "hole": 10,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Harre Vig 2025",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Harre Vig 2025",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Harre Vig 2025",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Harre Vig 2025",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Harre Vig 2025",
+        "key": 8,
+        "points": 4,
+        "type": "Eagle"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Skive 2025",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Emil Gregersen",
+    "count": 13,
+    "keySum": 122,
+    "pointSum": 43,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2025",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Ikast 2025",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Harre Vig 2025",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Skive 2025",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Johan Dubbelman",
+    "count": 13,
+    "keySum": 124,
+    "pointSum": 44,
+    "details": [
+      {
+        "hole": 4,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hammel 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Jon Fogh",
+    "count": 7,
+    "keySum": 63,
+    "pointSum": 26,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Hammel 2020",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Hammel 2020",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ikast 2025",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Skive 2025",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Rene Simonsen",
+    "count": 6,
+    "keySum": 50,
+    "pointSum": 21,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Hammel 2020",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Ikast 2025",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hobro 2025 Opdateret",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Rasmus Opstrup",
+    "count": 6,
+    "keySum": 74,
+    "pointSum": 20,
+    "details": [
+      {
+        "hole": 14,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Harre Vig 2025",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Skive 2025",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Skive 2025",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "René Lund",
+    "count": 5,
+    "keySum": 37,
+    "pointSum": 22,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Hammel 2020",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 18,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Harre Vig 2025",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "Mikkel Berthelsen",
+    "count": 5,
+    "keySum": 47,
+    "pointSum": 17,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Harre Vig 2025",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Skive 2025",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Anders Schmidt",
+    "count": 4,
+    "keySum": 12,
+    "pointSum": 17,
+    "details": [
+      {
+        "hole": 14,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hammel 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 2,
+        "points": 5,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Skive 2025",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "Anders Kristensen",
+    "count": 4,
+    "keySum": 39,
+    "pointSum": 16,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Hammel 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Ikast 2025",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2025",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Jesper Pasgaard Bertelsen",
+    "count": 3,
+    "keySum": 22,
+    "pointSum": 11,
+    "details": [
+      {
+        "hole": 17,
+        "courseLabel": "Gulbjerg/Elbæk 2025",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 14,
+    "playerName": "Emil Rom Madsen",
+    "count": 2,
+    "keySum": 12,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Sand / Sky 2024",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 15,
+    "playerName": "David Hjortbak",
+    "count": 2,
+    "keySum": 32,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Hammel 2020",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Harre Vig 2025",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

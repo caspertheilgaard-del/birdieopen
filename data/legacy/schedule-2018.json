@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 29/4 - 2018 kl. 9:30",
+    "club": "Skanderborg Golfklub",
+    "courseName": "Skanderborg Golfklub 2018",
+    "par": 69,
+    "lengthMeters": 5402,
+    "address": "Hylke Møllevej 2, 8600 Skanderborg",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 6/5 - 2018 kl. 9:30",
+    "club": "Hammel Golfklub Par 72 (5661m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 43,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 21/5 - 2018 kl. 9:00",
+    "club": "Himmelbjerget Golf Club Par 71 (5391m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Bakbjergvej 7, 8653 Them",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 34,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 9/6 - 2018 kl. 9:00",
+    "club": "Mollerup Golf Club",
+    "courseName": "Mollerup Golf Club 2018",
+    "par": 71,
+    "lengthMeters": 5646,
+    "address": "Mollerupvej 7, 8240 Risskov",
+    "winnerName": "Thomas Bertelsen",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Wed 20/6 - 2018 kl. 17:07",
+    "club": "Aarhus Aadal Golf Club",
+    "courseName": "Aarhus Aadal",
+    "par": 72,
+    "lengthMeters": 5807,
+    "address": "Brydehøjvej 35, 8462 Harlev",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 36,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 3/7 - 2018 kl. 17:00",
+    "club": "Silkeborg Ry Golfklub",
+    "courseName": "Kildebjerg Ry",
+    "par": 72,
+    "lengthMeters": 5853,
+    "address": "Skovagervej 200, 8660 Ry",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 5/8 - 2018 kl. 9:28",
+    "club": "Søhøjlandet Golf",
+    "courseName": "Søhøjlandet",
+    "par": 72,
+    "lengthMeters": 5665,
+    "address": "Amerikabakken 499, 8883 Gjern",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 25/8 - 2018 kl. 9:00",
+    "club": "Toftlund Golf Klub",
+    "courseName": "Brundtlandbanen",
+    "par": 73,
+    "lengthMeters": 5896,
+    "address": "Brundtland alle 3, 6520 Toftlund",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 40,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 25/8 - 2018 kl. 15:00",
+    "club": "Toftlund Golf Klub",
+    "courseName": "Brundtlandbanen",
+    "par": 73,
+    "lengthMeters": 5896,
+    "address": "Brundtland alle 3, 6520 Toftlund",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Søndag 26/8 - 2018 kl. 9:30",
+    "club": "Royal Oak Golf Klub",
+    "courseName": "Royal Oak",
+    "par": 72,
+    "lengthMeters": 5967,
+    "address": "Golfvej 2, 6630 Rødding",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 34,
+    "sponsor": "Ingen sponsor"
+  }
+]

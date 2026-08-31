@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 5/5 - 2024 kl. 9:30",
+    "club": "Skanderborg Golfklub",
+    "courseName": "Skanderborg 2024",
+    "par": 69,
+    "lengthMeters": 5402,
+    "address": "Hylke Møllevej 2, 8600 Skanderborg",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 20/5 - 2024 kl. 9:30",
+    "club": "Randers Fjord Golfklub",
+    "courseName": "Randers Fjrod Golfklub",
+    "par": 72,
+    "lengthMeters": 5835,
+    "address": "Murhusbakken 21, Støvring, 8930 Randers NØ",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 1/6 - 2024 kl. 9:30",
+    "club": "Aarhus Aadal Golf Club",
+    "courseName": "Aarhus Aadal",
+    "par": 72,
+    "lengthMeters": 5807,
+    "address": "Brydehøjvej 35, 8462 Harlev",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 9/6 - 2024 kl. 9:30",
+    "club": "Viborg Golfklub",
+    "courseName": "Gul / Rød",
+    "par": 72,
+    "lengthMeters": 5645,
+    "address": "Spangsbjerg Allé 50, 8800 Viborg",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Wed 19/6 - 2024 kl. 17:04",
+    "club": "Søhøjlandet Golf",
+    "courseName": "Søhøjlandet",
+    "par": 72,
+    "lengthMeters": 5665,
+    "address": "Amerikabakken 499, 8883 Gjern",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 2/7 - 2024 kl. 17:00",
+    "club": "Lübker Golf Resort",
+    "courseName": "Sand / Sky 2024",
+    "par": 72,
+    "lengthMeters": 5770,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 35,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 11/8 - 2024 kl. 10:30",
+    "club": "Herning Golf Klub",
+    "courseName": "Herning 2024",
+    "par": 71,
+    "lengthMeters": 5893,
+    "address": "Golfvej 24, 7400 Herning",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 44,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 31/8 - 2024 kl. 8:45",
+    "club": "Odense Golfklub",
+    "courseName": "Odense Golfklub 2024",
+    "par": 72,
+    "lengthMeters": 5845,
+    "address": "Hollufgårds Allé 21, 5220 Odense SØ",
+    "winnerName": "Emil Rom Madsen",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 31/8 - 2024 kl. 14:30",
+    "club": "Odense Golfklub",
+    "courseName": "Odense Golfklub 2024",
+    "par": 72,
+    "lengthMeters": 5845,
+    "address": "Hollufgårds Allé 21, 5220 Odense SØ",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 1/9 - 2024 kl. 9:30",
+    "club": "Barløseborg Golfklub",
+    "courseName": "Barløseborg Golfklub 2024",
+    "par": 71,
+    "lengthMeters": 5697,
+    "address": "Skovvangsvej 47, 5610 Assens",
+    "winnerName": "Emil Rom Madsen",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  }
+]

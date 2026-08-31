@@ -1,0 +1,1460 @@
+{
+  "seasonLegacyId": "18",
+  "year": 2018,
+  "sections": [
+    {
+      "kind": "prelim",
+      "tableId": "stilling_15",
+      "columns": [
+        {
+          "index": 0,
+          "legacyRoundId": "57",
+          "venue": "Skanderborg Golfklub",
+          "when": "Søn 29/4 - 2018 kl. 9:30"
+        },
+        {
+          "index": 1,
+          "legacyRoundId": "58",
+          "venue": "Hammel Golfklub",
+          "when": "Søn 6/5 - 2018 kl. 9:30"
+        },
+        {
+          "index": 2,
+          "legacyRoundId": "59",
+          "venue": "Himmelbjerget Golf Club",
+          "when": "Man 21/5 - 2018 kl. 9:00"
+        },
+        {
+          "index": 3,
+          "legacyRoundId": "60",
+          "venue": "Mollerup Golf Club",
+          "when": "Lør 9/6 - 2018 kl. 9:00"
+        },
+        {
+          "index": 4,
+          "legacyRoundId": "61",
+          "venue": "Aarhus Aadal Golf Club",
+          "when": "Wed 20/6 - 2018 kl. 17:07"
+        },
+        {
+          "index": 5,
+          "legacyRoundId": "63",
+          "venue": "Silkeborg Ry Golfklub",
+          "when": "Tue 3/7 - 2018 kl. 17:00"
+        },
+        {
+          "index": 6,
+          "legacyRoundId": "62",
+          "venue": "Søhøjlandet Golf",
+          "when": "Søn 5/8 - 2018 kl. 9:28"
+        }
+      ],
+      "rows": [
+        {
+          "playerName": "Peter T. Jensen",
+          "legacyPlayerId": "1",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 24,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 5,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 6,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            }
+          ],
+          "total": 200,
+          "behind": "29",
+          "place": 13
+        },
+        {
+          "playerName": "Morten Fryland",
+          "legacyPlayerId": "34",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 28,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 3,
+              "value": 28,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 4,
+              "value": 26,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 5,
+              "value": 27,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 6,
+              "value": 35,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 202,
+          "behind": "27",
+          "place": 12
+        },
+        {
+          "playerName": "David Hjortbak",
+          "legacyPlayerId": "35",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 38,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 30,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 4,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 24,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 203,
+          "behind": "26",
+          "place": 11
+        },
+        {
+          "playerName": "Rasmus Opstrup",
+          "legacyPlayerId": "36",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 38,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 35,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 229,
+          "behind": "-",
+          "place": 1
+        },
+        {
+          "playerName": "Jon Fogh",
+          "legacyPlayerId": "37",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 36,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 224,
+          "behind": "5",
+          "place": 4
+        },
+        {
+          "playerName": "Anders Kristensen",
+          "legacyPlayerId": "39",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 35,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 43,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 28,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 3,
+              "value": 22,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 23,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 207,
+          "behind": "22",
+          "place": 8
+        },
+        {
+          "playerName": "Andreas Opstrup",
+          "legacyPlayerId": "40",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 37,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 38,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 28,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 36,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 228,
+          "behind": "1",
+          "place": 2
+        },
+        {
+          "playerName": "Peter Dybvad",
+          "legacyPlayerId": "46",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 21,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 32,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            }
+          ],
+          "total": 206,
+          "behind": "23",
+          "place": 10
+        },
+        {
+          "playerName": "Palle Elgaard",
+          "legacyPlayerId": "49",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 1,
+              "value": 38,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 28,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 4,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            }
+          ],
+          "total": 209,
+          "behind": "20",
+          "place": 7
+        },
+        {
+          "playerName": "Jesper Pasgaard Bertelsen",
+          "legacyPlayerId": "57",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 43,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 27,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 37,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 222,
+          "behind": "7",
+          "place": 5
+        },
+        {
+          "playerName": "Johan Dubbelman",
+          "legacyPlayerId": "58",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 1,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 32,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 36,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 226,
+          "behind": "3",
+          "place": 3
+        },
+        {
+          "playerName": "Emil Gregersen",
+          "legacyPlayerId": "59",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 36,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 35,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 28,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 23,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 207,
+          "behind": "22",
+          "place": 8
+        },
+        {
+          "playerName": "Peter Meincke",
+          "legacyPlayerId": "55",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 34,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 34,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 2,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 30,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            }
+          ],
+          "total": 217,
+          "behind": "12",
+          "place": 6
+        },
+        {
+          "playerName": "Stefan Møller Jensen",
+          "legacyPlayerId": "60",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 16,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 29,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 5,
+              "value": 38,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 198,
+          "behind": "31",
+          "place": 15
+        },
+        {
+          "playerName": "Christoffer Schmidt",
+          "legacyPlayerId": "61",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 12,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 24,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 30,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            },
+            {
+              "columnIndex": 4,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 31,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 30,
+              "stableford": null,
+              "average": true,
+              "legacyRoundId": null
+            }
+          ],
+          "total": 185,
+          "behind": "44",
+          "place": 16
+        },
+        {
+          "playerName": "Thomas Bertelsen",
+          "legacyPlayerId": "62",
+          "carryover": null,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 20,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "57"
+            },
+            {
+              "columnIndex": 1,
+              "value": 33,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "58"
+            },
+            {
+              "columnIndex": 2,
+              "value": 29,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "59"
+            },
+            {
+              "columnIndex": 3,
+              "value": 37,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "60"
+            },
+            {
+              "columnIndex": 4,
+              "value": 25,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "61"
+            },
+            {
+              "columnIndex": 5,
+              "value": 30,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "63"
+            },
+            {
+              "columnIndex": 6,
+              "value": 26,
+              "stableford": null,
+              "average": false,
+              "legacyRoundId": "62"
+            }
+          ],
+          "total": 200,
+          "behind": "29",
+          "place": 13
+        }
+      ]
+    },
+    {
+      "kind": "final",
+      "tableId": "stilling_16",
+      "columns": [
+        {
+          "index": 0,
+          "legacyRoundId": "65",
+          "venue": "Toftlund Golf Klub",
+          "when": "Lør 25/8 - 2018 kl. 9:00"
+        },
+        {
+          "index": 1,
+          "legacyRoundId": "64",
+          "venue": "Toftlund Golf Klub",
+          "when": "Lør 25/8 - 2018 kl. 15:00"
+        },
+        {
+          "index": 2,
+          "legacyRoundId": "66",
+          "venue": "Royal Oak Golf Klub",
+          "when": "Søn 26/8 - 2018 kl. 9:30"
+        }
+      ],
+      "rows": [
+        {
+          "playerName": "David Hjortbak",
+          "legacyPlayerId": "35",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 6,
+              "stableford": 30,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 14,
+              "stableford": 38,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 2,
+              "stableford": 21,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 36,
+          "behind": "31",
+          "place": 10
+        },
+        {
+          "playerName": "Rasmus Opstrup",
+          "legacyPlayerId": "36",
+          "carryover": 28,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 13,
+              "stableford": 35,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 6,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 13,
+              "stableford": 33,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 60,
+          "behind": "7",
+          "place": 2
+        },
+        {
+          "playerName": "Jon Fogh",
+          "legacyPlayerId": "37",
+          "carryover": 22,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 4,
+              "stableford": 28,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 11,
+              "stableford": 36,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 12,
+              "stableford": 31,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 49,
+          "behind": "18",
+          "place": 4
+        },
+        {
+          "playerName": "Anders Kristensen",
+          "legacyPlayerId": "39",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 4,
+              "stableford": 28,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 8,
+              "stableford": 33,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 5,
+              "stableford": 27,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 31,
+          "behind": "36",
+          "place": 11
+        },
+        {
+          "playerName": "Andreas Opstrup",
+          "legacyPlayerId": "40",
+          "carryover": 26,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 14,
+              "stableford": 40,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 13,
+              "stableford": 37,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 14,
+              "stableford": 34,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 67,
+          "behind": "-",
+          "place": 1
+        },
+        {
+          "playerName": "Peter Dybvad",
+          "legacyPlayerId": "46",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 10,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 6,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 9,
+              "stableford": 29,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 39,
+          "behind": "28",
+          "place": 9
+        },
+        {
+          "playerName": "Palle Elgaard",
+          "legacyPlayerId": "49",
+          "carryover": 16,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 10,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 8,
+              "stableford": 33,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 8,
+              "stableford": 28,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 42,
+          "behind": "25",
+          "place": 6
+        },
+        {
+          "playerName": "Peter Meincke",
+          "legacyPlayerId": "55",
+          "carryover": 18,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 11,
+              "stableford": 33,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 4,
+              "stableford": 31,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 8,
+              "stableford": 28,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 41,
+          "behind": "26",
+          "place": 8
+        },
+        {
+          "playerName": "Jesper Pasgaard Bertelsen",
+          "legacyPlayerId": "57",
+          "carryover": 20,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 10,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 9,
+              "stableford": 34,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 3,
+              "stableford": 22,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 42,
+          "behind": "25",
+          "place": 6
+        },
+        {
+          "playerName": "Johan Dubbelman",
+          "legacyPlayerId": "58",
+          "carryover": 24,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 10,
+              "stableford": 32,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 13,
+              "stableford": 37,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 12,
+              "stableford": 31,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 59,
+          "behind": "8",
+          "place": 3
+        },
+        {
+          "playerName": "Emil Gregersen",
+          "legacyPlayerId": "59",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 2,
+              "stableford": 20,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 1,
+              "stableford": 22,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 2,
+              "stableford": 21,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 19,
+          "behind": "48",
+          "place": 14
+        },
+        {
+          "playerName": "Stefan Møller Jensen",
+          "legacyPlayerId": "60",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 2,
+              "stableford": 20,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 4,
+              "stableford": 31,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 8,
+              "stableford": 28,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 28,
+          "behind": "39",
+          "place": 12
+        },
+        {
+          "playerName": "Christoffer Schmidt",
+          "legacyPlayerId": "61",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 13,
+              "stableford": 35,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 11,
+              "stableford": 36,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 10,
+              "stableford": 30,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 48,
+          "behind": "19",
+          "place": 5
+        },
+        {
+          "playerName": "Thomas Bertelsen",
+          "legacyPlayerId": "62",
+          "carryover": 14,
+          "cells": [
+            {
+              "columnIndex": 0,
+              "value": 5,
+              "stableford": 29,
+              "average": false,
+              "legacyRoundId": "65"
+            },
+            {
+              "columnIndex": 1,
+              "value": 2,
+              "stableford": 29,
+              "average": false,
+              "legacyRoundId": "64"
+            },
+            {
+              "columnIndex": 2,
+              "value": 4,
+              "stableford": 26,
+              "average": false,
+              "legacyRoundId": "66"
+            }
+          ],
+          "total": 25,
+          "behind": "42",
+          "place": 13
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "legacyId": "2012",
+    "year": 2012,
+    "label": "Birdie Open 2012",
+    "path": "stilling/2012/hardcoded"
+  },
+  {
+    "legacyId": "13",
+    "year": 2013,
+    "label": "Birdie Open 2013",
+    "path": "stilling/13/db"
+  },
+  {
+    "legacyId": "14",
+    "year": 2014,
+    "label": "Birdie Open 2014",
+    "path": "stilling/14/db"
+  },
+  {
+    "legacyId": "15",
+    "year": 2015,
+    "label": "Birdie Open 2015",
+    "path": "stilling/15/db"
+  },
+  {
+    "legacyId": "16",
+    "year": 2016,
+    "label": "Birdie Open 2016",
+    "path": "stilling/16/db"
+  },
+  {
+    "legacyId": "17",
+    "year": 2017,
+    "label": "Birdie Open 2017",
+    "path": "stilling/17/db"
+  },
+  {
+    "legacyId": "18",
+    "year": 2018,
+    "label": "Birdie Open 2018",
+    "path": "stilling/18/db"
+  },
+  {
+    "legacyId": "19",
+    "year": 2019,
+    "label": "Birdie Open 2019",
+    "path": "stilling/19/db"
+  },
+  {
+    "legacyId": "20",
+    "year": 2020,
+    "label": "Birdie Open 2020",
+    "path": "stilling/20/db"
+  },
+  {
+    "legacyId": "21",
+    "year": 2021,
+    "label": "Birdie Open 2021",
+    "path": "stilling/21/db"
+  },
+  {
+    "legacyId": "22",
+    "year": 2022,
+    "label": "Birdie Open 2022",
+    "path": "stilling/22/db"
+  },
+  {
+    "legacyId": "23",
+    "year": 2023,
+    "label": "Birdie Open 2023",
+    "path": "stilling/23/db"
+  },
+  {
+    "legacyId": "24",
+    "year": 2024,
+    "label": "Birdie Open 2024",
+    "path": "stilling/24/db"
+  },
+  {
+    "legacyId": "25",
+    "year": 2025,
+    "label": "Birdie Open 2025",
+    "path": "stilling/25/db"
+  },
+  {
+    "legacyId": "26",
+    "year": 2026,
+    "label": "Birdie Open 2026",
+    "path": "stilling/26/db"
+  }
+]

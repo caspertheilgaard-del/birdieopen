@@ -1,69 +1,165 @@
-import Image from "next/image";
+import Link from "next/link";
+import { getHome } from "@/lib/data";
+import { dayAndMonth, isSameDay, longDate, meters, timeOfDay } from "@/lib/format";
 
-export default function Home() {
+export default async function HomePage() {
+  const home = await getHome();
+  const { season, top, nextRound, champion, birdieChampion, stats } = home;
+  const leader = top[0];
+  const runnerUp = top[1];
+  const today = new Date();
+  const nextIsToday = isSameDay(nextRound?.startsAt ?? null, today);
+  const date = dayAndMonth(nextRound?.startsAt ?? null);
+
+  const badge = nextRound
+    ? nextIsToday
+      ? `${nextRound.kind === "final" ? "Finaledag" : "Spilledag"} · ${nextRound.kind === "final" ? "Finalerunde" : "Runde"} i dag ${timeOfDay(nextRound.startsAt)}`
+      : `Næste runde · ${longDate(nextRound.startsAt)}`
+    : `Sæsonen er afgjort · ${season.year}`;
+
+  const headline = nextRound?.venue
+    ? nextRound.kind === "final"
+      ? `Alt afgøres på ${nextRound.venue}.`
+      : `Næste stop: ${nextRound.venue}.`
+    : leader
+      ? `${leader.playerName} vinder Birdie Open ${season.year}.`
+      : `Birdie Open ${season.year}.`;
+
+  const lede =
+    leader && runnerUp
+      ? `${leader.playerName} fører Birdie Open ${season.year} med ${leader.points} point, ${runnerUp.points === leader.points ? "lige med" : `${leader.points - runnerUp.points} foran`} ${runnerUp.playerName}${nextRound ? "" : " efter sæsonens sidste runde"}.`
+      : `Invitation-only golfturnering siden 2012.`;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <section className="hero">
+        <div className="hero__inner">
+          <div className="hero__copy">
+            <span className="live-badge">
+              <span className="live-badge__dot" aria-hidden="true" />
+              {badge}
+            </span>
+            <h1 className="hero__title">{headline.toUpperCase()}</h1>
+            <p className="hero__lede">{lede}</p>
+            <div className="hero__actions">
+              <Link href={`/stilling/${season.year}`} className="btn btn--primary">
+                Se stillingen
+              </Link>
+              <Link href={`/turneringsplan/${season.year}`} className="btn btn--ghost">
+                Turneringsplan
+              </Link>
+            </div>
+          </div>
+
+          <div className="hero__card">
+            <div className="hero__card-head">
+              <span className="hero__card-title">
+                STILLINGEN · {home.finalRoundsTotal > 0 ? "FINALEN" : "SÆSONEN"}
+              </span>
+              <span className="hero__card-sub">
+                {home.finalRoundsTotal > 0
+                  ? `efter ${home.finalRoundsPlayed} af ${home.finalRoundsTotal} runder`
+                  : `${stats.rounds} runder`}
+              </span>
+            </div>
+            <div>
+              {top.map((row) => (
+                <div key={row.playerSlug} className={`hero__row${row.place === 1 ? " is-leader" : ""}`}>
+                  <span
+                    className="hero__row-place"
+                    style={
+                      row.place === 1
+                        ? { background: "var(--yellow)", color: "var(--green)" }
+                        : row.place <= 3
+                          ? { background: "var(--green)", color: "var(--cream)" }
+                          : undefined
+                    }
+                  >
+                    {row.place}
+                  </span>
+                  <span className="hero__row-name">{row.playerName}</span>
+                  <span className="hero__row-behind">{row.behind > 0 ? `+${row.behind}` : ""}</span>
+                  <span className="hero__row-points">{row.points}</span>
+                </div>
+              ))}
+            </div>
+            <Link href={`/stilling/${season.year}`} className="hero__card-link">
+              Se hele stillingen →
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="stats">
+          <div className="stats__inner">
+            <div>
+              <span className="stats__value">{stats.seasonNumber}.</span>{" "}
+              <span className="stats__label">sæson siden 2012</span>
+            </div>
+            <div>
+              <span className="stats__value">{stats.activePlayers}</span>{" "}
+              <span className="stats__label">aktive deltagere</span>
+            </div>
+            <div>
+              <span className="stats__value">{stats.rounds}</span>{" "}
+              <span className="stats__label">runder i {season.year}</span>
+            </div>
+            <div>
+              <span className="stats__value">{stats.birdies}</span>{" "}
+              <span className="stats__label">birdies i {season.year}</span>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="home-cards">
+        {nextRound ? (
+          <div className="card next-round">
+            <div className="date-block">
+              <div className="date-block__day">{date.day}</div>
+              <div className="date-block__month">{date.month}</div>
+            </div>
+            <div className="next-round__body">
+              <div className="eyebrow next-round__eyebrow">
+                {nextIsToday ? "I dag" : "Næste runde"} ·{" "}
+                {nextRound.kind === "final" ? "Finalerunde" : "Indledende runde"}
+              </div>
+              <div className="next-round__venue">
+                {nextRound.venue}
+                {nextRound.courseName ? ` · ${nextRound.courseName}` : ""}
+              </div>
+              <div className="next-round__meta">
+                {[
+                  `${longDate(nextRound.startsAt)} ${timeOfDay(nextRound.startsAt)}`.trim(),
+                  nextRound.par ? `Par ${nextRound.par}` : null,
+                  meters(nextRound.lengthMeters),
+                  nextRound.address,
+                ]
+                  .filter(Boolean)
+                  .join(" · ")}
+              </div>
+            </div>
+            <Link href={`/turneringsplan/${season.year}`} className="btn btn--dark">
+              Hele planen
+            </Link>
+          </div>
+        ) : null}
+
+        {champion ? (
+          <div className="card champion-card">
+            <div className="eyebrow">Forsvarende mester {champion.year}</div>
+            <div className="champion-card__name">{champion.name}</div>
+            <div className="champion-card__note">Vandt Birdie Open {champion.year}.</div>
+          </div>
+        ) : null}
+
+        {birdieChampion ? (
+          <div className="card champion-card">
+            <div className="eyebrow">Forsvarende birdiemester {birdieChampion.year}</div>
+            <div className="champion-card__name">{birdieChampion.name}</div>
+            <div className="champion-card__note">Flest birdies i {birdieChampion.year}.</div>
+          </div>
+        ) : null}
+      </section>
+    </main>
   );
 }

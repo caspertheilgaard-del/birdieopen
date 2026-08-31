@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 30/4 - 2023 kl. 9:30",
+    "club": "Stensballegaard Golf",
+    "courseName": "Guldbjerg / Elbæk",
+    "par": 72,
+    "lengthMeters": 5882,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 48,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 13/5 - 2023 kl. 9:30",
+    "club": "Norddjurs Golfklub",
+    "courseName": "Norddjurs",
+    "par": 72,
+    "lengthMeters": 5739,
+    "address": "Nordkystvejen 10, 8961 Allingåbro",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 29/5 - 2023 kl. 9:30",
+    "club": "Horsens Golfklub",
+    "courseName": "Horsens Golfklub 2019",
+    "par": 72,
+    "lengthMeters": 5794,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 42,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 10/6 - 2023 kl. 9:30",
+    "club": "Himmelbjerget Golf Club Par 71 (5391m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Bakbjergvej 7, 8653 Them",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 35,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 20/6 - 2023 kl. 17:00",
+    "club": "Randers Golf Klub",
+    "courseName": "Randers 2023",
+    "par": 72,
+    "lengthMeters": 5721,
+    "address": "Himmelbovej 22, 8920 Randers",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 36,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 29/6 - 2023 kl. 17:00",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel 2020",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Emil Rom Madsen",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 13/8 - 2023 kl. 11:00",
+    "club": "Grenaa Golfklub",
+    "courseName": "Grenå 2023",
+    "par": 72,
+    "lengthMeters": 5892,
+    "address": "Vestermarken 1, 8500 Grenaa",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 26/8 - 2023 kl. 8:30",
+    "club": "Hedensted Golf Klub",
+    "courseName": "Hedensted 2023",
+    "par": 72,
+    "lengthMeters": 5715,
+    "address": "Rindbækvej 6, 8722 Hedensted",
+    "winnerName": "Emil Rom Madsen",
+    "winnerPoints": 42,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 26/8 - 2023 kl. 14:15",
+    "club": "Hedensted Golf Klub",
+    "courseName": "Hedensted 2023",
+    "par": 72,
+    "lengthMeters": 5715,
+    "address": "Rindbækvej 6, 8722 Hedensted",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 27/8 - 2023 kl. 9:45",
+    "club": "Juelsminde Golfklub",
+    "courseName": "Juelsminde 2023",
+    "par": 72,
+    "lengthMeters": 5610,
+    "address": "Bolbroholtvej 11, 7130 Juelsminde",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  }
+]

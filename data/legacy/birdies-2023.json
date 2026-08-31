@@ -1,0 +1,923 @@
+[
+  {
+    "place": 1,
+    "playerName": "Andreas Opstrup",
+    "count": 30,
+    "keySum": 275,
+    "pointSum": 90,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 3,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Norddjurs",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Norddjurs",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Norddjurs",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Randers 2023",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Randers 2023",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Randers 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Randers 2023",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Hammel 2020",
+        "key": 2,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Hammel 2020",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Hedensted 2023",
+        "key": 3,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hedensted 2023",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Hedensted 2023",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hedensted 2023",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hedensted 2023",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Hedensted 2023",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Hedensted 2023",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Hedensted 2023",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Juelsminde 2023",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Juelsminde 2023",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Juelsminde 2023",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Juelsminde 2023",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Juelsminde 2023",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Emil Gregersen",
+    "count": 13,
+    "keySum": 100,
+    "pointSum": 43,
+    "details": [
+      {
+        "hole": 4,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Norddjurs",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Randers 2023",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Hammel 2020",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Hammel 2020",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Hammel 2020",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Hammel 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Juelsminde 2023",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Juelsminde 2023",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Rene Simonsen",
+    "count": 13,
+    "keySum": 110,
+    "pointSum": 45,
+    "details": [
+      {
+        "hole": 10,
+        "courseLabel": "Norddjurs",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Norddjurs",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Randers 2023",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Randers 2023",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Hammel 2020",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Hammel 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Hammel 2020",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Hammel 2020",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Hedensted 2023",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Peter Meincke",
+    "count": 11,
+    "keySum": 102,
+    "pointSum": 37,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Norddjurs",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Randers 2023",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Randers 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hammel 2020",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Hammel 2020",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Hedensted 2023",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Hedensted 2023",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Juelsminde 2023",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Johan Dubbelman",
+    "count": 11,
+    "keySum": 103,
+    "pointSum": 37,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Randers 2023",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Randers 2023",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Hammel 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Hammel 2020",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Grenå 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hedensted 2023",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hedensted 2023",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Juelsminde 2023",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Juelsminde 2023",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Rasmus Opstrup",
+    "count": 10,
+    "keySum": 58,
+    "pointSum": 31,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Norddjurs",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Hammel 2020",
+        "key": 6,
+        "points": 5,
+        "type": "Eagle"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Grenå 2023",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hedensted 2023",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Hedensted 2023",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Jon Fogh",
+    "count": 8,
+    "keySum": 118,
+    "pointSum": 24,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Norddjurs",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Norddjurs",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Norddjurs",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Randers 2023",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Hedensted 2023",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Juelsminde 2023",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Mikkel Berthelsen",
+    "count": 4,
+    "keySum": 48,
+    "pointSum": 14,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Randers 2023",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Hedensted 2023",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Hedensted 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Juelsminde 2023",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "Stefan Møller Jensen",
+    "count": 3,
+    "keySum": 10,
+    "pointSum": 14,
+    "details": [
+      {
+        "hole": 4,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "Jesper Pasgaard Bertelsen",
+    "count": 2,
+    "keySum": 14,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Grenå 2023",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Juelsminde 2023",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Emil Rom Madsen",
+    "count": 2,
+    "keySum": 27,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "Anders Schmidt",
+    "count": 2,
+    "keySum": 28,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Norddjurs",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Casper Theilgaard",
+    "count": 1,
+    "keySum": 3,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Hammel 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 14,
+    "playerName": "David Hjortbak",
+    "count": 1,
+    "keySum": 4,
+    "pointSum": 5,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Himmelbjerget Golf Club",
+        "key": 4,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 15,
+    "playerName": "Alexander Bodum",
+    "count": 1,
+    "keySum": 14,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Guldbjerg / Elbæk",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 16,
+    "playerName": "Anders Kristensen",
+    "count": 1,
+    "keySum": 15,
+    "pointSum": 3,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Hedensted 2023",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

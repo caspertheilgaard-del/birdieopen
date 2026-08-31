@@ -1,0 +1,1147 @@
+[
+  {
+    "place": 1,
+    "playerName": "Emil Gregersen",
+    "count": 22,
+    "keySum": 188,
+    "pointSum": 67,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Aarhus Aadal",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 5,
+        "type": "Eagle"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Andreas Opstrup",
+    "count": 18,
+    "keySum": 151,
+    "pointSum": 54,
+    "details": [
+      {
+        "hole": 14,
+        "courseLabel": "Tange Sø 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 3,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Aarhus Aadal",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Aarhus Aadal",
+        "key": 2,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 2,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 2,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Johan Dubbelman",
+    "count": 17,
+    "keySum": 156,
+    "pointSum": 55,
+    "details": [
+      {
+        "hole": 4,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Aarhus Aadal",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Aarhus Aadal",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Peter Meincke",
+    "count": 15,
+    "keySum": 146,
+    "pointSum": 51,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Ikast 2022",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Casper Theilgaard",
+    "count": 14,
+    "keySum": 139,
+    "pointSum": 46,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Ikast 2022",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Rasmus Opstrup",
+    "count": 11,
+    "keySum": 46,
+    "pointSum": 27,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Ikast 2022",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2022",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 9,
+        "points": 4,
+        "type": "Eagle"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Aarhus Aadal",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 3,
+        "points": 5,
+        "type": "Eagle"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Rene Simonsen",
+    "count": 10,
+    "keySum": 110,
+    "pointSum": 34,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2022",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Jon Fogh",
+    "count": 10,
+    "keySum": 126,
+    "pointSum": 34,
+    "details": [
+      {
+        "hole": 11,
+        "courseLabel": "Tange Sø 2022",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Tange Sø 2022",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "Alexander Bodum",
+    "count": 7,
+    "keySum": 89,
+    "pointSum": 26,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Gut Bissenmoor 2022",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "Jesper Pasgaard Bertelsen",
+    "count": 5,
+    "keySum": 46,
+    "pointSum": 20,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Aarhus Aadal",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Anders Kristensen",
+    "count": 5,
+    "keySum": 52,
+    "pointSum": 20,
+    "details": [
+      {
+        "hole": 11,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "Anders Schmidt",
+    "count": 4,
+    "keySum": 25,
+    "pointSum": 16,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Aarhus Aadal",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Mikkel Berthelsen",
+    "count": 4,
+    "keySum": 46,
+    "pointSum": 16,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Aarhus Aadal",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 14,
+    "playerName": "Emil Rom Madsen",
+    "count": 3,
+    "keySum": 28,
+    "pointSum": 13,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Gut Kaden C-B",
+        "key": 3,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 15,
+    "playerName": "David Hjortbak",
+    "count": 3,
+    "keySum": 44,
+    "pointSum": 12,
+    "details": [
+      {
+        "hole": 16,
+        "courseLabel": "Mollerup Golf Club 2018",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Herning Golf Klub 2022",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Gut Kaden C-A",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 16,
+    "playerName": "Stefan Møller Jensen",
+    "count": 1,
+    "keySum": 17,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Aarhus Aadal",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

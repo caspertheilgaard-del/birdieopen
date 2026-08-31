@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 28/4 - 2013 kl. 10:00",
+    "club": "Tange Sø Golfklub",
+    "courseName": "Tange Sø Golfklub før 2015",
+    "par": 71,
+    "lengthMeters": 5848,
+    "address": "Tange Søvej 68, 8840 Rødkjærsbro",
+    "winnerName": "Peter Dybvad",
+    "winnerPoints": 34,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 5/5 - 2013 kl. 10:00",
+    "club": "Odder Golfklub Par 70 (5455m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Aakjærvej 200, 8300 Odder",
+    "winnerName": "Jakob Voetmann",
+    "winnerPoints": 36,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 20/5 - 2013 kl. 17:00",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 34,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 9/6 - 2013 kl. 10:00",
+    "club": "Kalø Golfklub",
+    "courseName": "Kalø Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5740,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 41,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Fredag 21/6 - 2013 kl. 10:00",
+    "club": "Skanderborg Golfklub Par 69 (5402m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Hylke Møllevej 2, 8600 Skanderborg",
+    "winnerName": "Jonas Husted",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 1/7 - 2013 kl. 10:00",
+    "club": "Horsens Golfklub Par 72 (5794m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Peter Dybvad",
+    "winnerPoints": 41,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 4/8 - 2013 kl. 9:30",
+    "club": "Lübker Golf Resort",
+    "courseName": "Sand / Sky Course",
+    "par": 72,
+    "lengthMeters": 6067,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Jonas Husted",
+    "winnerPoints": 33,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 31/8 - 2013 kl. 9:10",
+    "club": "Volstrup Golf Center Par 70 (5396m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Rosbjergvej 5, 9500 Hobro",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 32,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 31/8 - 2013 kl. 14:30",
+    "club": "Volstrup Golf Center Par 70 (5396m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Rosbjergvej 5, 9500 Hobro",
+    "winnerName": "Morten Fryland",
+    "winnerPoints": 30,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 1/9 - 2013 kl. 10:00",
+    "club": "Hobro Golf Par 71 (5878m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Torndalsvej 3, 9500 Hobro",
+    "winnerName": "Peter Dybvad",
+    "winnerPoints": 34,
+    "sponsor": "Ingen sponsor"
+  }
+]

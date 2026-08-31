@@ -1,0 +1,458 @@
+[
+  {
+    "place": 1,
+    "playerName": "Andreas Opstrup",
+    "count": 17,
+    "keySum": 192,
+    "pointSum": 51,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Kalø 2019",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kalø 2019",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Aarhus Aadal",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Peter Meincke",
+    "count": 8,
+    "keySum": 93,
+    "pointSum": 28,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Tange Sø Golfklub",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kalø 2019",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Elbæk/Brakør 2016 (Hvid)",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Rasmus Opstrup",
+    "count": 5,
+    "keySum": 54,
+    "pointSum": 17,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Tange Sø Golfklub",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Emil Gregersen",
+    "count": 4,
+    "keySum": 49,
+    "pointSum": 13,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Elbæk/Brakør 2016 (Hvid)",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Jon Fogh",
+    "count": 4,
+    "keySum": 52,
+    "pointSum": 15,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Johan Dubbelman",
+    "count": 4,
+    "keySum": 54,
+    "pointSum": 12,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Jesper Pasgaard Bertelsen",
+    "count": 3,
+    "keySum": 23,
+    "pointSum": 13,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 18,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Peter T. Jensen",
+    "count": 2,
+    "keySum": 13,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Tange Sø Golfklub",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Aarhus Aadal",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "Peter Dybvad",
+    "count": 2,
+    "keySum": 26,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Randers Fjrod Golfklub",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "David Hjortbak",
+    "count": 1,
+    "keySum": 8,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 18,
+        "courseLabel": "Holstebro Golfklub - Storåbanen",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Palle Elgaard",
+    "count": 1,
+    "keySum": 18,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 14,
+        "courseLabel": "Holstebro Golfklub - Skovbanen",
+        "key": 18,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

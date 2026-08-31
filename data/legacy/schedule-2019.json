@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 28/4 - 2019 kl. 9:28",
+    "club": "Tange Sø Golfklub Par 71 (5848m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Tange Søvej 68, 8840 Rødkjærsbro",
+    "winnerName": "Peter Meincke",
+    "winnerPoints": 33,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 11/5 - 2019 kl. 9:30",
+    "club": "Kalø Golfklub",
+    "courseName": "Kalø 2019",
+    "par": 72,
+    "lengthMeters": 5686,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 39,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 26/5 - 2019 kl. 9:30",
+    "club": "Randers Fjord Golfklub",
+    "courseName": "Randers Fjrod Golfklub",
+    "par": 72,
+    "lengthMeters": 5835,
+    "address": "Murhusbakken 21, Støvring, 8930 Randers NØ",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 10/6 - 2019 kl. 9:30",
+    "club": "Horsens Golfklub",
+    "courseName": "Horsens Golfklub 2019",
+    "par": 72,
+    "lengthMeters": 5794,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 40,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 20/6 - 2019 kl. 17:00",
+    "club": "Stensballegaard Golf",
+    "courseName": "Elbæk/Brakør 2016 (Hvid)",
+    "par": 72,
+    "lengthMeters": 6048,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 33,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 2/7 - 2019 kl. 17:00",
+    "club": "Silkeborg Ry Golfklub",
+    "courseName": "Kildebjerg Ry",
+    "par": 72,
+    "lengthMeters": 5853,
+    "address": "Skovagervej 200, 8660 Ry",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 11/8 - 2019 kl. 9:30",
+    "club": "Aarhus Aadal Golf Club",
+    "courseName": "Aarhus Aadal",
+    "par": 72,
+    "lengthMeters": 5807,
+    "address": "Brydehøjvej 35, 8462 Harlev",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 24/8 - 2019 kl. 9:00",
+    "club": "Holstebro Golfklub - Råsted",
+    "courseName": "Holstebro Golfklub - Skovbanen",
+    "par": 72,
+    "lengthMeters": 5943,
+    "address": "Brandsbjergvej 4, 7570 Vemb",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 24/8 - 2019 kl. 14:30",
+    "club": "Holstebro Golfklub - Råsted",
+    "courseName": "Holstebro Golfklub - Skovbanen",
+    "par": 72,
+    "lengthMeters": 5943,
+    "address": "Brandsbjergvej 4, 7570 Vemb",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 25/8 - 2019 kl. 9:30",
+    "club": "Holstebro Golfklub - Storådalen",
+    "courseName": "Holstebro Golfklub - Storåbanen",
+    "par": 71,
+    "lengthMeters": 5850,
+    "address": "Frøjkvej 83, 7500 Holstebro",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 41,
+    "sponsor": "Ingen sponsor"
+  }
+]

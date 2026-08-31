@@ -1,0 +1,110 @@
+[
+  {
+    "group": "prelim",
+    "when": "Lørdag 26/4 - 2014 kl. 10:00",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 3/5 - 2014 kl. 10:00",
+    "club": "Horsens Golfklub Par 72 (5794m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 32,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 24/5 - 2014 kl. 12:00",
+    "club": "Skanderborg Golfklub",
+    "courseName": "Skanderborg Golfklub 2014",
+    "par": 69,
+    "lengthMeters": 5402,
+    "address": "Hylke Møllevej 2, 8600 Skanderborg",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 9/6 - 2014 kl. 10:00",
+    "club": "Kalø Golfklub",
+    "courseName": "Kalø Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5740,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 39,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Fredag 27/6 - 2014 kl. 17:00",
+    "club": "Stensballegaard Golf",
+    "courseName": "Elbæk/Guldbjerg",
+    "par": 72,
+    "lengthMeters": 5882,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Palle Elgaard",
+    "winnerPoints": 43,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 3/7 - 2014 kl. 17:00",
+    "club": "Tange Sø Golfklub",
+    "courseName": "Tange Sø Golfklub før 2015",
+    "par": 71,
+    "lengthMeters": 5848,
+    "address": "Tange Søvej 68, 8840 Rødkjærsbro",
+    "winnerName": "Peter Henriksen",
+    "winnerPoints": 40,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 10/8 - 2014 kl. 10:00",
+    "club": "Lübker Golf Resort",
+    "courseName": "Forest / Sand",
+    "par": 72,
+    "lengthMeters": 5603,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 32,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 30/8 - 2014 kl. 9:15",
+    "club": "Odense Eventyr Golf",
+    "courseName": "Nord-Syd",
+    "par": 72,
+    "lengthMeters": 5865,
+    "address": "Falen 277, 5250 Odense",
+    "winnerName": "Jonas Husted",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 30/8 - 2014 kl. 14:45",
+    "club": "Odense Eventyr Golf",
+    "courseName": "Nord-Vest",
+    "par": 72,
+    "lengthMeters": 5980,
+    "address": "Falen 277, 5250 Odense",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 38,
+    "sponsor": ""
+  }
+]

@@ -1,0 +1,919 @@
+[
+  {
+    "place": 1,
+    "playerName": "Casper Theilgaard",
+    "count": 15,
+    "keySum": 140,
+    "pointSum": 49,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Odder 2026",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Odder 2026",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ikast 2026",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Lohersand 2026",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Lohersand 2026",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Lohersand 2026",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Emil Gregersen",
+    "count": 15,
+    "keySum": 162,
+    "pointSum": 49,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Skanderborg 2024",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Odder 2026",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Ikast 2026",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ikast 2026",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Lohersand 2026",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Peter Meincke",
+    "count": 14,
+    "keySum": 119,
+    "pointSum": 50,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Guldbjerg / Brakør 2026",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Odder 2026",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Odder 2026",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Ikast 2026",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ikast 2026",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Lohersand 2026",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Rene Simonsen",
+    "count": 12,
+    "keySum": 110,
+    "pointSum": 40,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Skanderborg 2024",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Skanderborg 2024",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Odder 2026",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Odder 2026",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Odder 2026",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Ikast 2026",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Ikast 2026",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ikast 2026",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Andreas Opstrup",
+    "count": 12,
+    "keySum": 114,
+    "pointSum": 36,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Skanderborg 2024",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Skanderborg 2024",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Guldbjerg / Brakør 2026",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 1,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Lohersand 2026",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Rasmus Opstrup",
+    "count": 12,
+    "keySum": 139,
+    "pointSum": 42,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Odder 2026",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Odder 2026",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Odder 2026",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Ikast 2026",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Johan Dubbelman",
+    "count": 11,
+    "keySum": 113,
+    "pointSum": 35,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Ikast 2026",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ikast 2026",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Lohersand 2026",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Lohersand 2026",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Jon Fogh",
+    "count": 7,
+    "keySum": 34,
+    "pointSum": 21,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Odder 2026",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Odder 2026",
+        "key": 10,
+        "points": 5,
+        "type": "Eagle"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Ikast 2026",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ikast 2026",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "Anders Schmidt",
+    "count": 4,
+    "keySum": 38,
+    "pointSum": 15,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Odder 2026",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "David Hjortbak",
+    "count": 4,
+    "keySum": 47,
+    "pointSum": 16,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Skanderborg 2024",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Guldbjerg / Brakør 2026",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Randers Fjord 2026",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "AB / Rød/Gul)",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Mikkel Berthelsen",
+    "count": 3,
+    "keySum": 25,
+    "pointSum": 11,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Skanderborg 2024",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Skanderborg 2024",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 8,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "Anders Kristensen",
+    "count": 3,
+    "keySum": 45,
+    "pointSum": 12,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Aarhus Aadal 2026",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Ry Kildebjerg 2022",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Lohersand 2026",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Stefan Møller Jensen",
+    "count": 2,
+    "keySum": 4,
+    "pointSum": 10,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Guldbjerg / Brakør 2026",
+        "key": 3,
+        "points": 5,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Lohersand 2026",
+        "key": 1,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 14,
+    "playerName": "René Lund",
+    "count": 1,
+    "keySum": 14,
+    "pointSum": 3,
+    "details": [
+      {
+        "hole": 10,
+        "courseLabel": "Ikast 2026",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

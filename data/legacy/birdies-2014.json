@@ -1,0 +1,443 @@
+[
+  {
+    "place": 1,
+    "playerName": "Rasmus Opstrup",
+    "count": 10,
+    "keySum": 87,
+    "pointSum": 36,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Skanderborg Golfklub 2014",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Forest / Sand",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Nord-Syd",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Jonas Husted",
+    "count": 10,
+    "keySum": 107,
+    "pointSum": 31,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 12,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Elbæk/Guldbjerg",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Elbæk/Guldbjerg",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Nord-Syd",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Nord-Syd",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Nord-Syd",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Nord-Vest",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Andreas Opstrup",
+    "count": 8,
+    "keySum": 67,
+    "pointSum": 26,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Elbæk/Guldbjerg",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Nord-Syd",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Nord-Vest",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Nord-Vest",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Peter T. Jensen",
+    "count": 4,
+    "keySum": 30,
+    "pointSum": 15,
+    "details": [
+      {
+        "hole": 17,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Nord-Syd",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Nord-Vest",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Nord-Vest",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Jon Fogh",
+    "count": 3,
+    "keySum": 35,
+    "pointSum": 11,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Kalø Golfklub før 2016",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Anders Kristensen",
+    "count": 2,
+    "keySum": 20,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 5,
+        "courseLabel": "Elbæk/Guldbjerg",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Elbæk/Guldbjerg",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Jakob Voetmann",
+    "count": 1,
+    "keySum": 10,
+    "pointSum": 5,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Skanderborg Golfklub 2014",
+        "key": 10,
+        "points": 5,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Christian Bendtsen",
+    "count": 1,
+    "keySum": 10,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "Jacob Olesen",
+    "count": 1,
+    "keySum": 15,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Nord-Syd",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "Christoffer Pahle",
+    "count": 1,
+    "keySum": 16,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Peter Dybvad",
+    "count": 1,
+    "keySum": 16,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 13,
+        "courseLabel": "Hammel Golfklub før 2016",
+        "key": 16,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "David Hjortbak",
+    "count": 1,
+    "keySum": 17,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Morten Fryland",
+    "count": 1,
+    "keySum": 17,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Tange Sø Golfklub før 2015",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 14,
+    "playerName": "Palle Elgaard",
+    "count": 1,
+    "keySum": 17,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 1,
+        "courseLabel": "Nord-Vest",
+        "key": 17,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

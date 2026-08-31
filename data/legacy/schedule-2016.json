@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Lørdag 30/4 - 2016 kl. 10:30",
+    "club": "Hammel Golfklub Par 72 (5661m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 42,
+    "sponsor": "Jon Fogh"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 16/5 - 2016 kl. 9:28",
+    "club": "Tange Sø Golfklub Par 71 (5848m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Tange Søvej 68, 8840 Rødkjærsbro",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 35,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 28/5 - 2016 kl. 10:00",
+    "club": "Grenaa Golfklub",
+    "courseName": "Grenaa",
+    "par": 71,
+    "lengthMeters": 5791,
+    "address": "Vestermarken 1, 8500 Grenaa",
+    "winnerName": "Palle Elgaard",
+    "winnerPoints": 39,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 11/6 - 2016 kl. 9:15",
+    "club": "Kalø Golfklub Par 72 (5740m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "Mikkel Pedersen",
+    "winnerPoints": 39,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 28/6 - 2016 kl. 17:00",
+    "club": "Stensballegaard Golf",
+    "courseName": "Elbæk/Brakør 2016 (Hvid)",
+    "par": 72,
+    "lengthMeters": 6048,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Peter Dybvad",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 7/7 - 2016 kl. 17:00",
+    "club": "Horsens Golfklub Par 72 (5794m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 40,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 7/8 - 2016 kl. 9:28",
+    "club": "Søhøjlandet Golf",
+    "courseName": "Søhøjlandet",
+    "par": 72,
+    "lengthMeters": 5665,
+    "address": "Amerikabakken 499, 8883 Gjern",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 20/8 - 2016 kl. 9:00",
+    "club": "Løgster Golfklub Par 72 (5688m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Viborgvej 130, Ravnstrup , 9670 Løgstør",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 41,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 20/8 - 2016 kl. 14:00",
+    "club": "Løgster Golfklub Par 72 (5688m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Viborgvej 130, Ravnstrup , 9670 Løgstør",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 39,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Søndag 21/8 - 2016 kl. 9:30",
+    "club": "Sebber Kloster Golf Klub Par 72 (5780m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Bjerregaardsvej 23, 9240 Nibe",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 37,
+    "sponsor": ""
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Lørdag 24/4 - 2021 kl. 9:32",
+    "club": "Stensballegaard Golf",
+    "courseName": "Elbæk/Brakør 2016 (Hvid)",
+    "par": 72,
+    "lengthMeters": 6048,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Emil Gregersen",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 9/5 - 2021 kl. 9:40",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel 2020",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 45,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 24/5 - 2021 kl. 9:32",
+    "club": "Ikast Golf Klub Par 71 (5445m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Remmevej 36, 7430 Ikast",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 36,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 6/6 - 2021 kl. 9:30",
+    "club": "Norddjurs Golfklub",
+    "courseName": "Norddjurs",
+    "par": 72,
+    "lengthMeters": 5739,
+    "address": "Nordkystvejen 10, 8961 Allingåbro",
+    "winnerName": "Peter Meincke",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 22/6 - 2021 kl. 17:00",
+    "club": "Silkeborg Ry Golfklub",
+    "courseName": "Kildebjerg Ry",
+    "par": 72,
+    "lengthMeters": 5853,
+    "address": "Skovagervej 200, 8660 Ry",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 1/7 - 2021 kl. 17:00",
+    "club": "Lübker Golf Resort",
+    "courseName": "Sky - Forrest",
+    "par": 72,
+    "lengthMeters": 5456,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Alexander Bodum",
+    "winnerPoints": 42,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 15/8 - 2021 kl. 9:30",
+    "club": "Randers Fjord Golfklub",
+    "courseName": "Randers Fjrod Golfklub",
+    "par": 72,
+    "lengthMeters": 5835,
+    "address": "Murhusbakken 21, Støvring, 8930 Randers NØ",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 28/8 - 2021 kl. 9:00",
+    "club": "Hjørring Golfklub",
+    "courseName": "Hjørring - Syd + Øst",
+    "par": 71,
+    "lengthMeters": 5422,
+    "address": "Vinstrupvej 30 , 9800 Hjørring",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 31,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 28/8 - 2021 kl. 14:30",
+    "club": "Hjørring Golfklub",
+    "courseName": "Hjørring - Nord + Syd",
+    "par": 72,
+    "lengthMeters": 5912,
+    "address": "Vinstrupvej 30 , 9800 Hjørring",
+    "winnerName": "Alexander Bodum",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 29/8 - 2021 kl. 9:30",
+    "club": "Sindal Golf Klub",
+    "courseName": "Sindal Golf klub",
+    "par": 71,
+    "lengthMeters": 5533,
+    "address": "Volstrupvej 135, 9870 Sindal",
+    "winnerName": "Stefan Møller Jensen",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Søndag 27/4 - 2025 kl. 9:32",
+    "club": "Stensballegaard Golf",
+    "courseName": "Gulbjerg/Elbæk 2025",
+    "par": 72,
+    "lengthMeters": 5882,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 3/5 - 2025 kl. 9:30",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel 2020",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Anders Schmidt",
+    "winnerPoints": 42,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 25/5 - 2025 kl. 9:32",
+    "club": "Ikast Golf Klub",
+    "courseName": "Ikast 2025",
+    "par": 69,
+    "lengthMeters": 5470,
+    "address": "Remmevej 36, 7430 Ikast",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 39,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 9/6 - 2025 kl. 9:30",
+    "club": "Hobro 2025",
+    "courseName": "Hobro 2025 Opdateret",
+    "par": 72,
+    "lengthMeters": 5919,
+    "address": "Torndalsvej 3, 9500 Hobro",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 36,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 17/6 - 2025 kl. 17:00",
+    "club": "Horsens Golfklub",
+    "courseName": "Horsens Golfklub 2019",
+    "par": 72,
+    "lengthMeters": 5794,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Jesper Pasgaard Bertelsen",
+    "winnerPoints": 40,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 1/7 - 2025 kl. 17:00",
+    "club": "Lübker Golf Resort",
+    "courseName": "Sand / Sky 2024",
+    "par": 72,
+    "lengthMeters": 5770,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Peter Meincke",
+    "winnerPoints": 37,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 17/8 - 2025 kl. 9:30",
+    "club": "Silkeborg Ry Golfklub",
+    "courseName": "Ry Kildebjerg 2022",
+    "par": 72,
+    "lengthMeters": 5819,
+    "address": "Skovagervej 200, 8660 Ry",
+    "winnerName": "René Lund",
+    "winnerPoints": 41,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 30/8 - 2025 kl. 9:00",
+    "club": "Harre Vig Golfklub",
+    "courseName": "Harre Vig 2025",
+    "par": 71,
+    "lengthMeters": 5620,
+    "address": "Harrebjergvej 13, 7870 Roslev",
+    "winnerName": "René Lund",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 30/8 - 2025 kl. 14:45",
+    "club": "Harre Vig Golfklub",
+    "courseName": "Harre Vig 2025",
+    "par": 71,
+    "lengthMeters": 5620,
+    "address": "Harrebjergvej 13, 7870 Roslev",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 38,
+    "sponsor": "Ingen sponsor"
+  },
+  {
+    "group": "final",
+    "when": "Søndag 31/8 - 2025 kl. 9:30",
+    "club": "Skive Golfklub",
+    "courseName": "Skive 2025",
+    "par": 71,
+    "lengthMeters": 5487,
+    "address": "Frugtparken 15, 7800 Skive",
+    "winnerName": "René Lund",
+    "winnerPoints": 44,
+    "sponsor": "Ingen sponsor"
+  }
+]

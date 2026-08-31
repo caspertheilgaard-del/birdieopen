@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Lørdag 29/4 - 2017 kl. 9:32",
+    "club": "Stensballegaard Golf",
+    "courseName": "Guldbjerg / Elbæk",
+    "par": 72,
+    "lengthMeters": 5882,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 36,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 6/5 - 2017 kl. 9:30",
+    "club": "Hammel Golfklub Par 72 (5661m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 42,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 21/5 - 2017 kl. 9:30",
+    "club": "Lyngbygaard Golf Par 72 (5835m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Lyngbygårdsvej 29, 8220 Brabrand",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 5/6 - 2017 kl. 9:30",
+    "club": "Kalø Golfklub Par 72 (5740m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 38,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 22/6 - 2017 kl. 17:00",
+    "club": "Lübker Golf Resort",
+    "courseName": "Sand / Sky Course 2017",
+    "par": 72,
+    "lengthMeters": 5808,
+    "address": "Trent Jones Allé 3, 8581 Nimtofte",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 38,
+    "sponsor": "Jon Fogh"
+  },
+  {
+    "group": "prelim",
+    "when": "Tue 4/7 - 2017 kl. 17:07",
+    "club": "Aarhus Aadal Golf Club",
+    "courseName": "Aarhus Aadal",
+    "par": 72,
+    "lengthMeters": 5807,
+    "address": "Brydehøjvej 35, 8462 Harlev",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 36,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 13/8 - 2017 kl. 9:30",
+    "club": "Grenaa Golfklub",
+    "courseName": "Grenaa",
+    "par": 71,
+    "lengthMeters": 5791,
+    "address": "Vestermarken 1, 8500 Grenaa",
+    "winnerName": "Anders Kristensen",
+    "winnerPoints": 32,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 26/8 - 2017 kl. 9:04",
+    "club": "Kaj Lykke Golfklub Par 72 (5956m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Kirkebrovej 5, 6740 Bramming",
+    "winnerName": "Johan Dubbelman",
+    "winnerPoints": 35,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 26/8 - 2017 kl. 14:30",
+    "club": "Kaj Lykke Golfklub Par 72 (5956m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Kirkebrovej 5, 6740 Bramming",
+    "winnerName": "Peter Meincke",
+    "winnerPoints": 36,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Søndag 27/8 - 2017 kl. 10:00",
+    "club": "Esbjerg Golfklub Par 71 (5638m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Sønderhedevej 11, 6710 Esbjerg V",
+    "winnerName": "Mikkel Pedersen",
+    "winnerPoints": 38,
+    "sponsor": ""
+  }
+]

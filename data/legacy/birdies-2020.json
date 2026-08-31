@@ -1,0 +1,805 @@
+[
+  {
+    "place": 1,
+    "playerName": "Andreas Opstrup",
+    "count": 23,
+    "keySum": 167,
+    "pointSum": 72,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Grenaa 2020",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Grenaa 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Skanderborg Golfklub 2018",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Skanderborg Golfklub 2018",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 3,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Søhøjlandet",
+        "key": 5,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Søhøjlandet",
+        "key": 4,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Søhøjlandet",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Søhøjlandet",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Odder 2020",
+        "key": 7,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Odder 2020",
+        "key": 2,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Odder 2020",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Odder 2020",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Sæby 2020",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Sæby 2020",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Sæby 2020",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 3,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 2,
+    "playerName": "Johan Dubbelman",
+    "count": 12,
+    "keySum": 96,
+    "pointSum": 42,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Grenaa 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kalø 2019",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Søhøjlandet",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 2,
+        "courseLabel": "Odder 2020",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Odder 2020",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Odder 2020",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Sæby 2020",
+        "key": 11,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Sæby 2020",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 16,
+        "courseLabel": "Sæby 2020",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 15,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 3,
+    "playerName": "Casper Theilgaard",
+    "count": 11,
+    "keySum": 124,
+    "pointSum": 35,
+    "details": [
+      {
+        "hole": 3,
+        "courseLabel": "Kalø 2019",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Kalø 2019",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Søhøjlandet",
+        "key": 8,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Odder 2020",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Odder 2020",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Odder 2020",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Odder 2020",
+        "key": 6,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Sæby 2020",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Sæby 2020",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Sæby 2020",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 4,
+    "playerName": "Peter Meincke",
+    "count": 10,
+    "keySum": 106,
+    "pointSum": 36,
+    "details": [
+      {
+        "hole": 2,
+        "courseLabel": "Grenaa 2020",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 5,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Kalø 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Kalø 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Kalø 2019",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Søhøjlandet",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Søhøjlandet",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Odder 2020",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Sæby 2020",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 5,
+    "playerName": "Rasmus Opstrup",
+    "count": 10,
+    "keySum": 121,
+    "pointSum": 35,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Kalø 2019",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Kalø 2019",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Søhøjlandet",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Odder 2020",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 4,
+        "courseLabel": "Sæby 2020",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Sæby 2020",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 16,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 6,
+    "playerName": "Emil Gregersen",
+    "count": 9,
+    "keySum": 89,
+    "pointSum": 30,
+    "details": [
+      {
+        "hole": 7,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 9,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Søhøjlandet",
+        "key": 14,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 1,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 1,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 3,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 7,
+        "courseLabel": "Odder 2020",
+        "key": 7,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Sæby 2020",
+        "key": 13,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 10,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 7,
+    "playerName": "Jon Fogh",
+    "count": 8,
+    "keySum": 96,
+    "pointSum": 29,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Grenaa 2020",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Grenaa 2020",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Kalø 2019",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Kalø 2019",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 5,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 11,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Sæby 2020",
+        "key": 17,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Sæby 2020",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      },
+      {
+        "hole": 9,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 15,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 8,
+    "playerName": "Jesper Pasgaard Bertelsen",
+    "count": 7,
+    "keySum": 61,
+    "pointSum": 27,
+    "details": [
+      {
+        "hole": 8,
+        "courseLabel": "Grenaa 2020",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 18,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 4,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 17,
+        "courseLabel": "Søhøjlandet",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 6,
+        "courseLabel": "Kildebjerg Ry",
+        "key": 3,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 10,
+        "courseLabel": "Sæby 2020",
+        "key": 18,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 8,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 13,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 13,
+        "courseLabel": "Frederikshavn 2020",
+        "key": 18,
+        "points": 3,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 9,
+    "playerName": "David Hjortbak",
+    "count": 3,
+    "keySum": 28,
+    "pointSum": 12,
+    "details": [
+      {
+        "hole": 17,
+        "courseLabel": "Horsens Golfklub 2019",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 12,
+        "courseLabel": "Odder 2020",
+        "key": 2,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 14,
+        "courseLabel": "Sæby 2020",
+        "key": 12,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 10,
+    "playerName": "Anders Kristensen",
+    "count": 2,
+    "keySum": 19,
+    "pointSum": 8,
+    "details": [
+      {
+        "hole": 9,
+        "courseLabel": "Kalø 2019",
+        "key": 9,
+        "points": 4,
+        "type": "Birdie"
+      },
+      {
+        "hole": 11,
+        "courseLabel": "Kalø 2019",
+        "key": 10,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 11,
+    "playerName": "Peter T. Jensen",
+    "count": 1,
+    "keySum": 6,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 12,
+        "courseLabel": "Grenaa 2020",
+        "key": 6,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 12,
+    "playerName": "Peter Dybvad",
+    "count": 1,
+    "keySum": 14,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 10,
+        "courseLabel": "Kalø 2019",
+        "key": 14,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  },
+  {
+    "place": 13,
+    "playerName": "Stefan Møller Jensen",
+    "count": 1,
+    "keySum": 15,
+    "pointSum": 4,
+    "details": [
+      {
+        "hole": 6,
+        "courseLabel": "Odder 2020",
+        "key": 15,
+        "points": 4,
+        "type": "Birdie"
+      }
+    ]
+  }
+]

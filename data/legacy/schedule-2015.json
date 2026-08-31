@@ -1,0 +1,122 @@
+[
+  {
+    "group": "prelim",
+    "when": "Lørdag 25/4 - 2015 kl. 12:07",
+    "club": "Skanderborg Golfklub",
+    "courseName": "Skanderborg Golfklub 2014",
+    "par": 69,
+    "lengthMeters": 5402,
+    "address": "Hylke Møllevej 2, 8600 Skanderborg",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 32,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 9/5 - 2015 kl. 9:30",
+    "club": "Hammel Golfklub",
+    "courseName": "Hammel Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5661,
+    "address": "Mosevej 11b, 8450 Hammel",
+    "winnerName": "Peter Henriksen",
+    "winnerPoints": 41,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Mandag 25/5 - 2015 kl. 9:30",
+    "club": "Kalø Golfklub",
+    "courseName": "Kalø Golfklub før 2016",
+    "par": 72,
+    "lengthMeters": 5740,
+    "address": "Århusvej 32, 8410 Rønde",
+    "winnerName": "Peter Henriksen",
+    "winnerPoints": 41,
+    "sponsor": "David Hjortbak"
+  },
+  {
+    "group": "prelim",
+    "when": "Lørdag 13/6 - 2015 kl. 9:30",
+    "club": "Tange Sø Golfklub Par 71 (5848m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Tange Søvej 68, 8840 Rødkjærsbro",
+    "winnerName": "David Hjortbak",
+    "winnerPoints": 35,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Fredag 26/6 - 2015 kl. 17:00",
+    "club": "Stensballegaard Golf",
+    "courseName": "Brakør/Elbæk",
+    "par": 72,
+    "lengthMeters": 6048,
+    "address": "Bygaden 70, 8700 Horsens",
+    "winnerName": "Peter T. Jensen",
+    "winnerPoints": 35,
+    "sponsor": "Jon Fogh"
+  },
+  {
+    "group": "prelim",
+    "when": "Torsdag 2/7 - 2015 kl. 17:00",
+    "club": "Horsens Golfklub Par 72 (5794m)",
+    "courseName": "",
+    "par": null,
+    "lengthMeters": null,
+    "address": "Silkeborgvej 44, 8700 Horsens",
+    "winnerName": "Andreas Opstrup",
+    "winnerPoints": 36,
+    "sponsor": ""
+  },
+  {
+    "group": "prelim",
+    "when": "Søndag 9/8 - 2015 kl. 9:30",
+    "club": "Mollerup Golf Club",
+    "courseName": "Mollerup",
+    "par": 71,
+    "lengthMeters": 5708,
+    "address": "Mollerupvej 7, 8240 Risskov",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 34,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 29/8 - 2015 kl. 9:30",
+    "club": "Ørnehøj Golf Klub",
+    "courseName": "Grøn",
+    "par": 70,
+    "lengthMeters": 5120,
+    "address": "Gammel Lundegårde 70, 9260 Gistrup",
+    "winnerName": "Jon Fogh",
+    "winnerPoints": 37,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Lørdag 29/8 - 2015 kl. 14:45",
+    "club": "Ørnehøj Golf Klub",
+    "courseName": "Grøn",
+    "par": 70,
+    "lengthMeters": 5120,
+    "address": "Gammel Lundegårde 70, 9260 Gistrup",
+    "winnerName": "Rasmus Opstrup",
+    "winnerPoints": 35,
+    "sponsor": ""
+  },
+  {
+    "group": "final",
+    "when": "Søndag 30/8 - 2015 kl. 10:00",
+    "club": "Aalborg Golf Klub",
+    "courseName": "Blå/Gul",
+    "par": 70,
+    "lengthMeters": 5471,
+    "address": "Jægersprisvej 35, 9000 Aalborg",
+    "winnerName": "Peter Henriksen",
+    "winnerPoints": 42,
+    "sponsor": ""
+  }
+]
