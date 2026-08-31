@@ -1,6 +1,4 @@
-import { hasSupabase } from "@/lib/supabase/config";
-import * as db from "./db";
-import * as snapshot from "./snapshot-source";
+import { loadSnapshot } from "./snapshot";
 import type {
   BirdieListRow,
   HomeData,
@@ -12,49 +10,36 @@ import type {
   SeasonSummary,
 } from "./types";
 
-export * from "./types";
-
-/**
- * One source at a time. Without a Supabase project the site renders the
- * imported snapshot, which keeps the whole archive browsable on its own.
- */
-const source = hasSupabase ? db : snapshot;
-
 export async function getSeasons(): Promise<SeasonSummary[]> {
-  return source.getSeasons();
-}
-
-export async function getCurrentSeason(): Promise<SeasonSummary> {
-  const seasons = await getSeasons();
-  return seasons.find((s) => s.status === "active") ?? seasons[0];
+  return (await loadSnapshot()).seasons;
 }
 
 export async function getStandings(year: number): Promise<SeasonStandings | null> {
-  return source.getStandings(year);
+  return (await loadSnapshot()).standings[String(year)] ?? null;
 }
 
 export async function getBirdieList(year: number): Promise<BirdieListRow[]> {
-  return source.getBirdieList(year);
+  return (await loadSnapshot()).birdies[String(year)] ?? [];
 }
 
 export async function getSchedule(year: number): Promise<ScheduleRound[]> {
-  return source.getSchedule(year);
+  return (await loadSnapshot()).schedule[String(year)] ?? [];
 }
 
 export async function getPlayers(): Promise<PlayerSummary[]> {
-  return source.getPlayers();
+  return (await loadSnapshot()).players;
 }
 
 export async function getHome(): Promise<HomeData> {
-  return source.getHome();
+  return (await loadSnapshot()).home;
 }
 
 export async function getPlayerProfile(slug: string): Promise<PlayerProfile | null> {
-  return source.getPlayerProfile(slug);
+  return (await loadSnapshot()).profiles[slug] ?? null;
 }
 
 export async function getPlayerSlugs(): Promise<string[]> {
-  return source.getPlayerSlugs();
+  return Object.keys((await loadSnapshot()).profiles);
 }
 
 export async function getScorecard(
@@ -62,5 +47,5 @@ export async function getScorecard(
   roundId: string,
   slug: string,
 ): Promise<ScorecardView | null> {
-  return source.getScorecard(year, roundId, slug);
+  return (await loadSnapshot()).scorecards[`${year}/${roundId}/${slug}`] ?? null;
 }

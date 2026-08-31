@@ -1326,3 +1326,329 @@ button {
 .back-link:hover {
   color: var(--green);
 }
+
+/* ---- live ------------------------------------------------------------ */
+
+.live-head {
+  background-color: var(--green);
+  background-image: linear-gradient(160deg, #0a281c 0%, #123b29 60%, #0a281c 100%);
+  color: var(--cream);
+}
+
+.live-head__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 20px 24px;
+}
+
+.live-head__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1;
+  margin: 14px 0 6px;
+  color: var(--cream);
+}
+
+.live-head__meta {
+  font-size: 14px;
+  color: var(--green-light);
+}
+
+.live-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.board {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.board thead tr {
+  background: var(--green);
+}
+
+.board th {
+  padding: 11px 10px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  text-align: center;
+}
+
+.board th:nth-child(2) {
+  text-align: left;
+}
+
+.board th.is-points {
+  color: var(--yellow);
+}
+
+.board td {
+  padding: 11px 10px;
+  text-align: center;
+}
+
+.board tbody tr {
+  border-top: 1px solid var(--line-soft);
+  background: var(--surface);
+}
+
+.board tbody tr:nth-child(even) {
+  background: var(--zebra);
+}
+
+.board tbody tr.is-leader {
+  background: var(--yellow-row);
+}
+
+.board tbody tr.is-me {
+  box-shadow: inset 3px 0 0 var(--green-muted);
+}
+
+.board__name {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.board__points {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--green);
+}
+
+.board__thru {
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.sync {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 8px 0;
+}
+
+.sync__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-muted);
+}
+
+.sync--pending .sync__dot {
+  background: var(--yellow-text);
+  animation: bo-pulse 1.6s ease-in-out infinite;
+}
+
+.sync--offline .sync__dot {
+  background: #b4472e;
+}
+
+/* ---- score entry ----------------------------------------------------- */
+
+.entry {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+  width: 100%;
+}
+
+.hole-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.hole-nav__btn {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-card);
+  border: 1px solid var(--border-card);
+  background: var(--surface);
+  font-size: 22px;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hole-nav__btn:disabled {
+  opacity: 0.35;
+}
+
+.hole-nav__title {
+  text-align: center;
+  flex: 1;
+}
+
+.hole-nav__hole {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--green);
+}
+
+.hole-nav__spec {
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.entry-card {
+  background: var(--surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-panel);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.entry-card__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.entry-card__name {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.entry-card__meta {
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.score-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+  gap: 8px;
+}
+
+.score-btn {
+  height: 56px;
+  border-radius: var(--r-btn);
+  border: 1px solid var(--border-card);
+  background: var(--page);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--green);
+}
+
+.score-btn[aria-pressed="true"] {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--cream);
+}
+
+.score-btn--clear {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.entry-card__result {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.entry-card__result strong {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--green);
+}
+
+.notice {
+  background: var(--yellow-row);
+  border: 1px solid var(--yellow-border);
+  border-radius: var(--r-card);
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--yellow-deep);
+  margin-bottom: 16px;
+}
+
+/* On a phone the seven nav items would stack three rows deep and push the page
+   down. One scrollable row keeps the header the same height everywhere. */
+@media (max-width: 760px) {
+  .header__bar {
+    padding: 10px 0 0;
+    gap: 10px;
+  }
+
+  .header__brand {
+    padding: 0 16px;
+  }
+
+  .nav {
+    margin-left: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 16px 10px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav__link {
+    white-space: nowrap;
+  }
+
+  .season-badge {
+    margin-left: 4px;
+  }
+
+  .page-title {
+    font-size: 34px;
+  }
+
+  .wrap {
+    padding: 28px 16px;
+  }
+
+  .hero__inner {
+    padding: 36px 16px 32px;
+    gap: 28px;
+  }
+
+  .home-cards {
+    padding: 28px 16px 4px;
+  }
+
+  .next-round,
+  .champion-card {
+    padding: 20px;
+  }
+
+  .round-card {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .rules-card {
+    padding: 22px 20px;
+  }
+}

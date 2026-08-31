@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     template: "%s · Birdie Open",
   },
   description: "Invitation-only golfturnering siden 2012.",
+  appleWebApp: { capable: true, title: "Birdie Open", statusBarStyle: "black-translucent" },
+  icons: { icon: "/icon-192.png", apple: "/icon-180.png" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a281c",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

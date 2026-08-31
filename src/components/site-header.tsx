@@ -11,6 +11,7 @@ const NAV = [
   { href: "/birdielisten", label: "Birdielisten" },
   { href: "/deltagere", label: "Deltagere" },
   { href: "/regler", label: "Regler" },
+  { href: "/live", label: "Live" },
 ];
 
 function isActive(pathname: string, href: string): boolean {

@@ -1,8 +1,6 @@
 -- Birdie Open: core schema.
 -- Holds 15 seasons of imported history alongside live scoring for the current round.
 
-create extension if not exists "pgcrypto";
-
 -- ---------------------------------------------------------------- players
 
 create table players (
