@@ -61,6 +61,12 @@ export default function RulesPage() {
       <p className="footnote">
         Pkt. 2 tilføjet, og reglerne om max- og minpoint i pkt. 6 ændret med virkning fra finalen i sæson 2015.
       </p>
+      <p className="footnote">
+        Om pkt. 7: til og med sæson 2022 gav en sejr i en finalerunde point svarende til antal
+        finaledeltagere, og hver placering derunder ét point mindre. Fra sæson 2023 er skalaen fordoblet,
+        så en sejr giver det dobbelte og hver placering to point mindre. Resultaterne i arkivet er
+        beregnet efter den skala, der var gældende det år.
+      </p>
     </main>
   );
 }
