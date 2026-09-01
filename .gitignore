@@ -9,3 +9,6 @@ npm-debug.log*
 .vercel
 next-env.d.ts
 .cache
+
+# Selvstændige designfiler, genskabes med npm run design
+design-html

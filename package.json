@@ -13,7 +13,8 @@
     "snapshot": "tsx scripts/import/snapshot.ts",
     "migrate": "tsx --env-file-if-exists=.env.local scripts/db/migrate.ts",
     "import": "tsx --env-file-if-exists=.env.local scripts/import/to-supabase.ts",
-    "test:schema": "tsx scripts/db/test-schema.ts"
+    "test:schema": "tsx scripts/db/test-schema.ts",
+    "design": "tsx scripts/design/export.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.5",
