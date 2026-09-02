@@ -1413,7 +1413,7 @@ button {
   box-shadow: inset 3px 0 0 var(--green-muted);
 }
 
-.board__name {
+.board td.board__name {
   text-align: left;
   font-weight: 600;
   font-size: 15px;
@@ -1522,7 +1522,8 @@ button {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 2px 10px;
   margin-bottom: 12px;
 }
 
@@ -1651,4 +1652,13 @@ button {
   .rules-card {
     padding: 22px 20px;
   }
+}
+
+/* Marks a screen that is showing sample data rather than a real round. */
+.preview-note {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 20px 0;
+  font-size: 13px;
+  color: var(--text-faint);
 }

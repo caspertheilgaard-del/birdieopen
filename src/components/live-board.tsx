@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { buildLeaderboard, formatToPar } from "@/lib/live/leaderboard";
 import type { LiveRound } from "@/lib/live/types";
 import { getSupabaseClient } from "@/lib/supabase/client";
+import { hasSupabase } from "@/lib/supabase/config";
 
 type ScoreRow = { round_player_id: string; hole: number; gross: number | null };
 type ScoreChange = {
@@ -19,15 +20,19 @@ type ScoreChange = {
  */
 export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: string | null }) {
   const [players, setPlayers] = useState(round.players);
-  const [connected, setConnected] = useState(false);
+  // With no project configured there is nothing to wait for, so the board starts
+  // as live. That also keeps the server-rendered markup right in the design export.
+  const [connected, setConnected] = useState(!hasSupabase);
 
   useEffect(() => {
     setPlayers(round.players);
   }, [round.players]);
 
   useEffect(() => {
-    const ids = new Set(round.players.map((p) => p.roundPlayerId));
     const supabase = getSupabaseClient();
+    if (!supabase) return;
+
+    const ids = new Set(round.players.map((p) => p.roundPlayerId));
 
     const channel = supabase
       .channel(`round-${round.id}`)

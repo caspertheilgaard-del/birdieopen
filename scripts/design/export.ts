@@ -25,6 +25,8 @@ const PAGES: Page[] = [
   { id: "deltagere", url: "/deltagere", title: "Deltagere", note: "Aktive deltagere med badges, og tidligere deltagere som chips." },
   { id: "spiller", url: "/spiller/jon-fogh", title: "Spillerprofil", note: "Karrieren sæson for sæson. Ny side, som designet ikke dækkede." },
   { id: "scorekort", url: "/scorekort/2026/148/jon-fogh", title: "Scorekort", note: "Hul for hul med farvede scores. Ny side, som designet ikke dækkede." },
+  { id: "livescore", url: "/design/live", title: "Livescore", note: "Leaderboardet mens der spilles. Din egen række er markeret i venstre kant." },
+  { id: "indtastning", url: "/design/kort", title: "Indtastning", note: "Sådan taster man scores ind undervejs. Bygget til mobil, ét hul ad gangen." },
   { id: "regler", url: "/regler", title: "Regler", note: "Turneringsregler, baner og pris." },
 ];
 
@@ -40,7 +42,10 @@ const LINK_MAP: [RegExp, string][] = [
   [/^\/spiller\/.+$/, fileFor("spiller")],
   [/^\/scorekort\/.+$/, fileFor("scorekort")],
   [/^\/regler$/, fileFor("regler")],
-  [/^\/live.*$/, "#"],
+  [/^\/design\/live$/, fileFor("livescore")],
+  [/^\/design\/kort$/, fileFor("indtastning")],
+  [/^\/live\/[^/]+\/kort$/, fileFor("indtastning")],
+  [/^\/live.*$/, fileFor("livescore")],
   [/^\/sponsorer$/, "#"],
   [/^\/log-ind.*$/, "#"],
 ];
@@ -272,7 +277,9 @@ async function main(): Promise<void> {
     "Klikker man på en anden spiller end Jon Fogh, lander man på hans profil, og",
     "sæsonvælgeren fører altid til 2026. Det er filer til gennemsyn, ikke sitet.",
     "",
-    "Live, login og sponsorer er ikke med. De sider skal have en database bag sig.",
+    "Livescore og indtastning er øjebliksbilleder med opdigtede scores. Knapperne",
+    "reagerer ikke, for de skal have en database bag sig. Login og sponsorer er",
+    "ikke med af samme grund.",
     "",
     "Det eneste link, der peger ud af filerne, er reglerne anno 2012. De ligger",
     "stadig på det gamle site. Alt andet er indlejret.",

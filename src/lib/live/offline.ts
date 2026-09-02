@@ -54,6 +54,8 @@ export async function flushScores(): Promise<FlushResult> {
   }
 
   const supabase = getSupabaseClient();
+  if (!supabase) return { sent: 0, remaining: items.length, error: null };
+
   const { error } = await supabase.from("scores").upsert(
     items.map((item) => ({
       round_player_id: item.roundPlayerId,
