@@ -280,7 +280,7 @@ async function main(): Promise<void> {
     "Selve sitet ligger i `~/birdieopen` og køres med `npm run dev`.",
   ].join("\n");
 
-  await writeFile(path.join(OUT, "LÆSMIG.md"), `${readme}\n`, "utf8");
+  await writeFile(path.join(OUT, "LAESMIG.md"), `${readme}\n`, "utf8");
 
   const single = await buildSingleFile(logo);
   await writeFile(path.join(OUT, "birdie-open-design.html"), single, "utf8");
