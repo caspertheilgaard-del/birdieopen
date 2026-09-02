@@ -10,32 +10,36 @@ import path from "node:path";
 const BASE = process.env.EXPORT_BASE ?? "http://localhost:3100";
 const OUT = path.join(process.cwd(), "design-html");
 
-type Page = { file: string; url: string; title: string; note: string };
+type Page = { id: string; url: string; title: string; note: string };
+
+/** Every file carries the project name, so nothing collides with a file the
+    reader already has in their downloads folder. */
+const fileFor = (id: string): string => `birdie-open-${id}.html`;
 
 const PAGES: Page[] = [
-  { file: "index.html", url: "/", title: "Forside", note: "Hero, top 5 i finalen, næste runde og mestrene." },
-  { file: "stilling-finale.html", url: "/stilling/2026", title: "Stilling, finalen", note: "Finalerunderne med overførte point og stablefordscore i parentes." },
-  { file: "stilling-indledende.html", url: "/stilling/2026?visning=indledende", title: "Stilling, indledende runder", note: "De syv indledende runder. Gråtonede tal er tildelt gennemsnitsscore ved afbud." },
-  { file: "turneringsplan.html", url: "/turneringsplan/2026", title: "Turneringsplan", note: "Alle runder med bane, tid og rundevinder." },
-  { file: "birdieliste.html", url: "/birdielisten/2026", title: "Birdielisten", note: "Antal, nøglesum og pointsum." },
-  { file: "deltagere.html", url: "/deltagere", title: "Deltagere", note: "Aktive deltagere med badges, og tidligere deltagere som chips." },
-  { file: "spiller.html", url: "/spiller/jon-fogh", title: "Spillerprofil", note: "Karrieren sæson for sæson. Ny side, som designet ikke dækkede." },
-  { file: "scorekort.html", url: "/scorekort/2026/148/jon-fogh", title: "Scorekort", note: "Hul for hul med farvede scores. Ny side, som designet ikke dækkede." },
-  { file: "regler.html", url: "/regler", title: "Regler", note: "Turneringsregler, baner og pris." },
+  { id: "forside", url: "/", title: "Forside", note: "Hero, top 5 i finalen, næste runde og mestrene." },
+  { id: "stilling-finale", url: "/stilling/2026", title: "Stilling, finalen", note: "Finalerunderne med overførte point og stablefordscore i parentes." },
+  { id: "stilling-indledende", url: "/stilling/2026?visning=indledende", title: "Stilling, indledende runder", note: "De syv indledende runder. Gråtonede tal er tildelt gennemsnitsscore ved afbud." },
+  { id: "turneringsplan", url: "/turneringsplan/2026", title: "Turneringsplan", note: "Alle runder med bane, tid og rundevinder." },
+  { id: "birdieliste", url: "/birdielisten/2026", title: "Birdielisten", note: "Antal, nøglesum og pointsum." },
+  { id: "deltagere", url: "/deltagere", title: "Deltagere", note: "Aktive deltagere med badges, og tidligere deltagere som chips." },
+  { id: "spiller", url: "/spiller/jon-fogh", title: "Spillerprofil", note: "Karrieren sæson for sæson. Ny side, som designet ikke dækkede." },
+  { id: "scorekort", url: "/scorekort/2026/148/jon-fogh", title: "Scorekort", note: "Hul for hul med farvede scores. Ny side, som designet ikke dækkede." },
+  { id: "regler", url: "/regler", title: "Regler", note: "Turneringsregler, baner og pris." },
 ];
 
 /** Internal links are pointed at the nearest exported file. */
 const LINK_MAP: [RegExp, string][] = [
-  [/^\/$/, "index.html"],
-  [/^\/stilling\/\d+\?visning=indledende$/, "stilling-indledende.html"],
-  [/^\/stilling(\/\d+)?(\?.*)?$/, "stilling-finale.html"],
+  [/^\/$/, fileFor("forside")],
+  [/^\/stilling\/\d+\?visning=indledende$/, fileFor("stilling-indledende")],
+  [/^\/stilling(\/\d+)?(\?.*)?$/, fileFor("stilling-finale")],
   [/^\/turneringsplan\/\d+\/kalender\.ics$/, "#"],
-  [/^\/turneringsplan(\/\d+)?$/, "turneringsplan.html"],
-  [/^\/birdielisten(\/\d+)?$/, "birdieliste.html"],
-  [/^\/deltagere$/, "deltagere.html"],
-  [/^\/spiller\/.+$/, "spiller.html"],
-  [/^\/scorekort\/.+$/, "scorekort.html"],
-  [/^\/regler$/, "regler.html"],
+  [/^\/turneringsplan(\/\d+)?$/, fileFor("turneringsplan")],
+  [/^\/birdielisten(\/\d+)?$/, fileFor("birdieliste")],
+  [/^\/deltagere$/, fileFor("deltagere")],
+  [/^\/spiller\/.+$/, fileFor("spiller")],
+  [/^\/scorekort\/.+$/, fileFor("scorekort")],
+  [/^\/regler$/, fileFor("regler")],
   [/^\/live.*$/, "#"],
   [/^\/sponsorer$/, "#"],
   [/^\/log-ind.*$/, "#"],
@@ -112,7 +116,112 @@ async function buildPage(page: Page, logo: string): Promise<string> {
   // Point the navigation at the sibling files.
   html = html.replace(/href="(\/[^"]*)"/g, (_match, href: string) => `href="${mapLink(href)}"`);
 
+  // Anything with no counterpart in the export stops being a link, so nobody
+  // clicks a dead end. Live, login, sponsors and the calendar all need a server.
+  html = html.replace(/ href="#"/g, ' data-unavailable="true"');
+  html = html.replace(
+    "</head>",
+    `<style>
+  [data-unavailable] { cursor: default; opacity: 0.55; }
+  a[data-unavailable]:hover { text-decoration: none; }
+</style></head>`,
+  );
+
   return html;
+}
+
+/**
+ * Everything in one file, the way the original prototype worked: the nav swaps
+ * which screen is shown instead of loading a page. Easier to pass on than nine
+ * separate downloads.
+ */
+async function buildSingleFile(logo: string): Promise<string> {
+  const shell = await buildPage(PAGES[0], logo);
+
+  // Every style block, not just the first: the stylesheet and the small
+  // preview-only rules are separate blocks.
+  const style = [...shell.matchAll(/<style>[\s\S]*?<\/style>/g)].map((m) => m[0]).join("\n");
+
+  /*
+    The font variables are declared on a class that Next puts on <html>, and this
+    file has no <html> of its own. Without them every font-family resolves to an
+    invalid var() chain and the page silently falls back to Times, so they are
+    lifted onto :root.
+  */
+  const fontVars = [...style.matchAll(/(--font-[a-z0-9-]+)\s*:\s*([^;}]+)/gi)]
+    .filter(([, name]) => name !== "--font-display" && name !== "--font-body")
+    .map(([, name, value]) => `${name}: ${value.trim()};`);
+  const fontRoot = fontVars.length > 0 ? `<style>:root { ${[...new Set(fontVars)].join(" ")} }</style>` : "";
+  const header = shell.match(/<header[\s\S]*?<\/header>/)?.[0] ?? "";
+  const footer = shell.match(/<footer[\s\S]*?<\/footer>/)?.[0] ?? "";
+
+  const screens: string[] = [];
+  for (const page of PAGES) {
+    const html = page.id === PAGES[0].id ? shell : await buildPage(page, logo);
+    const start = html.indexOf("<main");
+    const end = html.lastIndexOf("</main>");
+    if (start === -1 || end === -1) throw new Error(`Ingen main i ${page.id}`);
+    const main = html.slice(start, end + "</main>".length);
+    screens.push(`<div class="screen" data-screen="${page.id}" hidden>${main}</div>`);
+  }
+
+  // Links between the exported files become view switches.
+  const toView = (markup: string): string =>
+    markup.replace(/href="birdie-open-([a-z-]+)\.html"/g, (_m, id: string) => `href="#${id}" data-view="${id}"`);
+
+  return `<title>Birdie Open Redesign</title>
+${style}
+${fontRoot}
+<style>
+  .screen[hidden] { display: none; }
+  .screen { animation: bo-fade 0.18s ease-out; }
+  @keyframes bo-fade { from { opacity: 0; } to { opacity: 1; } }
+</style>
+<div class="shell">
+${toView(header)}
+${toView(screens.join("\n"))}
+${footer}
+</div>
+<script>
+(function () {
+  var screens = document.querySelectorAll("[data-screen]");
+  var links = document.querySelectorAll("[data-view]");
+
+  function show(id) {
+    var found = false;
+    screens.forEach(function (screen) {
+      var match = screen.dataset.screen === id;
+      screen.hidden = !match;
+      if (match) found = true;
+    });
+    if (!found) return show("forside");
+
+    links.forEach(function (link) {
+      // The header nav marks the current screen; in-page buttons do not.
+      if (!link.classList.contains("nav__link")) return;
+      if (link.dataset.view === id) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+
+    if (history.replaceState) history.replaceState(null, "", "#" + id);
+    window.scrollTo(0, 0);
+  }
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      show(link.dataset.view);
+    });
+  });
+
+  window.addEventListener("hashchange", function () {
+    show(location.hash.slice(1) || "forside");
+  });
+
+  show(location.hash.slice(1) || "forside");
+})();
+</script>
+`;
 }
 
 async function main(): Promise<void> {
@@ -126,7 +235,7 @@ async function main(): Promise<void> {
   let leaks = 0;
   for (const page of PAGES) {
     const html = await buildPage(page, logo);
-    await writeFile(path.join(OUT, page.file), html, "utf8");
+    await writeFile(path.join(OUT, fileFor(page.id)), html, "utf8");
 
     const external = [
       ...html.matchAll(/(?:src|href)="((?:https?:\/\/|\/)[^"#][^"]*)"/g),
@@ -136,7 +245,7 @@ async function main(): Promise<void> {
       .filter((href) => !ALLOWED.includes(href));
 
     const size = `${Math.round(Buffer.byteLength(html) / 1024)} KB`;
-    console.log(`  ${page.file.padEnd(28)} ${size.padStart(7)}  ${page.title}`);
+    console.log(`  ${fileFor(page.id).padEnd(38)} ${size.padStart(7)}  ${page.title}`);
     if (external.length > 0) {
       leaks += external.length;
       console.error(`     henter stadig udefra: ${[...new Set(external)].slice(0, 4).join(", ")}`);
@@ -146,12 +255,16 @@ async function main(): Promise<void> {
   const readme = [
     "# Birdie Open, designet som HTML",
     "",
-    "En fil pr. skærm. Åbn dem ved at dobbeltklikke. Alt er indlejret i filen:",
+    "En fil pr. skærm. Start med `birdie-open-forside.html` og klik dig rundt i",
+    "menuen. Alt er indlejret i filen:",
     "stylesheet, skrifter og logo, så de virker uden server og uden internet.",
     "",
     "Data er de rigtige tal fra sæson 2026.",
     "",
-    ...PAGES.map((p) => `- \`${p.file}\` — ${p.title}. ${p.note}`),
+    ...PAGES.map((p) => `- \`${fileFor(p.id)}\` — ${p.title}. ${p.note}`),
+    "",
+    "Og `birdie-open-design.html`, hvor alle skærme ligger i samme fil og menuen",
+    "skifter mellem dem. Den er nemmest at sende videre.",
     "",
     "## To ting at vide",
     "",
@@ -169,11 +282,17 @@ async function main(): Promise<void> {
 
   await writeFile(path.join(OUT, "LÆSMIG.md"), `${readme}\n`, "utf8");
 
+  const single = await buildSingleFile(logo);
+  await writeFile(path.join(OUT, "birdie-open-design.html"), single, "utf8");
+  console.log(
+    `  ${"birdie-open-design.html".padEnd(38)} ${`${Math.round(Buffer.byteLength(single) / 1024)} KB`.padStart(7)}  Alle skærme i én fil`,
+  );
+
   if (leaks > 0) {
     console.error(`\n${leaks} referencer peger ud af filerne. De virker ikke offline.`);
     process.exit(1);
   }
-  console.log(`\n${PAGES.length} filer i design-html/. Alt er indlejret.`);
+  console.log(`\n${PAGES.length + 1} filer i design-html/. Alt er indlejret.`);
 }
 
 main().catch((error) => {
