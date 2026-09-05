@@ -8,7 +8,7 @@ import { PGlite } from "@electric-sql/pglite";
  * live project, where a failed run is a lot less convenient.
  */
 
-const MIGRATIONS = ["0001_schema.sql", "0002_scoring.sql", "0003_rls.sql"];
+const MIGRATIONS = ["0001_schema.sql", "0002_scoring.sql", "0003_rls.sql", "0004_birdies_from_scores.sql"];
 
 async function main(): Promise<void> {
   const db = new PGlite();
@@ -113,13 +113,73 @@ async function main(): Promise<void> {
     failed += 1;
   }
 
+  // --- birdies out of the scores ---------------------------------------
+  // Spiller A went round in par; give them a three on the par-4 sixth and a
+  // two on the par-4 seventh, which is a birdie and an eagle.
+  await db.exec(`
+    update scores set gross = 3
+      where round_player_id = '66666666-6666-6666-6666-666666666666' and hole = 6;
+    update scores set gross = 2
+      where round_player_id = '66666666-6666-6666-6666-666666666666' and hole = 7;
+  `);
+  await db.query("select bo_recalculate_season('11111111-1111-1111-1111-111111111111')");
+
+  const birdies = await db.query<{ hole: number; kind: string }>(
+    "select hole, kind from birdies where round_id = '55555555-5555-5555-5555-555555555555' order by hole",
+  );
+  if (birdies.rows.length !== 2) {
+    console.error(`✗ birdies: fik ${birdies.rows.length} rækker, ventede 2`);
+    failed += 1;
+  } else {
+    if (birdies.rows[0].kind !== "birdie") {
+      console.error(`✗ birdies: hul 6 blev ${birdies.rows[0].kind}, ventede birdie`);
+      failed += 1;
+    }
+    if (birdies.rows[1].kind !== "eagle") {
+      console.error(`✗ birdies: hul 7 blev ${birdies.rows[1].kind}, ventede eagle`);
+      failed += 1;
+    }
+  }
+
+  // Running it again must not double them up.
+  await db.query("select bo_recalculate_season('11111111-1111-1111-1111-111111111111')");
+  const again = await db.query<{ count: string }>(
+    "select count(*) as count from birdies where round_id = '55555555-5555-5555-5555-555555555555'",
+  );
+  if (Number(again.rows[0].count) !== 2) {
+    console.error(`✗ birdies: anden kørsel gav ${again.rows[0].count} rækker, ventede 2`);
+    failed += 1;
+  }
+
+  // The same hole on the same course in two rounds must count twice, which the
+  // old unique constraint would have collapsed into one.
+  await db.exec(`
+    insert into rounds (id, season_id, course_id, kind, sequence, venue, status)
+      values ('88888888-8888-8888-8888-888888888888',
+              '11111111-1111-1111-1111-111111111111',
+              '22222222-2222-2222-2222-222222222222', 'prelim', 2, 'Testklubben', 'live');
+    insert into round_players (id, round_id, player_id, handicap_strokes, status)
+      values ('99999999-9999-9999-9999-999999999999', '88888888-8888-8888-8888-888888888888',
+              '33333333-3333-3333-3333-333333333333', 18, 'playing');
+    insert into scores (round_player_id, hole, gross)
+      values ('99999999-9999-9999-9999-999999999999', 6, 3);
+  `);
+  await db.query("select bo_recalculate_season('11111111-1111-1111-1111-111111111111')");
+  const sixth = await db.query<{ count: string }>(
+    "select count(*) as count from birdies where hole = 6 and player_id = '33333333-3333-3333-3333-333333333333'",
+  );
+  if (Number(sixth.rows[0].count) !== 2) {
+    console.error(`✗ birdies: samme hul i to runder gav ${sixth.rows[0].count}, ventede 2`);
+    failed += 1;
+  }
+
   await db.close();
 
   if (failed > 0) {
     console.error(`\n${failed} fejl i skemaet.`);
     process.exit(1);
   }
-  console.log(`\n${checks.length + 4} kontroller bestået. Skemaet kører.`);
+  console.log(`\n${checks.length + 9} kontroller bestået. Skemaet kører.`);
 }
 
 main().catch((error) => {

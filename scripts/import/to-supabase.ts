@@ -17,6 +17,14 @@ if (!url || !key) {
 const supabase = createClient(url, key, { auth: { persistSession: false } });
 const CHUNK = 500;
 
+async function insert(table: string, rows: object[]): Promise<void> {
+  for (let i = 0; i < rows.length; i += CHUNK) {
+    const { error } = await supabase.from(table).insert(rows.slice(i, i + CHUNK));
+    if (error) throw new Error(`${table}: ${error.message}`);
+  }
+  console.log(`  ${table}: ${rows.length}`);
+}
+
 async function upsert(table: string, rows: object[], onConflict: string): Promise<void> {
   for (let i = 0; i < rows.length; i += CHUNK) {
     const slice = rows.slice(i, i + CHUNK);
@@ -209,7 +217,15 @@ async function main(): Promise<void> {
     "season_id,player_id",
   );
 
-  await upsert(
+  // Birdies carry no natural key any more, because the same hole on the same
+  // course can be birdied in two different rounds. So the imported ones are
+  // replaced wholesale; the ones a live round generates are keyed on the round.
+  {
+    const { error } = await supabase.from("birdies").delete().is("round_id", null);
+    if (error) throw new Error(`birdies: ${error.message}`);
+  }
+
+  await insert(
     "birdies",
     data.birdies
       .map((b) => {
@@ -229,7 +245,6 @@ async function main(): Promise<void> {
           : null;
       })
       .filter(Boolean) as object[],
-    "season_id,player_id,course_label,hole,stroke_index,par,kind",
   );
 
   await upsert(

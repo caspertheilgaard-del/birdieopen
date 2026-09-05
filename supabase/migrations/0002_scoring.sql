@@ -236,6 +236,12 @@ begin
     from final_places fp
     where rr.round_id = fp.round_id and rr.player_id = fp.player_id;
   end if;
+
+  -- Birdies come out of the same scores, so the list keeps step with the
+  -- standings. Defined in a later migration; skipped until it exists.
+  if to_regprocedure('bo_refresh_season_birdies(uuid)') is not null then
+    execute 'select bo_refresh_season_birdies($1)' using p_season;
+  end if;
 end;
 $$;
 
