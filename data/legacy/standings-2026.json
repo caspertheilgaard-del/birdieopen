@@ -1020,7 +1020,7 @@
         },
         {
           "index": 3,
-          "legacyRoundId": null,
+          "legacyRoundId": "158",
           "venue": "Gut Apeldör",
           "when": "Søn 30/8 - 2026 kl. 8:30"
         }
@@ -1054,15 +1054,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 24,
+              "stableford": 34,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 51,
-          "behind": "37",
-          "place": 11
+          "total": 75,
+          "behind": "31",
+          "place": 6
         },
         {
           "playerName": "Rasmus Opstrup",
@@ -1092,15 +1092,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 22,
+              "stableford": 33,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 84,
-          "behind": "4",
-          "place": 3
+          "total": 106,
+          "behind": "-",
+          "place": 1
         },
         {
           "playerName": "Jon Fogh",
@@ -1130,14 +1130,14 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 20,
+              "stableford": 32,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 72,
-          "behind": "16",
+          "total": 92,
+          "behind": "14",
           "place": 4
         },
         {
@@ -1168,15 +1168,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 20,
+              "stableford": 32,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 86,
-          "behind": "2",
-          "place": 2
+          "total": 106,
+          "behind": "-",
+          "place": 1
         },
         {
           "playerName": "Andreas Opstrup",
@@ -1206,14 +1206,14 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 10,
+              "stableford": 29,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 33,
-          "behind": "55",
+          "total": 43,
+          "behind": "63",
           "place": 13
         },
         {
@@ -1244,15 +1244,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 16,
+              "stableford": 31,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 59,
-          "behind": "29",
-          "place": 5
+          "total": 75,
+          "behind": "31",
+          "place": 6
         },
         {
           "playerName": "Peter Meincke",
@@ -1282,15 +1282,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 12,
+              "stableford": 30,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 88,
-          "behind": "-",
-          "place": 1
+          "total": 100,
+          "behind": "6",
+          "place": 3
         },
         {
           "playerName": "Johan Dubbelman",
@@ -1320,15 +1320,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 16,
+              "stableford": 31,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 56,
-          "behind": "32",
-          "place": 7
+          "total": 72,
+          "behind": "34",
+          "place": 8
         },
         {
           "playerName": "Emil Gregersen",
@@ -1358,15 +1358,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 2,
+              "stableford": 25,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 51,
-          "behind": "37",
-          "place": 11
+          "total": 53,
+          "behind": "53",
+          "place": 12
         },
         {
           "playerName": "Stefan Møller Jensen",
@@ -1396,15 +1396,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 4,
+              "stableford": 26,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 53,
-          "behind": "35",
-          "place": 10
+          "total": 57,
+          "behind": "49",
+          "place": 11
         },
         {
           "playerName": "Anders Schmidt",
@@ -1434,15 +1434,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 10,
+              "stableford": 29,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 59,
-          "behind": "29",
-          "place": 5
+          "total": 69,
+          "behind": "37",
+          "place": 9
         },
         {
           "playerName": "Rene Simonsen",
@@ -1472,15 +1472,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 10,
+              "stableford": 29,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 56,
-          "behind": "32",
-          "place": 7
+          "total": 66,
+          "behind": "40",
+          "place": 10
         },
         {
           "playerName": "René Lund",
@@ -1510,15 +1510,15 @@
             },
             {
               "columnIndex": 3,
-              "value": null,
-              "stableford": null,
+              "value": 26,
+              "stableford": 37,
               "average": false,
-              "legacyRoundId": null
+              "legacyRoundId": "158"
             }
           ],
-          "total": 56,
-          "behind": "32",
-          "place": 7
+          "total": 82,
+          "behind": "24",
+          "place": 5
         }
       ]
     }

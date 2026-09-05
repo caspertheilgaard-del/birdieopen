@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SeasonNav } from "@/components/season-nav";
 import { getBirdieList, getSeasons } from "@/lib/data";
+import { formatPlace, tiedPlaces } from "@/lib/scoring";
 
 type Params = { year: string };
 
@@ -26,6 +27,8 @@ export default async function BirdiePage({ params }: { params: Promise<Params> }
   const season = Number(year);
   const [rows, seasons] = await Promise.all([getBirdieList(season), getSeasons()]);
   if (!seasons.some((s) => s.year === season)) notFound();
+
+  const tied = tiedPlaces(rows.map((row) => row.place));
 
   return (
     <main className="wrap wrap--birdies">
@@ -55,7 +58,7 @@ export default async function BirdiePage({ params }: { params: Promise<Params> }
               {rows.map((row) => (
                 <tr key={row.playerSlug} className={row.place === 1 ? "is-leader" : undefined}>
                   <td>
-                    <span className={placeClass(row.place)}>{row.place}</span>
+                    <span className={placeClass(row.place)}>{formatPlace(row.place, tied)}</span>
                   </td>
                   <td className="cell-name">
                     <Link href={`/spiller/${row.playerSlug}`}>{row.playerName}</Link>

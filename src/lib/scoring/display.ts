@@ -54,3 +54,66 @@ export function roundClass(points: number | null): string {
 export function seasonVsHandicap(total: number, roundsCounted: number): number {
   return total - LEVEL_PER_ROUND * roundsCounted;
 }
+
+/**
+ * The traditional marks on a gross score: circles for shots gained on par,
+ * squares for shots dropped. This is the golf convention every scorecard uses,
+ * and it sits alongside the stableford colouring rather than replacing it,
+ * because a hole can be a birdie and still pay four points when a stroke falls
+ * on it.
+ */
+export type GrossResult =
+  | "hole-in-one"
+  | "albatross"
+  | "eagle"
+  | "birdie"
+  | "par"
+  | "bogey"
+  | "double"
+  | "blank";
+
+export function grossResult(gross: number | null, par: number): GrossResult {
+  if (gross === null || gross <= 0) return "blank";
+  if (gross === 1 && par > 2) return "hole-in-one";
+
+  const diff = gross - par;
+  if (diff <= -3) return "albatross";
+  if (diff === -2) return "eagle";
+  if (diff === -1) return "birdie";
+  if (diff === 0) return "par";
+  if (diff === 1) return "bogey";
+  return "double";
+}
+
+export function grossClass(gross: number | null, par: number): string {
+  return `gm gm--${grossResult(gross, par)}`;
+}
+
+const NAMES: Record<GrossResult, string> = {
+  "hole-in-one": "Hole in one",
+  albatross: "Albatros",
+  eagle: "Eagle",
+  birdie: "Birdie",
+  par: "Par",
+  bogey: "Bogey",
+  double: "Dobbeltbogey eller mere",
+  blank: "",
+};
+
+export function grossName(gross: number | null, par: number): string {
+  return NAMES[grossResult(gross, par)];
+}
+
+/**
+ * Shared places are written T2, T5 and so on, the way every tour leaderboard
+ * does it. Pass the whole column of places so a place knows whether it is shared.
+ */
+export function tiedPlaces(places: number[]): Set<number> {
+  const counts = new Map<number, number>();
+  for (const place of places) counts.set(place, (counts.get(place) ?? 0) + 1);
+  return new Set([...counts.entries()].filter(([, n]) => n > 1).map(([place]) => place));
+}
+
+export function formatPlace(place: number, tied: Set<number>): string {
+  return tied.has(place) ? `T${place}` : String(place);
+}

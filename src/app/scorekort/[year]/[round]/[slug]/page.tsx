@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { getScorecard } from "@/lib/data";
 import { longDate, timeOfDay } from "@/lib/format";
 import type { ScorecardHole } from "@/lib/data";
-import { LEVEL_PER_ROUND, holeClass } from "@/lib/scoring";
-import { ScoreKey } from "@/components/score-key";
+import { LEVEL_PER_ROUND, grossClass, grossName, holeClass } from "@/lib/scoring";
+import { GrossKey, ScoreKey } from "@/components/score-key";
 
 type Params = { year: string; round: string; slug: string };
 
@@ -97,6 +97,7 @@ export default async function ScorecardPage({ params }: { params: Promise<Params
         </table>
       </div>
 
+      <GrossKey />
       <ScoreKey />
 
       <div className="summary-grid">
@@ -138,7 +139,11 @@ function HoleRow({ hole }: { hole: ScorecardHole }) {
       <td>{hole.par}</td>
       <td style={{ color: "var(--text-faint)" }}>{hole.strokeIndex}</td>
       <td className="strokes-dot">{hole.strokes > 0 ? "•".repeat(hole.strokes) : ""}</td>
-      <td className="cell-gross">{hole.gross ?? "–"}</td>
+      <td>
+        <span className={grossClass(hole.gross, hole.par)} title={grossName(hole.gross, hole.par)}>
+          {hole.gross ?? "–"}
+        </span>
+      </td>
       <td>
         <span className={holeClass(hole.gross === null || hole.gross <= 0 ? null : hole.points)}>
           {hole.gross === null || hole.gross <= 0 ? "–" : hole.points}

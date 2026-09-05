@@ -466,6 +466,9 @@ export async function getHome(): Promise<HomeData> {
     finalRoundsTotal: finalRounds.length,
     nextRound: schedule.find((r) => r.status !== "final") ?? schedule.find((r) => r.winner === null) ?? null,
     liveRound: schedule.find((r) => r.status === "live") ?? null,
+    // Playoffs are curated rather than scraped, so the database has no record of
+    // one yet. The snapshot import carries them.
+    playoff: null,
     champion: championOf("champion"),
     birdieChampion: championOf("birdie_champion"),
     stats: {

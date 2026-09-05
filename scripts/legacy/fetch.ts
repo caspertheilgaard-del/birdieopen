@@ -38,15 +38,20 @@ function cachePath(url: string): string {
   return path.join(CACHE_DIR, `${createHash("sha1").update(url).digest("hex")}.html`);
 }
 
+/** Pass --fresh to ignore the cache and pull the pages again. */
+const FRESH = process.argv.includes("--fresh");
+
 /** Fetches a legacy page, caching to disk so a rerun never re-hits their server. */
 export async function fetchPage(pathname: string): Promise<string> {
   const url = `${BASE}/${pathname}`;
   const file = cachePath(url);
-  try {
-    const cached = await readFile(file, "utf8");
-    if (cached.length > 0) return cached;
-  } catch {
-    // not cached yet
+  if (!FRESH) {
+    try {
+      const cached = await readFile(file, "utf8");
+      if (cached.length > 0) return cached;
+    } catch {
+      // not cached yet
+    }
   }
 
   const p = await getPage();

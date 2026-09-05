@@ -560,7 +560,8 @@ button {
 
 .place {
   display: inline-flex;
-  width: 26px;
+  min-width: 26px;
+  padding: 0 5px;
   height: 26px;
   border-radius: var(--r-badge);
   align-items: center;
@@ -787,7 +788,8 @@ button {
 }
 
 .hero__row-place {
-  width: 26px;
+  min-width: 26px;
+  padding: 0 5px;
   height: 26px;
   border-radius: 6px;
   display: flex;
@@ -1872,4 +1874,103 @@ button {
 
 .cell-vs.is-ahead {
   color: var(--red);
+}
+
+/* ---- marks on the gross score -----------------------------------------
+   Circles for shots gained on par, squares for shots dropped, the way a
+   scorecard has always been marked. Outlines rather than fills, so they sit
+   quietly beside the filled stableford chips in the next column. The rings use
+   outline-offset, which lets the row's own background show through the gap and
+   keeps them right on zebra stripes. */
+
+.gm {
+  display: inline-flex;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.gm--blank {
+  color: var(--text-empty);
+  font-weight: 400;
+}
+
+.gm--birdie {
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  color: var(--red);
+}
+
+.gm--eagle {
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  outline: 1.5px solid var(--red);
+  outline-offset: 2px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.gm--albatross {
+  position: relative;
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  outline: 1.5px solid var(--red);
+  outline-offset: 2px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.gm--albatross::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+}
+
+/* One in fifteen years. It gets the gold. */
+.gm--hole-in-one {
+  background: var(--yellow);
+  border: 1.5px solid var(--green-dark);
+  border-radius: 50%;
+  outline: 1.5px solid var(--yellow);
+  outline-offset: 2px;
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.gm--bogey {
+  border: 1.5px solid var(--line-strong);
+  color: var(--text-secondary);
+}
+
+.gm--double {
+  border: 1.5px solid var(--line-strong);
+  outline: 1.5px solid var(--line-strong);
+  outline-offset: 2px;
+  color: var(--text-secondary);
+}
+
+.gross-key .gm {
+  min-width: 26px;
+  height: 26px;
+  font-size: 13px;
+}
+
+.score-key__pair {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+}
+
+.score-key__caption {
+  font-size: 12px;
+  color: var(--text-faint);
 }

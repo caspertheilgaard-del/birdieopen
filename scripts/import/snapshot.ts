@@ -118,6 +118,18 @@ export function buildSnapshot(data: Normalized): Snapshot {
         };
       });
 
+      const placed = placeRows(rows);
+      const playoff = data.playoffs.find((p) => p.year === season.year);
+      if (kind === "final" && playoff) {
+        const sharedFirst = placed.filter((row) => row.place === 1);
+        if (sharedFirst.length > 1 && sharedFirst.some((row) => row.playerSlug === playoff.winner)) {
+          for (const row of sharedFirst) {
+            row.place = row.playerSlug === playoff.winner ? 1 : 2;
+          }
+          placed.sort((a, b) => a.place - b.place || b.total - a.total);
+        }
+      }
+
       return {
         kind,
         columns: columns.map((round) => ({
@@ -127,7 +139,7 @@ export function buildSnapshot(data: Normalized): Snapshot {
           startsAt: round.starts_at,
           played: (resultsByRound.get(round.legacy_id)?.size ?? 0) > 0,
         })),
-        rows: placeRows(rows),
+        rows: placed,
       };
     };
 
@@ -211,11 +223,16 @@ export function buildSnapshot(data: Normalized): Snapshot {
   }
 
   const currentYear = seasons[0]?.year ?? new Date().getFullYear();
-  const previousYear = seasons[1]?.year ?? currentYear;
-  const championOf = (year: number, kind: "champion" | "birdie_champion") => {
-    const row = data.champions.find((c) => c.year === year && c.kind === kind);
+  const championOf = (kind: "champion" | "birdie_champion") => {
+    const row = [...data.champions]
+      .filter((c) => c.kind === kind)
+      .sort((a, b) => b.year - a.year)[0];
     if (!row) return null;
-    return { name: nameBySlug.get(row.player_slug) ?? row.player_slug, slug: row.player_slug, year };
+    return {
+      name: nameBySlug.get(row.player_slug) ?? row.player_slug,
+      slug: row.player_slug,
+      year: row.year,
+    };
   };
 
   const currentSchedule = schedule[String(currentYear)] ?? [];
@@ -237,8 +254,18 @@ export function buildSnapshot(data: Normalized): Snapshot {
     finalRoundsTotal: finalRounds.length,
     nextRound: currentSchedule.find((r) => r.winner === null) ?? null,
     liveRound: currentSchedule.find((r) => r.status === "live") ?? null,
-    champion: championOf(previousYear, "champion"),
-    birdieChampion: championOf(previousYear, "birdie_champion"),
+    playoff: (() => {
+      const p = data.playoffs.find((x) => x.year === currentYear);
+      if (!p) return null;
+      return {
+        winnerName: nameBySlug.get(p.winner) ?? p.winner,
+        winnerSlug: p.winner,
+        against: p.against.map((slug) => nameBySlug.get(slug) ?? slug),
+        note: p.note,
+      };
+    })(),
+    champion: championOf("champion"),
+    birdieChampion: championOf("birdie_champion"),
     stats: {
       seasonNumber: seasons.length,
       activePlayers: data.players.filter((p) => p.active).length,
@@ -251,7 +278,8 @@ export function buildSnapshot(data: Normalized): Snapshot {
     const out: string[] = [];
     if (home.champion?.slug === slug) out.push(`Mester ${home.champion.year}`);
     if (home.birdieChampion?.slug === slug) out.push(`Birdiemester ${home.birdieChampion.year}`);
-    if (home.top[0]?.playerSlug === slug) out.push(`Fører ${currentYear}`);
+    // Only worth saying while there is still a round to play.
+    if (home.nextRound && home.top[0]?.playerSlug === slug) out.push(`Fører ${currentYear}`);
     return out;
   };
 

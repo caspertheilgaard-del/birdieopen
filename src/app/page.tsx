@@ -1,34 +1,52 @@
 import Link from "next/link";
 import { getHome } from "@/lib/data";
 import { dayAndMonth, isSameDay, longDate, meters, timeOfDay } from "@/lib/format";
+import { formatPlace, tiedPlaces } from "@/lib/scoring";
 
 export default async function HomePage() {
   const home = await getHome();
-  const { season, top, nextRound, champion, birdieChampion, stats } = home;
+  const { season, top, nextRound, playoff, champion, birdieChampion, stats } = home;
   const leader = top[0];
+  const tied = tiedPlaces(top.map((row) => row.place));
   const runnerUp = top[1];
   const today = new Date();
   const nextIsToday = isSameDay(nextRound?.startsAt ?? null, today);
   const date = dayAndMonth(nextRound?.startsAt ?? null);
 
+  // Two players level at the top means the title goes to a playoff on one hole,
+  // so the front page says that rather than crowning either of them.
+  const atTop = top.filter((row) => row.place === 1);
+  const undecided = !nextRound && !playoff && atTop.length > 1;
+
   const badge = nextRound
     ? nextIsToday
       ? `${nextRound.kind === "final" ? "Finaledag" : "Spilledag"} · ${nextRound.kind === "final" ? "Finalerunde" : "Runde"} i dag ${timeOfDay(nextRound.startsAt)}`
       : `Næste runde · ${longDate(nextRound.startsAt)}`
-    : `Sæsonen er afgjort · ${season.year}`;
+    : undecided
+      ? `Omspil om titlen · ${season.year}`
+      : playoff
+        ? `Afgjort i omspil · ${season.year}`
+        : `Sæsonen er afgjort · ${season.year}`;
 
   const headline = nextRound?.venue
     ? nextRound.kind === "final"
       ? `Alt afgøres på ${nextRound.venue}.`
       : `Næste stop: ${nextRound.venue}.`
-    : leader
-      ? `${leader.playerName} vinder Birdie Open ${season.year}.`
-      : `Birdie Open ${season.year}.`;
+    : undecided
+      ? "Det skal afgøres på ét hul."
+      : playoff
+        ? `${playoff.winnerName} vandt på omspilshullet.`
+        : leader
+          ? `${leader.playerName} vandt Birdie Open ${season.year}.`
+          : `Birdie Open ${season.year}.`;
 
-  const lede =
-    leader && runnerUp
-      ? `${leader.playerName} fører Birdie Open ${season.year} med ${leader.points} point, ${runnerUp.points === leader.points ? "lige med" : `${leader.points - runnerUp.points} foran`} ${runnerUp.playerName}${nextRound ? "" : " efter sæsonens sidste runde"}.`
-      : `Invitation-only golfturnering siden 2012.`;
+  const lede = undecided
+    ? `${atTop.map((row) => row.playerName).join(" og ")} sluttede Birdie Open ${season.year} på ${atTop[0].points} point. Efter reglernes pkt. 10 spilles der omspil på ét hul om førstepladsen.`
+    : playoff
+      ? `${playoff.winnerName} og ${playoff.against.join(" og ")} sluttede Birdie Open ${season.year} lige på ${top[0]?.points} point, og førstepladsen blev afgjort på ét hul.`
+      : leader && runnerUp
+      ? `${leader.playerName} ${nextRound ? "fører" : "vandt"} Birdie Open ${season.year} med ${leader.points} point, ${runnerUp.points === leader.points ? "lige med" : `${leader.points - runnerUp.points} foran`} ${runnerUp.playerName}${nextRound ? "" : " efter sæsonens sidste runde"}.`
+      : "Invitation-only golfturnering siden 2012.";
 
   return (
     <main>
@@ -75,7 +93,7 @@ export default async function HomePage() {
                           : undefined
                     }
                   >
-                    {row.place}
+                    {formatPlace(row.place, tied)}
                   </span>
                   <span className="hero__row-name">{row.playerName}</span>
                   <span className="hero__row-behind">{row.behind > 0 ? `+${row.behind}` : ""}</span>
@@ -146,15 +164,24 @@ export default async function HomePage() {
 
         {champion ? (
           <div className="card champion-card">
-            <div className="eyebrow">Forsvarende mester {champion.year}</div>
+            <div className="eyebrow">
+              {champion.year === season.year ? "Mester" : "Forsvarende mester"} {champion.year}
+            </div>
             <div className="champion-card__name">{champion.name}</div>
-            <div className="champion-card__note">Vandt Birdie Open {champion.year}.</div>
+            <div className="champion-card__note">
+              {playoff && playoff.winnerSlug === champion.slug
+                ? playoff.note
+                : `Vandt Birdie Open ${champion.year}.`}
+            </div>
           </div>
         ) : null}
 
         {birdieChampion ? (
           <div className="card champion-card">
-            <div className="eyebrow">Forsvarende birdiemester {birdieChampion.year}</div>
+            <div className="eyebrow">
+              {birdieChampion.year === season.year ? "Birdiemester" : "Forsvarende birdiemester"}{" "}
+              {birdieChampion.year}
+            </div>
             <div className="champion-card__name">{birdieChampion.name}</div>
             <div className="champion-card__note">Flest birdies i {birdieChampion.year}.</div>
           </div>

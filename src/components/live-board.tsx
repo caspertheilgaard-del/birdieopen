@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { buildLeaderboard } from "@/lib/live/leaderboard";
-import { formatLevel, levelDiff } from "@/lib/scoring";
+import { formatLevel, formatPlace, levelDiff, tiedPlaces } from "@/lib/scoring";
 import type { LiveRound } from "@/lib/live/types";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import { hasSupabase } from "@/lib/supabase/config";
@@ -67,6 +67,7 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
   }, [round.id, round.players]);
 
   const rows = useMemo(() => buildLeaderboard(round.holes, players), [round.holes, players]);
+  const tied = useMemo(() => tiedPlaces(rows.map((row) => row.place)), [rows]);
   const holeCount = round.holes.length || 18;
 
   return (
@@ -98,7 +99,7 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
               >
                 <td>
                   <span className={row.place === 1 ? "place place--1" : row.place <= 3 ? "place place--2" : "place"}>
-                    {row.place}
+                    {formatPlace(row.place, tied)}
                   </span>
                 </td>
                 <td className="board__name">

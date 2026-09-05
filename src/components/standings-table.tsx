@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { StandingsTable as Table } from "@/lib/data";
 import { shortDate, timeOfDay } from "@/lib/format";
-import { LEVEL_PER_ROUND, roundClass, seasonVsHandicap } from "@/lib/scoring";
+import { LEVEL_PER_ROUND, formatPlace, roundClass, seasonVsHandicap, tiedPlaces } from "@/lib/scoring";
 
 function placeClass(place: number): string {
   if (place === 1) return "place place--1";
@@ -11,6 +11,7 @@ function placeClass(place: number): string {
 
 export function StandingsTable({ table, year }: { table: Table; year: number }) {
   const isFinal = table.kind === "final";
+  const tied = tiedPlaces(table.rows.map((row) => row.place));
 
   return (
     <div className="panel panel--table">
@@ -37,7 +38,7 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
           {table.rows.map((row) => (
             <tr key={row.playerSlug} className={row.place === 1 ? "is-leader" : undefined}>
               <td>
-                <span className={placeClass(row.place)}>{row.place}</span>
+                <span className={placeClass(row.place)}>{formatPlace(row.place, tied)}</span>
               </td>
               <td className="cell-name">
                 <Link href={`/spiller/${row.playerSlug}`}>{row.playerName}</Link>
