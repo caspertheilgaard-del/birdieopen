@@ -1,0 +1,25 @@
+# Netlify bygger sitet som rene filer. Ingen server, ingen funktioner.
+# Ruter der kræver en database bliver lagt til side under bygningen; se
+# scripts/share/build-static.ts.
+
+[build]
+  command = "npm run build:static"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Playwright bruges kun til at hente historikken fra det gamle site, aldrig
+  # under et build, så browseren skal ikke hentes her.
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
