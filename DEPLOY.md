@@ -5,8 +5,7 @@ Sitet bygges som rene filer, så der er ingen server at holde kørende.
 ## Én gang
 
 1. Log ind på [netlify.com](https://app.netlify.com) og vælg **Add new site → Import an existing project**.
-2. Vælg **GitHub** og find `birdieopen`. Er repoet privat, skal Netlify have adgang
-   til det, hvilket den selv beder om undervejs.
+2. Vælg **GitHub** og find `caspertheilgaard-del/birdieopen`.
 3. Netlify læser `netlify.toml`, så byggeopskriften er udfyldt på forhånd:
    - Build command: `npm run build:static`
    - Publish directory: `out`
@@ -14,6 +13,10 @@ Sitet bygges som rene filer, så der er ingen server at holde kørende.
    afhængighederne skal hentes.
 
 Derefter bygger Netlify automatisk, hver gang der bliver skubbet til `main`.
+
+Sitet er offentligt, når det er deployet. Vil du holde det for jer selv indtil
+videre, kan du sætte en adgangskode på under **Site configuration → Access &
+security → Password protection**.
 
 ## Hvad der ikke er med
 
