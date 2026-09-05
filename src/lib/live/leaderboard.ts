@@ -66,8 +66,3 @@ export function buildLeaderboard(holes: LiveHole[], players: LivePlayer[]): Lead
 
   return rows;
 }
-
-export function formatToPar(value: number): string {
-  if (value === 0) return "E";
-  return value > 0 ? `+${value}` : String(value);
-}

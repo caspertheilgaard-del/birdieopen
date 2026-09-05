@@ -15,7 +15,7 @@ export default async function SponsorsPage() {
 
   return (
     <main className="wrap wrap--plan">
-      <h1 className="page-title">SPONSORER</h1>
+      <h1 className="page-title">Sponsorer</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         Runder med en sponsor bag sig, sæson for sæson.
       </p>

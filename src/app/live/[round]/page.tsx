@@ -33,7 +33,7 @@ export default async function LiveRoundPage({ params }: { params: Promise<Params
             <span className="live-badge__dot" aria-hidden="true" />
             {round.status === "live" ? "Live nu" : round.status === "final" ? "Afsluttet" : "Endnu ikke spillet"}
           </span>
-          <h1 className="live-head__title">{round.venue.toUpperCase()}</h1>
+          <h1 className="live-head__title">{round.venue}</h1>
           <p className="live-head__meta">
             {[
               round.kind === "final" ? "Finalerunde" : "Indledende runde",

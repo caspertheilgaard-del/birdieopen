@@ -1,56 +1,82 @@
 /* Design tokens from the Birdie Open redesign handoff. Every colour, radius and
    shadow in the app resolves to one of these. */
 :root {
-  --green: #0a281c;
-  --green-dark: #081f15;
-  --green-mid: #123b29;
-  --green-muted: #7fa48b;
-  --green-light: #bfd8c6;
-  --green-nav: #cfe0d4;
-  --green-outline: #4e6f5c;
+  /* Augusta green leads, the way it does at Augusta. The old near-black green
+     is kept only for the deepest surfaces. */
+  --green: #006747;
+  --green-dark: #00432e;
+  --green-mid: #0e7a55;
+  --green-muted: #9cc3ae;
+  --green-light: #d5e6da;
+  --green-nav: #dceae1;
+  --green-outline: #4e8c6f;
   --green-chip: #eaf3ec;
 
-  --cream: #f7f5ee;
-  --page: #f3f1e9;
+  --cream: #ffffff;
+  --page: #f4f3ef;
 
   --yellow: #ffd34d;
   --yellow-hover: #ffdd75;
-  --yellow-row: #fff6d6;
+  --yellow-row: #fff7dd;
   --yellow-border: #e8c95e;
-  --yellow-text: #b08a1e;
-  --yellow-deep: #7a5e0c;
+  --yellow-text: #8a6a12;
+  --yellow-deep: #6b510a;
 
-  --text: #1b2b22;
-  --text-num: #22352b;
-  --text-body: #3a463d;
-  --text-secondary: #68715f;
-  --text-muted: #5b6558;
-  --text-faint: #93998e;
-  --text-avg: #b3bab0;
-  --text-empty: #c7ccc2;
+  /* Under par is red on every leaderboard in golf, so it is here too. */
+  --red: #ba0c2f;
+
+  --text: #22282a;
+  --text-num: #22282a;
+  --text-body: #3f4548;
+  --text-secondary: #53565a;
+  --text-muted: #6b6f73;
+  --text-faint: #8b8f92;
+  --text-avg: #a9adb0;
+  --text-empty: #c4c7c9;
 
   --surface: #fff;
-  --zebra: #fbfaf4;
-  --line-soft: #eeebdf;
-  --line: #edeae0;
-  --line-strong: #e7e3d6;
-  --border-card: #e3e0d3;
-  --link: #155f9e;
+  --zebra: #faf9f6;
+  --line-soft: #ebe9e3;
+  --line: #e4e2db;
+  --line-strong: #dcd9d1;
+  --border-card: #e0ded6;
+  --link: #006747;
 
-  --r-badge: 7px;
-  --r-btn: 8px;
-  --r-toggle: 9px;
-  --r-date: 10px;
-  --r-card: 12px;
-  --r-panel: 14px;
+  /* We play stableford, so a hole is judged on the points it paid, not on the
+     gross score. Two points is level. Anything above that goes red, the way
+     under par does on a stroke play leaderboard. The same scale is used on the
+     scorecard and on the keypad while a round is being typed in. */
+  --score-blank-bg: transparent;
+  --score-blank-fg: var(--text-empty);
+  --score-0-bg: var(--green-dark);
+  --score-0-fg: #fff;
+  --score-1-bg: #e9e7e0;
+  --score-1-fg: var(--text-secondary);
+  --score-2-bg: transparent;
+  --score-2-fg: var(--text);
+  --score-3-bg: var(--red);
+  --score-3-fg: #fff;
+  --score-4-bg: var(--yellow);
+  --score-4-fg: var(--green-dark);
+  --score-5-bg: var(--green);
+  --score-5-fg: var(--yellow);
+
+  --r-badge: 4px;
+  --r-btn: 4px;
+  --r-toggle: 5px;
+  --r-date: 5px;
+  --r-card: 6px;
+  --r-panel: 6px;
   --r-pill: 999px;
 
-  --shadow-header: 0 2px 12px rgba(6, 25, 17, 0.35);
-  --shadow-panel: 0 2px 8px rgba(20, 33, 27, 0.05);
-  --shadow-hero: 0 16px 40px rgba(4, 18, 12, 0.45);
+  --shadow-header: 0 1px 0 rgba(0, 0, 0, 0.12);
+  --shadow-panel: 0 1px 2px rgba(34, 40, 42, 0.06);
+  --shadow-hero: 0 18px 44px rgba(0, 40, 26, 0.35);
 
-  --font-display: var(--font-barlow-condensed), "Barlow Condensed", sans-serif;
-  --font-body: var(--font-barlow), "Barlow", sans-serif;
+  --font-display: var(--font-source-serif), "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: var(--font-barlow), "Barlow", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  /* Scores and tables stay in the sans, lining up in columns. */
+  --font-num: var(--font-body);
 }
 
 *,
@@ -147,7 +173,7 @@ button {
   top: 0;
   z-index: 50;
   background: var(--green);
-  box-shadow: var(--shadow-header);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .header__bar {
@@ -171,33 +197,35 @@ button {
   text-decoration: none;
 }
 
-.logo-chip {
-  width: 48px;
-  height: 48px;
-  background: var(--cream);
-  border-radius: var(--r-date);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.header__mark {
+  width: 44px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer__mark {
+  width: 28px;
+  height: auto;
   flex-shrink: 0;
 }
 
 .header__title {
+  display: block;
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1.05;
   color: var(--cream);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.005em;
 }
 
 .header__tagline {
-  font-size: 11px;
+  display: block;
+  font-size: 10px;
   color: var(--green-muted);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .nav {
@@ -209,14 +237,14 @@ button {
 }
 
 .nav__link {
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 9px 14px;
+  padding: 9px 12px;
   border: none;
-  border-radius: var(--r-badge);
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
   background: transparent;
   color: var(--green-nav);
 }
@@ -228,36 +256,39 @@ button {
 }
 
 .nav__link[aria-current="page"] {
-  background: var(--yellow);
-  color: var(--green);
+  background: transparent;
+  color: #fff;
+  border-bottom-color: var(--yellow);
 }
 
 .nav__link[aria-current="page"]:hover {
-  color: var(--green);
+  color: #fff;
+  opacity: 1;
 }
 
 .season-badge {
-  margin-left: 10px;
-  font-family: var(--font-display);
-  font-size: 14px;
+  margin-left: 14px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--green);
-  background: var(--green-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: var(--r-pill);
   padding: 5px 12px;
-  border: none;
 }
 
 /* ---- headings ------------------------------------------------------- */
 
 .page-title {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 44px;
+  font-weight: 600;
+  font-size: clamp(34px, 4.5vw, 50px);
+  line-height: 1.05;
   margin: 0;
   color: var(--green);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 .page-note {
@@ -267,26 +298,27 @@ button {
 }
 
 .section-label {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.12em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
 }
 
 /* ---- buttons -------------------------------------------------------- */
 
 .btn {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-num);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border: none;
   border-radius: var(--r-btn);
-  padding: 14px 26px;
+  padding: 13px 24px;
   display: inline-block;
 }
 
@@ -319,9 +351,9 @@ button {
 .btn--dark {
   background: var(--green);
   color: var(--cream);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 12px 20px;
+  padding: 11px 18px;
 }
 
 .btn--dark:hover {
@@ -355,14 +387,14 @@ button {
 }
 
 .date-block__day {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 800;
   font-size: 26px;
   line-height: 1;
 }
 
 .date-block__month {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.14em;
@@ -370,7 +402,7 @@ button {
 }
 
 .eyebrow {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.14em;
@@ -379,6 +411,11 @@ button {
 }
 
 /* ---- tables --------------------------------------------------------- */
+
+.table,
+.board {
+  font-variant-numeric: tabular-nums;
+}
 
 .table {
   width: 100%;
@@ -390,11 +427,11 @@ button {
 }
 
 .table th {
-  padding: 13px 12px;
-  font-family: var(--font-display);
-  font-size: 14px;
+  padding: 12px;
+  font-family: var(--font-num);
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--green-light);
   text-align: left;
@@ -425,17 +462,17 @@ button {
 }
 
 .table__round-name {
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-family: var(--font-num);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--cream);
   text-transform: none;
 }
 
 .table__round-date {
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 400;
   color: var(--green-muted);
   margin-top: 2px;
   text-transform: none;
@@ -453,6 +490,7 @@ button {
 
 .table tbody tr.is-leader {
   background: var(--yellow-row);
+  box-shadow: inset 3px 0 0 var(--yellow);
 }
 
 .table td {
@@ -486,7 +524,7 @@ button {
 
 .cell-score {
   text-align: center;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-size: 17px;
   font-weight: 600;
   white-space: nowrap;
@@ -508,9 +546,9 @@ button {
 
 .cell-total {
   text-align: center;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 21px;
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-size: 19px;
   color: var(--green);
 }
 
@@ -522,12 +560,12 @@ button {
 
 .place {
   display: inline-flex;
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
   border-radius: var(--r-badge);
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 700;
   font-size: 15px;
   background: var(--line);
@@ -562,7 +600,7 @@ button {
 }
 
 .toggle__btn {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -630,7 +668,7 @@ button {
 
 .hero {
   background-color: var(--green);
-  background-image: linear-gradient(160deg, #0a281c 0%, #123b29 60%, #0a281c 100%);
+  background-image: linear-gradient(160deg, var(--green-dark) 0%, var(--green) 55%, #00553b 100%);
 }
 
 .hero__inner {
@@ -660,7 +698,7 @@ button {
   color: var(--yellow);
   border-radius: var(--r-pill);
   padding: 7px 16px;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -678,7 +716,7 @@ button {
 
 .hero__title {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   font-size: clamp(46px, 7vw, 86px);
   line-height: 0.98;
   color: var(--cream);
@@ -723,7 +761,7 @@ button {
 }
 
 .hero__card-title {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.1em;
@@ -755,7 +793,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 700;
   font-size: 15px;
   background: var(--line);
@@ -776,7 +814,7 @@ button {
 }
 
 .hero__row-points {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 800;
   font-size: 22px;
   width: 44px;
@@ -786,7 +824,7 @@ button {
 .hero__card-link {
   display: block;
   padding: 12px 20px;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.08em;
@@ -814,7 +852,7 @@ button {
 }
 
 .stats__value {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 800;
   font-size: 30px;
   color: var(--yellow);
@@ -875,7 +913,7 @@ button {
 
 .next-round__venue {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   color: var(--green);
 }
@@ -893,7 +931,7 @@ button {
 
 .champion-card__name {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   font-size: 30px;
   color: var(--green);
   margin: 6px 0 4px;
@@ -918,7 +956,7 @@ button {
 }
 
 .season-nav__link {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.06em;
@@ -1007,7 +1045,7 @@ button {
 
 .round-card__venue {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   color: var(--green);
 }
@@ -1038,7 +1076,7 @@ button {
 }
 
 .chip__label {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.1em;
@@ -1090,7 +1128,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.04em;
@@ -1106,7 +1144,7 @@ button {
 .pill {
   margin-top: 5px;
   display: inline-block;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -1147,7 +1185,7 @@ button {
 
 .rules-card h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   color: var(--green);
   margin: 0 0 14px;
@@ -1182,10 +1220,32 @@ button {
 
 .card-head__total-value {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   font-size: 56px;
   line-height: 1;
   color: var(--green);
+}
+
+.card-head__total-value.is-ahead {
+  color: var(--red);
+}
+
+.card-head__total-note {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-top: 4px;
+}
+
+.cell-gross {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.score-key__note {
+  color: var(--text-faint);
 }
 
 .meta-list {
@@ -1224,43 +1284,10 @@ button {
 }
 
 .table--scorecard tbody tr.is-turn td {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-size: 16px;
 }
 
-.gross {
-  display: inline-flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 17px;
-  border-radius: 6px;
-}
-
-.gross--eagle {
-  background: var(--yellow);
-  color: var(--green);
-  border-radius: 50%;
-}
-
-.gross--birdie {
-  background: var(--yellow-row);
-  color: var(--yellow-deep);
-  border-radius: 50%;
-}
-
-.gross--bogey {
-  background: var(--line);
-  color: var(--text-muted);
-}
-
-.gross--worse {
-  background: var(--green);
-  color: var(--cream);
-}
 
 .strokes-dot {
   color: var(--text-faint);
@@ -1283,7 +1310,7 @@ button {
 
 .summary-grid strong {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 800;
   font-size: 26px;
   color: var(--green);
@@ -1313,7 +1340,7 @@ button {
 }
 
 .back-link {
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.08em;
@@ -1331,7 +1358,7 @@ button {
 
 .live-head {
   background-color: var(--green);
-  background-image: linear-gradient(160deg, #0a281c 0%, #123b29 60%, #0a281c 100%);
+  background-image: linear-gradient(160deg, var(--green-dark) 0%, var(--green) 55%, #00553b 100%);
   color: var(--cream);
 }
 
@@ -1343,7 +1370,7 @@ button {
 
 .live-head__title {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1;
   margin: 14px 0 6px;
@@ -1374,7 +1401,7 @@ button {
 
 .board th {
   padding: 11px 10px;
-  font-family: var(--font-display);
+  font-family: var(--font-num);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -1420,10 +1447,15 @@ button {
 }
 
 .board__points {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 22px;
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-size: 21px;
   color: var(--green);
+}
+
+.board__points.is-ahead,
+.cell-score.is-ahead {
+  color: var(--red);
 }
 
 .board__thru {
@@ -1497,7 +1529,7 @@ button {
 
 .hole-nav__hole {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   font-size: 40px;
   line-height: 1;
   color: var(--green);
@@ -1543,40 +1575,73 @@ button {
   gap: 8px;
 }
 
-.score-btn {
+/* The keypad is neutral until a score is chosen; then the button takes the
+   colour of the points it paid, matching the chip on the scorecard. */
+.score-btn.pts {
+  height: 56px;
+  min-width: 0;
+  /* The chip's round shape and gold ring belong on a scored hole, not on an
+     untouched key, so they are cleared until the button is pressed. */
+  border-radius: var(--r-btn);
+  box-shadow: none;
+  border: 1px solid var(--border-card);
+  background: var(--page);
+  color: var(--green);
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.score-btn.pts[aria-pressed="true"] {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.score-btn.pts--0[aria-pressed="true"] {
+  background: var(--score-0-bg);
+  color: var(--score-0-fg);
+}
+
+.score-btn.pts--1[aria-pressed="true"] {
+  background: var(--score-1-bg);
+  color: var(--score-1-fg);
+}
+
+.score-btn.pts--2[aria-pressed="true"] {
+  background: var(--green);
+  color: #fff;
+}
+
+.score-btn.pts--3[aria-pressed="true"] {
+  background: var(--score-3-bg);
+  color: var(--score-3-fg);
+}
+
+.score-btn.pts--4[aria-pressed="true"],
+.score-btn.pts--5[aria-pressed="true"] {
+  background: var(--score-4-bg);
+  color: var(--score-4-fg);
+}
+
+.score-btn--clear {
   height: 56px;
   border-radius: var(--r-btn);
   border: 1px solid var(--border-card);
   background: var(--page);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 22px;
-  color: var(--green);
-}
-
-.score-btn[aria-pressed="true"] {
-  background: var(--green);
-  border-color: var(--green);
-  color: var(--cream);
-}
-
-.score-btn--clear {
-  font-size: 15px;
-  letter-spacing: 0.06em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 
 .entry-card__result {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 14px;
   color: var(--text-secondary);
-}
-
-.entry-card__result strong {
-  font-family: var(--font-display);
-  font-size: 18px;
-  color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 
 .notice {
@@ -1661,4 +1726,98 @@ button {
   padding: 12px 20px 0;
   font-size: 13px;
   color: var(--text-faint);
+}
+
+/* ---- stableford score chips ------------------------------------------
+   Two points is level on a hole. Above that goes red, the way under par does
+   on a stroke play board. Used by the scorecard and the keypad alike. */
+
+.pts {
+  display: inline-flex;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  border-radius: var(--r-badge);
+  background: var(--score-2-bg);
+  color: var(--score-2-fg);
+}
+
+.pts--blank {
+  background: var(--score-blank-bg);
+  color: var(--score-blank-fg);
+  font-weight: 400;
+}
+
+.pts--0 {
+  background: var(--score-0-bg);
+  color: var(--score-0-fg);
+}
+
+.pts--1 {
+  background: var(--score-1-bg);
+  color: var(--score-1-fg);
+}
+
+.pts--3 {
+  background: var(--score-3-bg);
+  color: var(--score-3-fg);
+  border-radius: 50%;
+}
+
+.pts--4 {
+  background: var(--score-4-bg);
+  color: var(--score-4-fg);
+  border-radius: 50%;
+}
+
+.pts--5 {
+  background: var(--score-5-bg);
+  color: var(--score-5-fg);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--yellow);
+}
+
+/* Above level, in points. Red is good here. */
+.is-ahead {
+  color: var(--red);
+}
+
+.score-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.score-key__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.score-key__scale {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.score-key__note {
+  flex: 1 1 260px;
+  color: var(--text-faint);
+}
+
+.score-key .pts {
+  min-width: 27px;
+  height: 27px;
+  font-size: 14px;
 }

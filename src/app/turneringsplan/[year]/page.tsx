@@ -70,7 +70,7 @@ export default async function SchedulePage({ params }: { params: Promise<Params>
 
   return (
     <main className="wrap wrap--plan">
-      <h1 className="page-title">TURNERINGSPLAN {season}</h1>
+      <h1 className="page-title">Turneringsplan {season}</h1>
       <p className="page-note">
         {prelim.length} indledende runder · {finals.length} finalerunder ·{" "}
         <Link href={`/turneringsplan/${season}/kalender.ics`}>importér i din kalender (ics)</Link>

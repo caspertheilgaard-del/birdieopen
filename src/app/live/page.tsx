@@ -10,7 +10,7 @@ export default async function LiveIndex() {
   if (!hasSupabase) {
     return (
       <main className="wrap wrap--plan">
-        <h1 className="page-title">LIVE</h1>
+        <h1 className="page-title">Live</h1>
         <div className="notice" style={{ marginTop: 20 }}>
           Livescore er ikke koblet til databasen endnu. Når Supabase-projektet er sat op, kan runder
           åbnes her, og scores tastes undervejs.
@@ -23,7 +23,7 @@ export default async function LiveIndex() {
 
   return (
     <main className="wrap wrap--plan">
-      <h1 className="page-title">LIVE</h1>
+      <h1 className="page-title">Live</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         {viewer ? `Logget ind som ${viewer.name}.` : "Log ind for at taste scores."}{" "}
         {viewer ? null : <Link href="/log-ind">Log ind</Link>}

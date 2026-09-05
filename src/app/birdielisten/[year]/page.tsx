@@ -29,7 +29,7 @@ export default async function BirdiePage({ params }: { params: Promise<Params> }
 
   return (
     <main className="wrap wrap--birdies">
-      <h1 className="page-title">BIRDIELISTEN {season}</h1>
+      <h1 className="page-title">Birdielisten {season}</h1>
       <p className="page-note" style={{ maxWidth: 640, textWrap: "pretty" }}>
         Placering afgøres efter flest birdies. En eagle (og hole-in-one) tæller som 3 birdies. Ved
         ligestilling vinder birdies på de sværeste huller, altså laveste nøglesum, og dernæst flest point.

@@ -31,7 +31,7 @@ export default async function PlayerPage({ params }: { params: Promise<Params> }
       <div className="profile-head">
         <span className="avatar">{initials(profile.name)}</span>
         <div>
-          <h1 className="page-title">{profile.name.toUpperCase()}</h1>
+          <h1 className="page-title">{profile.name}</h1>
           <p className="page-note">
             {profile.active ? "Aktiv deltager" : "Tidligere deltager"} · {totals.seasons}{" "}
             {totals.seasons === 1 ? "sæson" : "sæsoner"}

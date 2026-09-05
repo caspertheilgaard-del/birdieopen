@@ -13,7 +13,7 @@ export default function ScoreEntryDesignPage() {
       <section className="live-head">
         <div className="live-head__inner">
           <h1 className="live-head__title" style={{ fontSize: "clamp(26px,5vw,40px)", marginTop: 0 }}>
-            {round.venue.toUpperCase()}
+            {round.venue}
           </h1>
           <p className="live-head__meta">
             {`${longDate(round.startsAt)} ${timeOfDay(round.startsAt)}`.trim()} · {round.courseName}

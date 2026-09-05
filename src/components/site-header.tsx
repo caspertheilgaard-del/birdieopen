@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// No "home" item: the mark takes you there, the way it does on any tour site.
 const NAV = [
-  { href: "/", label: "Forside" },
   { href: "/stilling", label: "Stilling" },
   { href: "/turneringsplan", label: "Turneringsplan" },
   { href: "/birdielisten", label: "Birdielisten" },
@@ -15,7 +14,6 @@ const NAV = [
 ];
 
 function isActive(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
@@ -26,14 +24,12 @@ export function SiteHeader({ season }: { season?: number }) {
     <header className="header">
       <div className="header__bar">
         <Link href="/" className="header__brand">
-          <span className="logo-chip">
-            <Image src="/logo.png" alt="" width={42} height={42} style={{ objectFit: "contain" }} priority />
-          </span>
+          {/* The mark sits straight on the green, no card behind it. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-mark-white.png" alt="" width={44} height={51} className="header__mark" />
           <span>
-            <span className="header__title">BIRDIE OPEN</span>
-            <span className="header__tagline" style={{ display: "block" }}>
-              Invitational golf siden 2012
-            </span>
+            <span className="header__title">Birdie Open</span>
+            <span className="header__tagline">Invitational golf siden 2012</span>
           </span>
         </Link>
         <nav className="nav" aria-label="Hovedmenu">
@@ -47,7 +43,7 @@ export function SiteHeader({ season }: { season?: number }) {
               {item.label}
             </Link>
           ))}
-          {season ? <span className="season-badge">SÆSON {season}</span> : null}
+          {season ? <span className="season-badge">Sæson {season}</span> : null}
         </nav>
       </div>
     </header>

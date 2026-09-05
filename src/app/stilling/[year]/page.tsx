@@ -43,7 +43,7 @@ export default async function StandingsPage({
     <main className="wrap">
       <div className="page-head">
         <div className="page-head__text">
-          <h1 className="page-title">STILLINGEN {season}</h1>
+          <h1 className="page-title">Stillingen {season}</h1>
           <p className="page-note">{note}</p>
         </div>
         {hasFinal && standings.prelim ? (

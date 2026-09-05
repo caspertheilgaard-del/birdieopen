@@ -39,7 +39,7 @@ export default async function HomePage() {
               <span className="live-badge__dot" aria-hidden="true" />
               {badge}
             </span>
-            <h1 className="hero__title">{headline.toUpperCase()}</h1>
+            <h1 className="hero__title">{headline}</h1>
             <p className="hero__lede">{lede}</p>
             <div className="hero__actions">
               <Link href={`/stilling/${season.year}`} className="btn btn--primary">
@@ -54,7 +54,7 @@ export default async function HomePage() {
           <div className="hero__card">
             <div className="hero__card-head">
               <span className="hero__card-title">
-                STILLINGEN · {home.finalRoundsTotal > 0 ? "FINALEN" : "SÆSONEN"}
+                Stillingen · {home.finalRoundsTotal > 0 ? "finalen" : "sæsonen"}
               </span>
               <span className="hero__card-sub">
                 {home.finalRoundsTotal > 0

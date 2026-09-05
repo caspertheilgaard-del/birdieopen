@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { holePoints, strokesOnHole } from "@/lib/scoring";
+import { LEVEL_PER_HOLE, holeClass, holePoints, strokesOnHole } from "@/lib/scoring";
+import { ScoreKey } from "@/components/score-key";
 import { flushScores, pendingScores, queueScore } from "@/lib/live/offline";
 import type { LiveRound } from "@/lib/live/types";
 
@@ -162,17 +163,22 @@ export function ScoreEntry({
             </div>
 
             <div className="score-buttons">
-              {options.map((value) => (
-                <button
-                  key={value}
-                  type="button"
-                  className="score-btn"
-                  aria-pressed={gross === value}
-                  onClick={() => setScore(player.roundPlayerId, gross === value ? null : value)}
-                >
-                  {value}
-                </button>
-              ))}
+              {options.map((value) => {
+                // The chosen button takes the colour of the points it pays, so the
+                // keypad teaches the same scale the scorecard uses.
+                const worth = holePoints(value, spec.par, received);
+                return (
+                  <button
+                    key={value}
+                    type="button"
+                    className={`score-btn ${holeClass(worth)}`}
+                    aria-pressed={gross === value}
+                    onClick={() => setScore(player.roundPlayerId, gross === value ? null : value)}
+                  >
+                    {value}
+                  </button>
+                );
+              })}
               <button
                 type="button"
                 className="score-btn score-btn--clear"
@@ -184,16 +190,22 @@ export function ScoreEntry({
 
             <div className="entry-card__result">
               {gross === null ? (
-                "Ingen score endnu"
+                <span style={{ color: "var(--text-faint)" }}>Ingen score endnu</span>
               ) : (
                 <>
-                  <strong>{points}</strong> point på hullet
+                  <span className={holeClass(points)}>{points}</span>
+                  <span>
+                    point på hullet
+                    {points > LEVEL_PER_HOLE ? ", bedre end par" : points === LEVEL_PER_HOLE ? ", lige" : ""}
+                  </span>
                 </>
               )}
             </div>
           </div>
         );
       })}
+
+      <ScoreKey />
 
       <div className="live-actions">
         <Link href={`/live/${round.id}`} className="btn btn--dark">

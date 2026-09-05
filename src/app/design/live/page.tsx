@@ -17,7 +17,7 @@ export default function LiveDesignPage() {
             <span className="live-badge__dot" aria-hidden="true" />
             Live nu
           </span>
-          <h1 className="live-head__title">{round.venue.toUpperCase()}</h1>
+          <h1 className="live-head__title">{round.venue}</h1>
           <p className="live-head__meta">
             Finalerunde · {`${longDate(round.startsAt)} ${timeOfDay(round.startsAt)}`.trim()} ·{" "}
             {round.courseName}
@@ -36,9 +36,8 @@ export default function LiveDesignPage() {
       <div className="wrap wrap--plan">
         <LiveBoard round={round} viewerId={SAMPLE_VIEWER_ID} />
         <p className="footnote">
-          Boldene går ud efter placering, så førebolden er nederst på listen indtil scorene tikker
-          ind. Din egen række er markeret i venstre kant. Thru viser hvor mange huller der er tastet,
-          og F når runden er færdig.
+          Din egen række er markeret i venstre kant. Thru viser hvor mange huller der er tastet, og F
+          når runden er færdig.
         </p>
       </div>
 

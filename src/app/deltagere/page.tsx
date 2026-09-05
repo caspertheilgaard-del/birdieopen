@@ -11,7 +11,7 @@ export default async function PlayersPage() {
 
   return (
     <main className="wrap wrap--deltagere">
-      <h1 className="page-title">DELTAGERE</h1>
+      <h1 className="page-title">Deltagere</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         {active.length} aktive deltagere. Kun med invitation.
       </p>

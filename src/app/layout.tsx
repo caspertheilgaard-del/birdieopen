@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow, Barlow_Condensed } from "next/font/google";
+import { Barlow, Source_Serif_4 } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getCurrentSeason } from "@/lib/data";
@@ -12,10 +12,12 @@ const barlow = Barlow({
   display: "swap",
 });
 
-const barlowCondensed = Barlow_Condensed({
+// Masters sets its headlines in Tiempos; Source Serif is the closest thing
+// with an open licence, and holds up at both 60px and 13px.
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-  variable: "--font-barlow-condensed",
+  weight: ["600"],
+  variable: "--font-source-serif",
   display: "swap",
 });
 
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a281c",
+  themeColor: "#006747",
   width: "device-width",
   initialScale: 1,
 };
@@ -39,7 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const season = await getCurrentSeason();
 
   return (
-    <html lang="da" className={`${barlow.variable} ${barlowCondensed.variable}`}>
+    <html lang="da" className={`${barlow.variable} ${sourceSerif.variable}`}>
       <body>
         <div className="shell">
           <SiteHeader season={season.year} />

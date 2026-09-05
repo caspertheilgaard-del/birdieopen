@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Livescore, stilling og birdieliste for Birdie Open.",
     start_url: "/live",
     display: "standalone",
-    background_color: "#f3f1e9",
-    theme_color: "#0a281c",
+    background_color: "#f4f3ef",
+    theme_color: "#006747",
     lang: "da",
     icons: [
       { src: "/icon-192.png", sizes: "192x192", type: "image/png" },

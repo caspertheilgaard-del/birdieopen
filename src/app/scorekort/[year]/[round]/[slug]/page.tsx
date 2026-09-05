@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getScorecard } from "@/lib/data";
 import { longDate, timeOfDay } from "@/lib/format";
 import type { ScorecardHole } from "@/lib/data";
+import { LEVEL_PER_ROUND, holeClass } from "@/lib/scoring";
+import { ScoreKey } from "@/components/score-key";
 
 type Params = { year: string; round: string; slug: string };
 
@@ -10,16 +12,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
   const { year, round, slug } = await params;
   const card = await getScorecard(Number(year), round, slug);
   return { title: card ? `Scorekort · ${card.playerName} · ${card.venue}` : "Scorekort" };
-}
-
-function grossClass(hole: ScorecardHole): string {
-  if (hole.gross === null || hole.gross <= 0) return "gross";
-  const diff = hole.gross - hole.par;
-  if (diff <= -2) return "gross gross--eagle";
-  if (diff === -1) return "gross gross--birdie";
-  if (diff === 1) return "gross gross--bogey";
-  if (diff >= 2) return "gross gross--worse";
-  return "gross";
 }
 
 function Nine({ holes, label }: { holes: ScorecardHole[]; label: string }) {
@@ -52,7 +44,7 @@ export default async function ScorecardPage({ params }: { params: Promise<Params
 
       <div className="card-head">
         <div>
-          <h1 className="page-title">{card.playerName.toUpperCase()}</h1>
+          <h1 className="page-title">{card.playerName}</h1>
           <div className="meta-list">
             <span>
               <strong>{card.venue}</strong>
@@ -66,7 +58,16 @@ export default async function ScorecardPage({ params }: { params: Promise<Params
         </div>
         <div className="card-head__total">
           <div className="eyebrow">Stableford</div>
-          <div className="card-head__total-value">{card.total}</div>
+          <div className={`card-head__total-value${card.total > LEVEL_PER_ROUND ? " is-ahead" : ""}`}>
+            {card.total}
+          </div>
+          <div className="card-head__total-note">
+            {card.total > LEVEL_PER_ROUND
+              ? `${card.total - LEVEL_PER_ROUND} over 36`
+              : card.total === LEVEL_PER_ROUND
+                ? "Lige på 36"
+                : `${LEVEL_PER_ROUND - card.total} under 36`}
+          </div>
         </div>
       </div>
 
@@ -95,6 +96,8 @@ export default async function ScorecardPage({ params }: { params: Promise<Params
           </tbody>
         </table>
       </div>
+
+      <ScoreKey />
 
       <div className="summary-grid">
         <div>
@@ -135,10 +138,12 @@ function HoleRow({ hole }: { hole: ScorecardHole }) {
       <td>{hole.par}</td>
       <td style={{ color: "var(--text-faint)" }}>{hole.strokeIndex}</td>
       <td className="strokes-dot">{hole.strokes > 0 ? "•".repeat(hole.strokes) : ""}</td>
+      <td className="cell-gross">{hole.gross ?? "–"}</td>
       <td>
-        <span className={grossClass(hole)}>{hole.gross ?? "–"}</span>
+        <span className={holeClass(hole.gross === null || hole.gross <= 0 ? null : hole.points)}>
+          {hole.gross === null || hole.gross <= 0 ? "–" : hole.points}
+        </span>
       </td>
-      <td style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 17 }}>{hole.points}</td>
       <td style={{ color: "var(--text-faint)" }}>{hole.running}</td>
     </tr>
   );

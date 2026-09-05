@@ -18,7 +18,7 @@ export default async function AdminPage() {
   if (!hasSupabase) {
     return (
       <main className="wrap wrap--plan">
-        <h1 className="page-title">ADMINISTRATION</h1>
+        <h1 className="page-title">Administration</h1>
         <div className="notice" style={{ marginTop: 20 }}>Databasen er ikke koblet på endnu.</div>
       </main>
     );
@@ -29,7 +29,7 @@ export default async function AdminPage() {
   if (!viewer.isAdmin) {
     return (
       <main className="wrap wrap--plan">
-        <h1 className="page-title">ADMINISTRATION</h1>
+        <h1 className="page-title">Administration</h1>
         <div className="notice" style={{ marginTop: 20 }}>
           Kun turneringsledelsen har adgang her.
         </div>
@@ -58,7 +58,7 @@ export default async function AdminPage() {
 
   return (
     <main className="wrap wrap--plan">
-      <h1 className="page-title">ADMINISTRATION</h1>
+      <h1 className="page-title">Administration</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         Logget ind som {viewer.name}. Åbn en runde, når bolden går ud, og luk den når alle er inde.
       </p>

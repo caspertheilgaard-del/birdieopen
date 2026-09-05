@@ -30,7 +30,7 @@ export default async function AdminRoundPage({ params }: { params: Promise<{ id:
       <Link className="back-link" href="/admin">
         ← Administration
       </Link>
-      <h1 className="page-title">{round.venue.toUpperCase()}</h1>
+      <h1 className="page-title">{round.venue}</h1>
       <p className="page-note" style={{ marginBottom: 20 }}>
         {`${longDate(round.startsAt)} ${timeOfDay(round.startsAt)}`.trim()}
         {round.courseName ? ` · ${round.courseName}` : ""} · {round.holes.length} huller registreret

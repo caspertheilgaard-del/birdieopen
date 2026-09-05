@@ -48,15 +48,15 @@ function RuleCard({ title, items }: { title: string; items: string[] }) {
 export default function RulesPage() {
   return (
     <main className="wrap wrap--regler">
-      <h1 className="page-title">REGLER</h1>
+      <h1 className="page-title">Regler</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         Gældende fra sæsonen 2014 og frem. De oprindelige{" "}
         <a href="https://www.birdieopen.dk/index.php/rules">regler anno 2012</a> findes stadig i arkivet.
       </p>
 
-      <RuleCard title="TURNERINGSREGLER" items={TOURNAMENT} />
-      <RuleCard title="BANER" items={COURSES} />
-      <RuleCard title="PRIS" items={PRICE} />
+      <RuleCard title="Turneringsregler" items={TOURNAMENT} />
+      <RuleCard title="Baner" items={COURSES} />
+      <RuleCard title="Pris" items={PRICE} />
 
       <p className="footnote">
         Pkt. 2 tilføjet, og reglerne om max- og minpoint i pkt. 6 ændret med virkning fra finalen i sæson 2015.

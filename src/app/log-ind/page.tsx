@@ -16,7 +16,7 @@ export default async function LoginPage({
 
   return (
     <main className="wrap wrap--regler">
-      <h1 className="page-title">LOG IND</h1>
+      <h1 className="page-title">Log ind</h1>
       <p className="page-note" style={{ marginBottom: 24 }}>
         Login er kun nødvendigt for at taste scores. Stilling, birdieliste og historik er åben for alle.
       </p>

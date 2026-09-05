@@ -113,9 +113,11 @@ async function buildPage(page: Page, logo: string): Promise<string> {
     .replace(/<link[^>]+rel="preload"[^>]*>/g, "")
     .replace(/<link[^>]+rel="prefetch"[^>]*>/g, "");
 
-  // The logo is the only image on these screens.
-  html = html.replace(/src="\/_next\/image\?url=%2Flogo\.png[^"]*"/g, `src="${logo}"`);
-  html = html.replace(/src="\/logo\.png"/g, `src="${logo}"`);
+  // The white mark is the only image on these screens.
+  html = html.replace(/src="\/logo-mark-white\.png"/g, `src="${logo}"`);
+  html = html.replace(/src="\/_next\/image\?url=%2Flogo[^"]*"/g, `src="${logo}"`);
+  html = html.replace(/srcSet="[^"]*logo[^"]*"/g, "");
+  html = html.replace(/srcset="[^"]*logo[^"]*"/g, "");
   html = html.replace(/srcSet="[^"]*"|srcset="[^"]*"/g, "");
 
   // Point the navigation at the sibling files.
@@ -231,7 +233,7 @@ ${footer}
 
 async function main(): Promise<void> {
   await mkdir(OUT, { recursive: true });
-  const logo = await fetchDataUri(`${BASE}/logo.png`, "image/png");
+  const logo = await fetchDataUri(`${BASE}/logo-mark-white.png`, "image/png");
 
   // The one link that is meant to leave the file: the old site still hosts the
   // 2012 rules, and the design points at them.

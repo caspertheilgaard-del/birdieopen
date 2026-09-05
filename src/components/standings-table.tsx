@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { StandingsTable as Table } from "@/lib/data";
 import { shortDate, timeOfDay } from "@/lib/format";
+import { LEVEL_PER_ROUND } from "@/lib/scoring";
 
 function placeClass(place: number): string {
   if (place === 1) return "place place--1";
@@ -47,6 +48,10 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
                 const classes = ["cell-score"];
                 if (cell.average) classes.push("is-average");
                 if (empty) classes.push("is-empty");
+                // A preliminary round above 36 points beat level, so it reads red.
+                if (!isFinal && !cell.average && (cell.value ?? 0) > LEVEL_PER_ROUND) {
+                  classes.push("is-ahead");
+                }
 
                 return (
                   <td key={column.roundId} className={classes.join(" ")}>

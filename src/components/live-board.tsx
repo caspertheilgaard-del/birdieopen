@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { buildLeaderboard, formatToPar } from "@/lib/live/leaderboard";
+import { buildLeaderboard } from "@/lib/live/leaderboard";
+import { formatLevel, levelDiff } from "@/lib/scoring";
 import type { LiveRound } from "@/lib/live/types";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import { hasSupabase } from "@/lib/supabase/config";
@@ -83,7 +84,7 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
               <th>Deltager</th>
               <th className="is-points">Point</th>
               <th>Thru</th>
-              <th>Score</th>
+              <th>Mod par</th>
               <th>Birdies</th>
             </tr>
           </thead>
@@ -108,15 +109,24 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
                     <span style={{ color: "var(--text-faint)", fontWeight: 400 }}> · afbud</span>
                   ) : null}
                 </td>
-                <td className="board__points">{row.points}</td>
+                <td className={`board__points${levelDiff(row.points, row.thru) > 0 ? " is-ahead" : ""}`}>
+                  {row.points}
+                </td>
                 <td className="board__thru">{row.thru === holeCount ? "F" : row.thru || "–"}</td>
-                <td>{row.thru > 0 ? formatToPar(row.toPar) : "–"}</td>
+                <td className={levelDiff(row.points, row.thru) > 0 ? "is-ahead" : undefined}>
+                  {row.thru > 0 ? formatLevel(levelDiff(row.points, row.thru)) : "–"}
+                </td>
                 <td>{row.birdies}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
+      <p className="footnote">
+        Mod par er de point, man ligger ud over to pr. hul. Efter 18 huller er det scoren mod 36.
+        Rødt er bedre end par, ligesom på scorekortet.
+      </p>
     </>
   );
 }
