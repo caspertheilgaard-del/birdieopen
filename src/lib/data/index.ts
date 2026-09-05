@@ -64,3 +64,7 @@ export async function getScorecard(
 ): Promise<ScorecardView | null> {
   return source.getScorecard(year, roundId, slug);
 }
+
+export async function getScorecardKeys(): Promise<{ year: string; round: string; slug: string }[]> {
+  return source.getScorecardKeys();
+}

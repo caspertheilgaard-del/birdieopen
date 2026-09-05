@@ -8,6 +8,11 @@ import { longDate, timeOfDay } from "@/lib/format";
 export const metadata = { title: "Runde" };
 export const dynamic = "force-dynamic";
 
+/** Nothing to prerender: these ids only exist once a database is connected. */
+export async function generateStaticParams() {
+  return [];
+}
+
 export default async function AdminRoundPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   if (!hasSupabase) notFound();

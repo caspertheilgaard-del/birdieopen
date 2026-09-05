@@ -6,7 +6,6 @@ import { hasSupabase } from "@/lib/supabase/config";
 import { longDate, timeOfDay } from "@/lib/format";
 
 export const metadata = { title: "Administration" };
-export const dynamic = "force-dynamic";
 
 const STATUS_LABEL: Record<string, string> = {
   scheduled: "Planlagt",

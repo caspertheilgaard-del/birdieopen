@@ -4,7 +4,16 @@ import { useState } from "react";
 import { getSupabaseClient } from "@/lib/supabase/client";
 
 /** Magic link only. Nobody has to remember a password, and none had to be migrated. */
-export function LoginForm({ returnTo }: { returnTo: string }) {
+export function LoginForm() {
+  // Where to go afterwards travels in the query, which only the browser needs.
+  const returnTo =
+    typeof window === "undefined"
+      ? "/live"
+      : (() => {
+          const wanted = new URLSearchParams(window.location.search).get("retur");
+          return wanted && wanted.startsWith("/") ? wanted : "/live";
+        })();
+
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);

@@ -4,16 +4,24 @@ import { hasSupabase } from "@/lib/supabase/config";
 import { dayAndMonth, longDate, timeOfDay } from "@/lib/format";
 
 export const metadata = { title: "Live" };
-export const dynamic = "force-dynamic";
 
 export default async function LiveIndex() {
   if (!hasSupabase) {
     return (
       <main className="wrap wrap--plan">
         <h1 className="page-title">Live</h1>
-        <div className="notice" style={{ marginTop: 20 }}>
-          Livescore er ikke koblet til databasen endnu. Når Supabase-projektet er sat op, kan runder
-          åbnes her, og scores tastes undervejs.
+        <p className="page-note" style={{ marginBottom: 20 }}>
+          Under en runde bliver scores tastet ind på mobilen, og stillingen opdaterer sig selv.
+          Skærmene virker, men de skal have en database bag sig for at vise en rigtig runde. Indtil
+          da kan de ses med opdigtede scores.
+        </p>
+        <div className="live-actions" style={{ marginTop: 0 }}>
+          <Link href="/design/live" className="btn btn--primary">
+            Se livescoren
+          </Link>
+          <Link href="/design/kort" className="btn btn--dark">
+            Se indtastningen
+          </Link>
         </div>
       </main>
     );

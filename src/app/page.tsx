@@ -5,7 +5,7 @@ import { formatPlace, tiedPlaces } from "@/lib/scoring";
 
 export default async function HomePage() {
   const home = await getHome();
-  const { season, top, nextRound, playoff, champion, birdieChampion, stats } = home;
+  const { season, top, nextRound, title, champion, birdieChampion, stats } = home;
   const leader = top[0];
   const tied = tiedPlaces(top.map((row) => row.place));
   const runnerUp = top[1];
@@ -13,10 +13,10 @@ export default async function HomePage() {
   const nextIsToday = isSameDay(nextRound?.startsAt ?? null, today);
   const date = dayAndMonth(nextRound?.startsAt ?? null);
 
-  // Two players level at the top means the title goes to a playoff on one hole,
-  // so the front page says that rather than crowning either of them.
+  // Level at the top with nothing recorded about how it was settled: the front
+  // page says the title is open rather than crowning one of them at random.
   const atTop = top.filter((row) => row.place === 1);
-  const undecided = !nextRound && !playoff && atTop.length > 1;
+  const undecided = !nextRound && !title && atTop.length > 1;
 
   const badge = nextRound
     ? nextIsToday
@@ -24,8 +24,8 @@ export default async function HomePage() {
       : `Næste runde · ${longDate(nextRound.startsAt)}`
     : undecided
       ? `Omspil om titlen · ${season.year}`
-      : playoff
-        ? `Afgjort i omspil · ${season.year}`
+      : title
+        ? `Afgjort på sidste hul · ${season.year}`
         : `Sæsonen er afgjort · ${season.year}`;
 
   const headline = nextRound?.venue
@@ -34,16 +34,16 @@ export default async function HomePage() {
       : `Næste stop: ${nextRound.venue}.`
     : undecided
       ? "Det skal afgøres på ét hul."
-      : playoff
-        ? `${playoff.winnerName} vandt på omspilshullet.`
+      : title
+        ? `${title.winnerName} vandt Birdie Open ${season.year}.`
         : leader
           ? `${leader.playerName} vandt Birdie Open ${season.year}.`
           : `Birdie Open ${season.year}.`;
 
   const lede = undecided
     ? `${atTop.map((row) => row.playerName).join(" og ")} sluttede Birdie Open ${season.year} på ${atTop[0].points} point. Efter reglernes pkt. 10 spilles der omspil på ét hul om førstepladsen.`
-    : playoff
-      ? `${playoff.winnerName} og ${playoff.against.join(" og ")} sluttede Birdie Open ${season.year} lige på ${top[0]?.points} point, og førstepladsen blev afgjort på ét hul.`
+    : title
+      ? `${title.winnerName} og ${title.tiedWith.join(" og ")} sluttede finalen lige på ${top[0]?.points} point, og sejren blev afgjort på sidste hul.`
       : leader && runnerUp
       ? `${leader.playerName} ${nextRound ? "fører" : "vandt"} Birdie Open ${season.year} med ${leader.points} point, ${runnerUp.points === leader.points ? "lige med" : `${leader.points - runnerUp.points} foran`} ${runnerUp.playerName}${nextRound ? "" : " efter sæsonens sidste runde"}.`
       : "Invitation-only golfturnering siden 2012.";
@@ -169,8 +169,8 @@ export default async function HomePage() {
             </div>
             <div className="champion-card__name">{champion.name}</div>
             <div className="champion-card__note">
-              {playoff && playoff.winnerSlug === champion.slug
-                ? playoff.note
+              {title && title.winnerSlug === champion.slug
+                ? title.note
                 : `Vandt Birdie Open ${champion.year}.`}
             </div>
           </div>

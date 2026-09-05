@@ -6,6 +6,11 @@ import { longDate, timeOfDay } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
+/** Nothing to prerender: these ids only exist once a database is connected. */
+export async function generateStaticParams() {
+  return [];
+}
+
 type Params = { round: string };
 
 export const metadata = { title: "Tast scores" };

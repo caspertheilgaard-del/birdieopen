@@ -380,17 +380,22 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     if (!prelim && !final) continue;
     if (final?.place === 1) titles += 1;
 
-    const played = (prelim?.cells ?? []).filter((c) => c.value !== null && !c.average);
+    // Final rounds count too; their stableford sits in `stableford`, because
+    // `value` holds the placement points those rounds paid.
+    const roundScores = [
+      ...(prelim?.cells ?? []).filter((c) => c.value !== null && !c.average).map((c) => c.value as number),
+      ...(final?.cells ?? []).filter((c) => c.stableford !== null && !c.average).map((c) => c.stableford as number),
+    ];
     lines.push({
       year: season.year,
       prelimTotal: prelim?.total ?? null,
       prelimPlace: prelim?.place ?? null,
       finalTotal: final?.total ?? null,
       finalPlace: final?.place ?? null,
-      roundsPlayed: played.length,
-      bestRound: played.length > 0 ? Math.max(...played.map((c) => c.value as number)) : null,
+      roundsPlayed: roundScores.length,
+      bestRound: roundScores.length > 0 ? Math.max(...roundScores) : null,
       birdies: birdies.find((b) => b.playerSlug === slug)?.count ?? 0,
-      playedPoints: played.reduce((n, c) => n + (c.value as number), 0),
+      playedPoints: roundScores.reduce((n, p) => n + p, 0),
     });
   }
 
@@ -407,7 +412,7 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     totals: {
       seasons: lines.length,
       roundsPlayed,
-      points: lines.reduce((n, l) => n + (l.prelimTotal ?? 0), 0),
+      points: playedPoints,
       birdies: lines.reduce((n, l) => n + l.birdies, 0),
       titles,
       bestRound: bestRounds.length > 0 ? Math.max(...bestRounds) : null,
@@ -466,9 +471,9 @@ export async function getHome(): Promise<HomeData> {
     finalRoundsTotal: finalRounds.length,
     nextRound: schedule.find((r) => r.status !== "final") ?? schedule.find((r) => r.winner === null) ?? null,
     liveRound: schedule.find((r) => r.status === "live") ?? null,
-    // Playoffs are curated rather than scraped, so the database has no record of
-    // one yet. The snapshot import carries them.
-    playoff: null,
+    // How a tied title was settled is curated rather than scraped, so the
+    // database has no record of it. The snapshot import carries it.
+    title: null,
     champion: championOf("champion"),
     birdieChampion: championOf("birdie_champion"),
     stats: {
@@ -478,4 +483,9 @@ export async function getHome(): Promise<HomeData> {
       birdies: birdies.reduce((n, b) => n + b.count, 0),
     },
   };
+}
+
+/** Server-rendered on demand when a database is connected, so nothing to list. */
+export async function getScorecardKeys(): Promise<{ year: string; round: string; slug: string }[]> {
+  return [];
 }

@@ -49,3 +49,12 @@ export async function getScorecard(
 ): Promise<ScorecardView | null> {
   return (await loadSnapshot()).scorecards[`${year}/${roundId}/${slug}`] ?? null;
 }
+
+/** Every scorecard in the archive, for prerendering a fully static build. */
+export async function getScorecardKeys(): Promise<{ year: string; round: string; slug: string }[]> {
+  const snapshot = await loadSnapshot();
+  return Object.keys(snapshot.scorecards).map((key) => {
+    const [year, round, slug] = key.split("/");
+    return { year, round, slug };
+  });
+}

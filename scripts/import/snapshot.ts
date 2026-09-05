@@ -119,12 +119,12 @@ export function buildSnapshot(data: Normalized): Snapshot {
       });
 
       const placed = placeRows(rows);
-      const playoff = data.playoffs.find((p) => p.year === season.year);
-      if (kind === "final" && playoff) {
+      const title = data.titles.find((t) => t.year === season.year);
+      if (kind === "final" && title) {
         const sharedFirst = placed.filter((row) => row.place === 1);
-        if (sharedFirst.length > 1 && sharedFirst.some((row) => row.playerSlug === playoff.winner)) {
+        if (sharedFirst.length > 1 && sharedFirst.some((row) => row.playerSlug === title.winner)) {
           for (const row of sharedFirst) {
-            row.place = row.playerSlug === playoff.winner ? 1 : 2;
+            row.place = row.playerSlug === title.winner ? 1 : 2;
           }
           placed.sort((a, b) => a.place - b.place || b.total - a.total);
         }
@@ -254,14 +254,14 @@ export function buildSnapshot(data: Normalized): Snapshot {
     finalRoundsTotal: finalRounds.length,
     nextRound: currentSchedule.find((r) => r.winner === null) ?? null,
     liveRound: currentSchedule.find((r) => r.status === "live") ?? null,
-    playoff: (() => {
-      const p = data.playoffs.find((x) => x.year === currentYear);
-      if (!p) return null;
+    title: (() => {
+      const row = data.titles.find((t) => t.year === currentYear);
+      if (!row) return null;
       return {
-        winnerName: nameBySlug.get(p.winner) ?? p.winner,
-        winnerSlug: p.winner,
-        against: p.against.map((slug) => nameBySlug.get(slug) ?? slug),
-        note: p.note,
+        winnerName: nameBySlug.get(row.winner) ?? row.winner,
+        winnerSlug: row.winner,
+        tiedWith: row.tiedWith.map((slug) => nameBySlug.get(slug) ?? slug),
+        note: row.note,
       };
     })(),
     champion: championOf("champion"),
@@ -373,7 +373,17 @@ export function buildSnapshot(data: Normalized): Snapshot {
         const finalRow = table?.final?.rows.find((r) => r.playerSlug === player.slug) ?? null;
         if (!prelimRow && !finalRow) return null;
 
-        const played = (prelimRow?.cells ?? []).filter((c) => c.value !== null && !c.average);
+        // Every round the player actually walked, preliminary and final alike,
+        // measured in the stableford it paid. A final round's cell carries the
+        // placement points in `value`, so the score comes from `stableford`.
+        const roundScores = [
+          ...(prelimRow?.cells ?? [])
+            .filter((c) => c.value !== null && !c.average)
+            .map((c) => c.value as number),
+          ...(finalRow?.cells ?? [])
+            .filter((c) => c.stableford !== null && !c.average)
+            .map((c) => c.stableford as number),
+        ];
         const birdieRow = birdies[String(season.year)]?.find((b) => b.playerSlug === player.slug);
 
         return {
@@ -382,9 +392,9 @@ export function buildSnapshot(data: Normalized): Snapshot {
           prelimPlace: prelimRow?.place ?? null,
           finalTotal: finalRow?.total ?? null,
           finalPlace: finalRow?.place ?? null,
-          roundsPlayed: played.length,
-          playedPoints: played.reduce((n, c) => n + (c.value as number), 0),
-          bestRound: played.length > 0 ? Math.max(...played.map((c) => c.value as number)) : null,
+          roundsPlayed: roundScores.length,
+          playedPoints: roundScores.reduce((n, p) => n + p, 0),
+          bestRound: roundScores.length > 0 ? Math.max(...roundScores) : null,
           birdies: birdieRow?.count ?? 0,
         };
       })
@@ -392,7 +402,6 @@ export function buildSnapshot(data: Normalized): Snapshot {
 
     const bestRounds = lines.map((l) => l.bestRound).filter((v): v is number => v !== null);
     const roundsPlayed = lines.reduce((n, l) => n + l.roundsPlayed, 0);
-    const points = lines.reduce((n, l) => n + (l.prelimTotal ?? 0), 0);
     // The average covers rounds actually played, so an assigned absence score
     // does not flatter or punish anyone's average.
     const playedPoints = lines.reduce((n, l) => n + l.playedPoints, 0);
@@ -406,7 +415,7 @@ export function buildSnapshot(data: Normalized): Snapshot {
       totals: {
         seasons: lines.length,
         roundsPlayed,
-        points,
+        points: playedPoints,
         birdies: lines.reduce((n, l) => n + l.birdies, 0),
         titles: data.champions.filter((c) => c.player_slug === player.slug && c.kind === "champion").length,
         bestRound: bestRounds.length > 0 ? Math.max(...bestRounds) : null,

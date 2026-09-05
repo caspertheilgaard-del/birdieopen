@@ -29,7 +29,7 @@ export type Normalized = {
   carryover: CarryoverRow[];
   birdies: BirdieRow[];
   champions: ChampionRow[];
-  playoffs: PlayoffRow[];
+  titles: TitleRow[];
 };
 
 export type PlayerRow = { legacy_id: string | null; name: string; slug: string; active: boolean; golfbox: string | null };
@@ -43,7 +43,7 @@ export type RoundResultRow = { round_legacy_id: string; player_slug: string; poi
 export type CarryoverRow = { year: number; player_slug: string; prelim_total: number; place: number; points: number };
 export type BirdieRow = { year: number; player_slug: string; course_label: string; hole: number | null; stroke_index: number | null; par: number | null; points: number; kind: "birdie" | "eagle" | "albatross" | "hole-in-one" };
 export type ChampionRow = { year: number; player_slug: string; kind: "champion" | "birdie_champion" };
-export type PlayoffRow = { year: number; winner: string; against: string[]; note: string };
+export type TitleRow = { year: number; winner: string; tiedWith: string[]; note: string };
 
 export function slugify(name: string): string {
   return name
@@ -102,7 +102,7 @@ export async function normalize(): Promise<Normalized> {
     carryover: [],
     birdies: [],
     champions: [],
-    playoffs: (await load<{ playoffs?: PlayoffRow[] }>("../manual.json"))?.playoffs ?? [],
+    titles: (await load<{ titles?: TitleRow[] }>("../manual.json"))?.titles ?? [],
   };
 
   const playerBySlug = new Map<string, PlayerRow>();
@@ -328,13 +328,13 @@ export async function normalize(): Promise<Normalized> {
     }
 
     // Champions: the winner of the final table, and the top of the birdie list.
-    // A tie for first is left undecided, because rule 10 sends it to a playoff
-    // on one hole and the result of that is not in the tables.
+    // A tie for first is left undecided unless data/manual.json records how it
+    // was settled, because the tables cannot say who took it.
     const finalSection = standings.sections.find((s) => s.kind === "final") ?? standings.sections[0];
     const atTop = finalSection?.rows.filter((r) => r.place === 1) ?? [];
-    const playoff = out.playoffs.find((p) => p.year === season.year);
-    if (playoff) {
-      out.champions.push({ year: season.year, player_slug: playoff.winner, kind: "champion" });
+    const title = out.titles.find((t) => t.year === season.year);
+    if (title) {
+      out.champions.push({ year: season.year, player_slug: title.winner, kind: "champion" });
     } else if (atTop.length === 1) {
       out.champions.push({ year: season.year, player_slug: slugify(atTop[0].playerName), kind: "champion" });
     }

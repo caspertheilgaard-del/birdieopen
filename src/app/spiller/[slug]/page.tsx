@@ -62,9 +62,14 @@ export default async function PlayerPage({ params }: { params: Promise<Params> }
         </div>
         <div>
           <strong>{totals.points.toLocaleString("da-DK")}</strong>
-          <span>Point i alt</span>
+          <span>Stablefordpoint</span>
         </div>
       </div>
+
+      <p className="footnote" style={{ marginTop: 10 }}>
+        Runder, bedste runde og snit dækker alle spillede runder, både indledende og finaler. Runder
+        med afbud tæller ikke med.
+      </p>
 
       <h2 className="section-label" style={{ margin: "30px 0 12px" }}>
         Sæson for sæson

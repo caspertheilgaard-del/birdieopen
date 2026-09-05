@@ -84,8 +84,8 @@ export type HomeData = {
   finalRoundsTotal: number;
   nextRound: ScheduleRound | null;
   liveRound: ScheduleRound | null;
-  /** Set when the season's first place was decided on a playoff hole. */
-  playoff: { winnerName: string; winnerSlug: string; against: string[]; note: string } | null;
+  /** Set when first place was settled on the course rather than by the tables. */
+  title: { winnerName: string; winnerSlug: string; tiedWith: string[]; note: string } | null;
   champion: { name: string; slug: string; year: number } | null;
   birdieChampion: { name: string; slug: string; year: number } | null;
   stats: { seasonNumber: number; activePlayers: number; rounds: number; birdies: number };

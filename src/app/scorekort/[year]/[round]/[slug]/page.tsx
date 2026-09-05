@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getScorecard } from "@/lib/data";
+import { getScorecard, getScorecardKeys } from "@/lib/data";
 import { longDate, timeOfDay } from "@/lib/format";
 import type { ScorecardHole } from "@/lib/data";
 import { LEVEL_PER_ROUND, grossClass, grossName, holeClass } from "@/lib/scoring";
 import { GrossKey, ScoreKey } from "@/components/score-key";
 
 type Params = { year: string; round: string; slug: string };
+
+export async function generateStaticParams(): Promise<Params[]> {
+  return getScorecardKeys();
+}
 
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
   const { year, round, slug } = await params;

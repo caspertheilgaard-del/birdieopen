@@ -13,3 +13,6 @@ next-env.d.ts
 # Selvstændige designfiler, genskabes med npm run design
 design-html
 birdie-open-design.zip
+.static-build-parked
+out
+birdieopen-site.zip

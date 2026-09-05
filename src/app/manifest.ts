@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 /** Installable on a phone, so the score card is one tap away on the course. */
 export default function manifest(): MetadataRoute.Manifest {
   return {

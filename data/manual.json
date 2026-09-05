@@ -1,11 +1,11 @@
 {
   "_note": "Fakta det gamle site aldrig registrerede. Alt andet kommer fra birdieopen.dk.",
-  "playoffs": [
+  "titles": [
     {
       "year": 2026,
       "winner": "rasmus-opstrup",
-      "against": ["anders-kristensen"],
-      "note": "Omspil på ét hul efter pointlighed på 106."
+      "tiedWith": ["anders-kristensen"],
+      "note": "Sejren blev afgjort på sidste hul. Begge sluttede på 106 point."
     }
   ]
 }

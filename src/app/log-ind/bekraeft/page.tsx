@@ -1,23 +1,17 @@
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
-import { hasSupabase } from "@/lib/supabase/config";
+import { ConfirmLogin } from "@/components/confirm-login";
 
-export const dynamic = "force-dynamic";
+export const metadata = { title: "Logger ind" };
 
-/** Supabase sends the visitor here with a one-time code to exchange for a session. */
-export default async function ConfirmPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ code?: string; retur?: string }>;
-}) {
-  const { code, retur } = await searchParams;
-  const target = retur && retur.startsWith("/") ? retur : "/live";
-
-  if (!hasSupabase || !code) redirect("/log-ind");
-
-  const supabase = await createClient();
-  const { error } = await supabase.auth.exchangeCodeForSession(code);
-  if (error) redirect("/log-ind?fejl=1");
-
-  redirect(target);
+/**
+ * Supabase sends the visitor here with a one-time code. The exchange happens in
+ * the browser, so this page needs nothing from the server and can be part of a
+ * static build.
+ */
+export default function ConfirmPage() {
+  return (
+    <main className="wrap wrap--regler">
+      <h1 className="page-title">Logger ind</h1>
+      <ConfirmLogin />
+    </main>
+  );
 }

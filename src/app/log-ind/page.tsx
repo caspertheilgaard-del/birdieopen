@@ -4,14 +4,8 @@ import { hasSupabase } from "@/lib/supabase/config";
 import Link from "next/link";
 
 export const metadata = { title: "Log ind" };
-export const dynamic = "force-dynamic";
 
-export default async function LoginPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ retur?: string }>;
-}) {
-  const { retur } = await searchParams;
+export default async function LoginPage() {
   const viewer = hasSupabase ? await getViewer() : null;
 
   return (
@@ -31,7 +25,7 @@ export default async function LoginPage({
           </p>
         </div>
       ) : (
-        <LoginForm returnTo={retur && retur.startsWith("/") ? retur : "/live"} />
+        <LoginForm />
       )}
     </main>
   );
