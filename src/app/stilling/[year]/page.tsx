@@ -72,6 +72,13 @@ export default async function StandingsPage({
 
       {table ? <StandingsTable table={table} year={season} /> : <p className="page-note">Ingen resultater for {season}.</p>}
 
+      {view === "prelim" ? (
+        <p className="footnote">
+          36 point er at spille til sit handicap. Runder over står rødt, runder fra 41 og op er
+          fremhævet, og runder under træder tilbage i gråt. Mod hcp er, hvor mange point man samlet
+          ligger over eller under 36 for hver runde, der tæller med.
+        </p>
+      ) : null}
       <p className="footnote">
         Gråtonede scores: deltageren spillede ikke runden og fik tildelt rundens gennemsnitsscore
         (jf. reglernes pkt. 12). I finaletabellen vises finalepoint med stablefordscoren i parentes.

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { StandingsTable as Table } from "@/lib/data";
 import { shortDate, timeOfDay } from "@/lib/format";
-import { LEVEL_PER_ROUND } from "@/lib/scoring";
+import { LEVEL_PER_ROUND, roundClass, seasonVsHandicap } from "@/lib/scoring";
 
 function placeClass(place: number): string {
   if (place === 1) return "place place--1";
@@ -29,6 +29,7 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
               </th>
             ))}
             <th className="is-points">Point</th>
+            {isFinal ? null : <th className="is-center">Mod hcp</th>}
             <th className="is-center">Til top</th>
           </tr>
         </thead>
@@ -48,10 +49,9 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
                 const classes = ["cell-score"];
                 if (cell.average) classes.push("is-average");
                 if (empty) classes.push("is-empty");
-                // A preliminary round above 36 points beat level, so it reads red.
-                if (!isFinal && !cell.average && (cell.value ?? 0) > LEVEL_PER_ROUND) {
-                  classes.push("is-ahead");
-                }
+                // Preliminary rounds are stableford, so each one is read against
+                // the 36 points that playing to your handicap pays.
+                if (!isFinal && !empty) classes.push(roundClass(cell.value));
 
                 return (
                   <td key={column.roundId} className={classes.join(" ")}>
@@ -86,11 +86,25 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
                 );
               })}
               <td className="cell-total">{row.total}</td>
+              {isFinal ? null : <VsHandicap row={row} />}
               <td className="cell-behind">{row.behind === null ? "-" : row.behind}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
+  );
+}
+
+/** How far a player is above or below 36 points for every round counted. */
+function VsHandicap({ row }: { row: Table["rows"][number] }) {
+  const counted = row.cells.filter((cell) => cell.value !== null).length;
+  if (counted === 0) return <td className="cell-vs">–</td>;
+
+  const diff = seasonVsHandicap(row.total, counted);
+  return (
+    <td className={`cell-vs${diff > 0 ? " is-ahead" : ""}`} title={`${counted} runder mod ${LEVEL_PER_ROUND * counted} point`}>
+      {diff > 0 ? `+${diff}` : diff}
+    </td>
   );
 }

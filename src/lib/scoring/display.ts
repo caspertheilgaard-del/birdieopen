@@ -36,9 +36,21 @@ export function isAhead(diff: number): boolean {
   return diff > 0;
 }
 
-/** A round total is judged against 36. */
+/**
+ * A round is judged against 36, which is what playing to your handicap pays.
+ * The scale runs from an exceptional round down to a poor one, so a season of
+ * scores can be read as a shape rather than as a wall of numbers.
+ */
 export function roundClass(points: number | null): string {
-  if (points === null) return "";
-  if (points > LEVEL_PER_ROUND) return "is-ahead";
-  return "";
+  if (points === null) return "rd rd--none";
+  if (points >= LEVEL_PER_ROUND + 5) return "rd rd--great";
+  if (points > LEVEL_PER_ROUND) return "rd rd--good";
+  if (points === LEVEL_PER_ROUND) return "rd rd--level";
+  if (points >= LEVEL_PER_ROUND - 4) return "rd rd--under";
+  return "rd rd--poor";
+}
+
+/** Points above or below 36 for every round counted, across a season. */
+export function seasonVsHandicap(total: number, roundsCounted: number): number {
+  return total - LEVEL_PER_ROUND * roundsCounted;
 }

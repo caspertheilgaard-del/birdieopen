@@ -1821,3 +1821,55 @@ button {
   height: 27px;
   font-size: 14px;
 }
+
+/* ---- round scores against handicap ------------------------------------
+   Thirty-six points is playing to your handicap. Rounds above it read red,
+   the same direction as a hole worth more than two points; rounds below it
+   step back into grey. The washes stay faint because a season table holds a
+   hundred of these at once. */
+
+.rd--great {
+  color: var(--red);
+  font-weight: 700;
+  background: rgba(255, 211, 77, 0.3);
+}
+
+.rd--good {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.rd--level {
+  color: var(--text);
+}
+
+/* Weaker rounds step back with tone alone. A wash behind them turned the table
+   into a checkerboard once the zebra stripes were counted in. */
+.rd--under {
+  color: var(--text-secondary);
+}
+
+.rd--poor {
+  color: var(--text-faint);
+}
+
+/* An assigned absence score is not a round anybody played, so it stays neutral. */
+.cell-score.is-average.rd--great,
+.cell-score.is-average.rd--good,
+.cell-score.is-average.rd--under,
+.cell-score.is-average.rd--poor {
+  color: var(--text-avg);
+  font-weight: 400;
+  background: transparent;
+}
+
+.cell-vs {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.cell-vs.is-ahead {
+  color: var(--red);
+}
