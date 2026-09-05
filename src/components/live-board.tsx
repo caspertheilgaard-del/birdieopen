@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { buildLeaderboard } from "@/lib/live/leaderboard";
 import { formatLevel, formatPlace, levelDiff, tiedPlaces } from "@/lib/scoring";
+import { HoleStrip } from "@/components/hole-strip";
 import type { LiveRound } from "@/lib/live/types";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import { hasSupabase } from "@/lib/supabase/config";
@@ -24,6 +25,7 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
   // With no project configured there is nothing to wait for, so the board starts
   // as live. That also keeps the server-rendered markup right in the design export.
   const [connected, setConnected] = useState(!hasSupabase);
+  const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
     setPlayers(round.players);
@@ -87,10 +89,11 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
               <th>Thru</th>
               <th>Mod par</th>
               <th>Birdies</th>
+              <th><span className="sr-only">Scorekort</span></th>
             </tr>
           </thead>
           <tbody>
-            {rows.map((row) => (
+            {rows.map((row) => [
               <tr
                 key={row.roundPlayerId}
                 className={[row.place === 1 ? "is-leader" : "", row.playerId === viewerId ? "is-me" : ""]
@@ -118,8 +121,44 @@ export function LiveBoard({ round, viewerId }: { round: LiveRound; viewerId: str
                   {row.thru > 0 ? formatLevel(levelDiff(row.points, row.thru)) : "–"}
                 </td>
                 <td>{row.birdies}</td>
-              </tr>
-            ))}
+                <td>
+                  <button
+                    type="button"
+                    className="card-toggle"
+                    aria-expanded={open === row.roundPlayerId}
+                    aria-controls={`kort-${row.roundPlayerId}`}
+                    aria-label={`Scorekort for ${row.name}`}
+                    onClick={() =>
+                      setOpen((current) => (current === row.roundPlayerId ? null : row.roundPlayerId))
+                    }
+                  >
+                    <svg width="11" height="7" viewBox="0 0 11 7" aria-hidden="true" focusable="false">
+                      <path
+                        d={open === row.roundPlayerId ? "M1.5 5.5l4-4 4 4" : "M1.5 1.5l4 4 4-4"}
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </td>
+              </tr>,
+              <tr
+                key={`${row.roundPlayerId}-kort`}
+                id={`kort-${row.roundPlayerId}`}
+                hidden={open !== row.roundPlayerId}
+                className="detail-row"
+              >
+                <td colSpan={7}>
+                  <HoleStrip
+                    holes={round.holes}
+                    player={players.find((p) => p.roundPlayerId === row.roundPlayerId)!}
+                  />
+                </td>
+              </tr>,
+            ])}
           </tbody>
         </table>
       </div>

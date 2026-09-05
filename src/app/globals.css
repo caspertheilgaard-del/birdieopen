@@ -2374,3 +2374,95 @@ button {
   font-size: 13px;
   color: var(--text-faint);
 }
+
+/* ---- hole by hole on the leaderboard ---------------------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.card-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-badge);
+  background: var(--surface);
+  color: var(--text-secondary);
+}
+
+.card-toggle:hover {
+  border-color: var(--green-muted);
+  color: var(--green);
+}
+
+.hole-strip {
+  overflow-x: auto;
+  padding: 4px 0 2px;
+}
+
+.hole-strip__table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.hole-strip__table th[scope="row"] {
+  text-align: left;
+  padding: 4px 12px 4px 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.hole-strip__table td {
+  padding: 3px 4px;
+  text-align: center;
+  min-width: 38px;
+}
+
+.hole-strip__heads td {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-faint);
+}
+
+.hole-strip__sum {
+  font-weight: 700;
+  color: var(--green);
+  border-left: 1px solid var(--line);
+  padding-left: 10px !important;
+}
+
+.hole-strip .gm,
+.hole-strip .pts {
+  min-width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+
+.hole-strip__foot {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.hole-strip__empty {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--text-faint);
+}

@@ -35,7 +35,7 @@ export function DemoBoard({ fallback, viewerId }: { fallback: LiveRound; viewerI
             ? "Henter runden…"
             : isOwn
               ? `Din runde: ${live.venue}, ${longDate(live.startsAt)} ${timeOfDay(live.startsAt)}`.trim()
-              : "Eksempel med opdigtede scores. Sæt en runde op, så står din egen her."}
+              : `${fallback.venue}, sidste finalerunde. Sæt en runde op, så står din egen her.`}
         </span>
         {isOwn ? (
           <button type="button" className="link-button" onClick={() => clearDemoRound()}>

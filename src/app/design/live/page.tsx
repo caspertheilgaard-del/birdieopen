@@ -66,7 +66,8 @@ export default async function LiveDesignPage() {
         <DemoBoard fallback={round} viewerId={`player-${VIEWER_SLUG}`} />
         <p className="footnote">
           Rigtige scores fra runden, standset undervejs: førebolden er nået 12 huller, de første ud
-          er på 14. Din egen række er markeret i venstre kant, og F står der, når en runde er færdig.
+          er på 14. Tryk på pilen yderst til højre for at se en spillers scorekort så langt, de er
+          nået. Din egen række er markeret i venstre kant, og F står der, når en runde er færdig.
         </p>
       </div>
     </main>
