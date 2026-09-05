@@ -1,6 +1,7 @@
 import { loadSnapshot } from "./snapshot";
 import type {
   BirdieListRow,
+  CourseDetail,
   HomeData,
   PlayerProfile,
   PlayerSummary,
@@ -57,4 +58,8 @@ export async function getScorecardKeys(): Promise<{ year: string; round: string;
     const [year, round, slug] = key.split("/");
     return { year, round, slug };
   });
+}
+
+export async function getCourse(key: string): Promise<CourseDetail | null> {
+  return (await loadSnapshot()).courses[key] ?? null;
 }

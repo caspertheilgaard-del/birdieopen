@@ -1656,37 +1656,68 @@ button {
   margin-bottom: 16px;
 }
 
-/* On a phone the seven nav items would stack three rows deep and push the page
-   down. One scrollable row keeps the header the same height everywhere. */
-@media (max-width: 760px) {
+/* The burger only exists on a phone; on a wide screen the row is the menu. */
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--r-btn);
+  background: transparent;
+  color: var(--cream);
+}
+
+.nav-toggle:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 860px) {
   .header__bar {
-    padding: 10px 0 0;
+    padding: 10px 16px;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
-  .header__brand {
-    padding: 0 16px;
+  .nav-toggle {
+    display: flex;
   }
 
+  /* Closed by default, and dropped out below the header when opened. */
   .nav {
+    display: none;
     margin-left: 0;
     width: 100%;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 16px 10px;
-    scrollbar-width: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 0 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
   }
 
-  .nav::-webkit-scrollbar {
-    display: none;
+  .header.is-open .nav {
+    display: flex;
   }
 
   .nav__link {
-    white-space: nowrap;
+    padding: 14px 4px;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+    padding-left: 12px;
+  }
+
+  .nav__link[aria-current="page"] {
+    border-left-color: var(--yellow);
+    background: rgba(255, 255, 255, 0.06);
   }
 
   .season-badge {
-    margin-left: 4px;
+    margin: 10px 0 4px 12px;
+    align-self: flex-start;
   }
 
   .page-title {
@@ -1973,4 +2004,307 @@ button {
 .score-key__caption {
   font-size: 12px;
   color: var(--text-faint);
+}
+
+/* ---- birdie details ---------------------------------------------------
+   Where the birdies were made, grouped by course, so a season reads as a map
+   rather than a list of lines. */
+
+.list-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin: 14px 0 6px;
+}
+
+.link-button {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--link);
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.count-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background: none;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  border-radius: var(--r-badge);
+  font: inherit;
+  color: inherit;
+}
+
+.count-button:hover {
+  background: var(--line);
+}
+
+.count-button svg {
+  color: var(--text-faint);
+}
+
+.cell-muted {
+  color: var(--text-secondary);
+}
+
+.cell-note {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--yellow-text);
+}
+
+.detail-row td {
+  padding: 0 18px 18px;
+  background: var(--zebra);
+}
+
+.birdie-detail__lede {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.birdie-course {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+}
+
+.birdie-course__name {
+  flex: 0 1 220px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.birdie-course__holes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.birdie-hole {
+  display: inline-flex;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.birdie-hole--birdie {
+  border: 1.5px solid var(--red);
+  color: var(--red);
+}
+
+.birdie-hole--eagle,
+.birdie-hole--albatross,
+.birdie-hole--hole-in-one {
+  background: var(--yellow);
+  border: 1.5px solid var(--yellow);
+  color: var(--green-dark);
+}
+
+@media (max-width: 620px) {
+  .birdie-course__name {
+    flex: 1 1 100%;
+  }
+
+  .detail-row td {
+    padding: 0 12px 14px;
+  }
+}
+
+/* ---- setting up a round ------------------------------------------------ */
+
+.steps {
+  display: flex;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.steps li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.steps__number {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-card);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.steps .is-current {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.steps .is-current .steps__number {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+.steps .is-done .steps__number {
+  background: var(--line);
+  border-color: var(--line);
+  color: var(--text-secondary);
+}
+
+.setup-card {
+  background: var(--surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-panel);
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.setup-card__venue {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--green);
+  margin-top: 2px;
+}
+
+.setup-card__meta {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+.setup-step__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--green);
+  margin: 0 0 6px;
+}
+
+.setup-step__note {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.pick-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+}
+
+.pick {
+  min-height: 52px;
+  padding: 12px 14px;
+  text-align: left;
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-btn);
+  background: var(--surface);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.pick:hover {
+  border-color: var(--green-muted);
+}
+
+.pick[aria-pressed="true"] {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  font-weight: 600;
+}
+
+.stroke-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stroke-input input {
+  font: inherit;
+  font-family: var(--font-num);
+  font-size: 30px;
+  font-weight: 700;
+  width: 92px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-btn);
+  background: var(--surface);
+  color: var(--green);
+  -moz-appearance: textfield;
+}
+
+.stroke-input input::-webkit-outer-spin-button,
+.stroke-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.stroke-input__step {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-card);
+  border-radius: var(--r-btn);
+  background: var(--page);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--green);
+}
+
+.stroke-input__step:hover {
+  border-color: var(--green-muted);
+}
+
+.confirm-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.confirm-row__name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.setup-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 22px;
 }

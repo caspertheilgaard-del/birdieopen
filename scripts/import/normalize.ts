@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import type { CourseDetail } from "../../src/lib/data/types";
 import type {
   LegacyBirdieRow,
   LegacyPlayers,
@@ -30,6 +31,8 @@ export type Normalized = {
   birdies: BirdieRow[];
   champions: ChampionRow[];
   titles: TitleRow[];
+  /** Courses typed in from a club scorecard, with hole lengths. */
+  manualCourses: CourseDetail[];
 };
 
 export type PlayerRow = { legacy_id: string | null; name: string; slug: string; active: boolean; golfbox: string | null };
@@ -103,6 +106,7 @@ export async function normalize(): Promise<Normalized> {
     birdies: [],
     champions: [],
     titles: (await load<{ titles?: TitleRow[] }>("../manual.json"))?.titles ?? [],
+    manualCourses: (await load<{ courses?: CourseDetail[] }>("../courses.json"))?.courses ?? [],
   };
 
   const playerBySlug = new Map<string, PlayerRow>();

@@ -16,7 +16,10 @@ export default async function LiveIndex() {
           da kan de ses med opdigtede scores.
         </p>
         <div className="live-actions" style={{ marginTop: 0 }}>
-          <Link href="/design/live" className="btn btn--primary">
+          <Link href="/design/runde" className="btn btn--primary">
+            Prøv en runde
+          </Link>
+          <Link href="/design/live" className="btn btn--dark">
             Se livescoren
           </Link>
           <Link href="/design/kort" className="btn btn--dark">

@@ -3,6 +3,7 @@ import * as db from "./db";
 import * as snapshot from "./snapshot-source";
 import type {
   BirdieListRow,
+  CourseDetail,
   HomeData,
   PlayerProfile,
   PlayerSummary,
@@ -67,4 +68,8 @@ export async function getScorecard(
 
 export async function getScorecardKeys(): Promise<{ year: string; round: string; slug: string }[]> {
   return source.getScorecardKeys();
+}
+
+export async function getCourse(key: string): Promise<CourseDetail | null> {
+  return source.getCourse(key);
 }

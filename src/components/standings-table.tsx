@@ -64,22 +64,13 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
                         {cell.stableford !== null ? (
                           <span style={{ color: "var(--text-faint)" }}> ({cell.stableford} point)</span>
                         ) : null}
+                        {cell.scorecard ? <ScorecardLink row={row} column={column} year={year} /> : null}
                       </>
                     ) : (
                       <>
                         {cell.value}
                         {cell.scorecard ? (
-                          <Link
-                            className="scorecard-link"
-                            href={`/scorekort/${year}/${column.roundId}/${row.playerSlug}`}
-                            title={`Se scorekort for ${row.playerName}`}
-                            aria-label={`Se scorekort for ${row.playerName}, ${column.venue}`}
-                          >
-                            <svg width="12" height="13" viewBox="0 0 12 13" aria-hidden="true" focusable="false">
-                              <rect x="0.5" y="0.5" width="11" height="12" rx="1.5" fill="none" stroke="currentColor" />
-                              <path d="M0.5 4.5h11M4.5 4.5v8" stroke="currentColor" />
-                            </svg>
-                          </Link>
+                          <ScorecardLink row={row} column={column} year={year} />
                         ) : null}
                       </>
                     )}
@@ -94,6 +85,30 @@ export function StandingsTable({ table, year }: { table: Table; year: number }) 
         </tbody>
       </table>
     </div>
+  );
+}
+
+function ScorecardLink({
+  row,
+  column,
+  year,
+}: {
+  row: Table["rows"][number];
+  column: Table["columns"][number];
+  year: number;
+}) {
+  return (
+    <Link
+      className="scorecard-link"
+      href={`/scorekort/${year}/${column.roundId}/${row.playerSlug}`}
+      title={`Se scorekort for ${row.playerName}`}
+      aria-label={`Se scorekort for ${row.playerName}, ${column.venue}`}
+    >
+      <svg width="12" height="13" viewBox="0 0 12 13" aria-hidden="true" focusable="false">
+        <rect x="0.5" y="0.5" width="11" height="12" rx="1.5" fill="none" stroke="currentColor" />
+        <path d="M0.5 4.5h11M4.5 4.5v8" stroke="currentColor" />
+      </svg>
+    </Link>
   );
 }
 

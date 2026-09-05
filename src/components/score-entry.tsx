@@ -127,6 +127,7 @@ export function ScoreEntry({
           <div className="hole-nav__hole">Hul {spec.hole}</div>
           <div className="hole-nav__spec">
             Par {spec.par} · Nøgle {spec.strokeIndex}
+            {spec.lengthMeters ? ` · ${spec.lengthMeters} m` : ""}
           </div>
         </div>
         <button

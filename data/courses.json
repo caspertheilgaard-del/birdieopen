@@ -1,0 +1,610 @@
+{
+  "_note": "Baner tastet fra klubbernes egne scorekort. Længder i meter. Totalerne er kontrolleret mod kortet.",
+  "courses": [
+    {
+      "key": "Lübker Sand/Sky|Gold",
+      "name": "Lübker Sand/Sky",
+      "club": "Lübker Golf Resort",
+      "address": "Trent Jones Alle 3, 8581 Nimtofte",
+      "tee": "Gold",
+      "par": 72,
+      "lengthMeters": 6476,
+      "courseRating": 76.3,
+      "slope": 147,
+      "holes": [
+        {
+          "hole": 1,
+          "par": 5,
+          "strokeIndex": 3,
+          "lengthMeters": 536
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "strokeIndex": 17,
+          "lengthMeters": 147
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "strokeIndex": 11,
+          "lengthMeters": 286
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "strokeIndex": 13,
+          "lengthMeters": 222
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "strokeIndex": 1,
+          "lengthMeters": 579
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "strokeIndex": 15,
+          "lengthMeters": 179
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "strokeIndex": 7,
+          "lengthMeters": 455
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "strokeIndex": 5,
+          "lengthMeters": 456
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "strokeIndex": 9,
+          "lengthMeters": 418
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "strokeIndex": 4,
+          "lengthMeters": 492
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "strokeIndex": 6,
+          "lengthMeters": 362
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "strokeIndex": 12,
+          "lengthMeters": 329
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "strokeIndex": 18,
+          "lengthMeters": 143
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "strokeIndex": 14,
+          "lengthMeters": 366
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "strokeIndex": 10,
+          "lengthMeters": 400
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "strokeIndex": 16,
+          "lengthMeters": 128
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "strokeIndex": 8,
+          "lengthMeters": 400
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "strokeIndex": 2,
+          "lengthMeters": 578
+        }
+      ]
+    },
+    {
+      "key": "Lübker Sand/Sky|Sort",
+      "name": "Lübker Sand/Sky",
+      "club": "Lübker Golf Resort",
+      "address": "Trent Jones Alle 3, 8581 Nimtofte",
+      "tee": "Sort",
+      "par": 72,
+      "lengthMeters": 6103,
+      "courseRating": 74.5,
+      "slope": 142,
+      "holes": [
+        {
+          "hole": 1,
+          "par": 5,
+          "strokeIndex": 3,
+          "lengthMeters": 520
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "strokeIndex": 17,
+          "lengthMeters": 125
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "strokeIndex": 11,
+          "lengthMeters": 274
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "strokeIndex": 13,
+          "lengthMeters": 198
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "strokeIndex": 1,
+          "lengthMeters": 564
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "strokeIndex": 15,
+          "lengthMeters": 173
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "strokeIndex": 7,
+          "lengthMeters": 439
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "strokeIndex": 5,
+          "lengthMeters": 426
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "strokeIndex": 9,
+          "lengthMeters": 406
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "strokeIndex": 4,
+          "lengthMeters": 467
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "strokeIndex": 6,
+          "lengthMeters": 332
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "strokeIndex": 12,
+          "lengthMeters": 291
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "strokeIndex": 18,
+          "lengthMeters": 141
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "strokeIndex": 14,
+          "lengthMeters": 307
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "strokeIndex": 10,
+          "lengthMeters": 374
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "strokeIndex": 16,
+          "lengthMeters": 126
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "strokeIndex": 8,
+          "lengthMeters": 384
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "strokeIndex": 2,
+          "lengthMeters": 556
+        }
+      ]
+    },
+    {
+      "key": "Lübker Sand/Sky|Hvid",
+      "name": "Lübker Sand/Sky",
+      "club": "Lübker Golf Resort",
+      "address": "Trent Jones Alle 3, 8581 Nimtofte",
+      "tee": "Hvid",
+      "par": 72,
+      "lengthMeters": 5770,
+      "courseRating": 72.8,
+      "slope": 139,
+      "holes": [
+        {
+          "hole": 1,
+          "par": 5,
+          "strokeIndex": 3,
+          "lengthMeters": 497
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "strokeIndex": 17,
+          "lengthMeters": 124
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "strokeIndex": 11,
+          "lengthMeters": 253
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "strokeIndex": 13,
+          "lengthMeters": 174
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "strokeIndex": 1,
+          "lengthMeters": 534
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "strokeIndex": 15,
+          "lengthMeters": 167
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "strokeIndex": 7,
+          "lengthMeters": 387
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "strokeIndex": 5,
+          "lengthMeters": 425
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "strokeIndex": 9,
+          "lengthMeters": 365
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "strokeIndex": 4,
+          "lengthMeters": 444
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "strokeIndex": 6,
+          "lengthMeters": 331
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "strokeIndex": 12,
+          "lengthMeters": 289
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "strokeIndex": 18,
+          "lengthMeters": 120
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "strokeIndex": 14,
+          "lengthMeters": 305
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "strokeIndex": 10,
+          "lengthMeters": 356
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "strokeIndex": 16,
+          "lengthMeters": 108
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "strokeIndex": 8,
+          "lengthMeters": 369
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "strokeIndex": 2,
+          "lengthMeters": 522
+        }
+      ]
+    },
+    {
+      "key": "Lübker Sand/Sky|Gul",
+      "name": "Lübker Sand/Sky",
+      "club": "Lübker Golf Resort",
+      "address": "Trent Jones Alle 3, 8581 Nimtofte",
+      "tee": "Gul",
+      "par": 72,
+      "lengthMeters": 5415,
+      "courseRating": 71.1,
+      "slope": 136,
+      "holes": [
+        {
+          "hole": 1,
+          "par": 5,
+          "strokeIndex": 3,
+          "lengthMeters": 495
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "strokeIndex": 17,
+          "lengthMeters": 107
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "strokeIndex": 11,
+          "lengthMeters": 236
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "strokeIndex": 13,
+          "lengthMeters": 156
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "strokeIndex": 1,
+          "lengthMeters": 506
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "strokeIndex": 15,
+          "lengthMeters": 150
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "strokeIndex": 7,
+          "lengthMeters": 385
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "strokeIndex": 5,
+          "lengthMeters": 401
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "strokeIndex": 9,
+          "lengthMeters": 328
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "strokeIndex": 4,
+          "lengthMeters": 421
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "strokeIndex": 6,
+          "lengthMeters": 299
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "strokeIndex": 12,
+          "lengthMeters": 260
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "strokeIndex": 18,
+          "lengthMeters": 105
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "strokeIndex": 14,
+          "lengthMeters": 303
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "strokeIndex": 10,
+          "lengthMeters": 332
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "strokeIndex": 16,
+          "lengthMeters": 93
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "strokeIndex": 8,
+          "lengthMeters": 349
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "strokeIndex": 2,
+          "lengthMeters": 489
+        }
+      ]
+    },
+    {
+      "key": "Lübker Sand/Sky|Rød",
+      "name": "Lübker Sand/Sky",
+      "club": "Lübker Golf Resort",
+      "address": "Trent Jones Alle 3, 8581 Nimtofte",
+      "tee": "Rød",
+      "par": 72,
+      "lengthMeters": 4841,
+      "courseRating": 68.0,
+      "slope": 132,
+      "holes": [
+        {
+          "hole": 1,
+          "par": 5,
+          "strokeIndex": 3,
+          "lengthMeters": 475
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "strokeIndex": 17,
+          "lengthMeters": 90
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "strokeIndex": 11,
+          "lengthMeters": 216
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "strokeIndex": 13,
+          "lengthMeters": 107
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "strokeIndex": 1,
+          "lengthMeters": 487
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "strokeIndex": 15,
+          "lengthMeters": 133
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "strokeIndex": 7,
+          "lengthMeters": 354
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "strokeIndex": 5,
+          "lengthMeters": 378
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "strokeIndex": 9,
+          "lengthMeters": 248
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "strokeIndex": 4,
+          "lengthMeters": 340
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "strokeIndex": 6,
+          "lengthMeters": 277
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "strokeIndex": 12,
+          "lengthMeters": 241
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "strokeIndex": 18,
+          "lengthMeters": 88
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "strokeIndex": 14,
+          "lengthMeters": 265
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "strokeIndex": 10,
+          "lengthMeters": 315
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "strokeIndex": 16,
+          "lengthMeters": 74
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "strokeIndex": 8,
+          "lengthMeters": 333
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "strokeIndex": 2,
+          "lengthMeters": 420
+        }
+      ]
+    }
+  ]
+}

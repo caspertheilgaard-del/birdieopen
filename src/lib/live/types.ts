@@ -1,4 +1,10 @@
-export type LiveHole = { hole: number; par: number; strokeIndex: number };
+export type LiveHole = {
+  hole: number;
+  par: number;
+  strokeIndex: number;
+  /** Known when the course was typed in from a club scorecard. */
+  lengthMeters?: number | null;
+};
 
 export type LivePlayer = {
   roundPlayerId: string;

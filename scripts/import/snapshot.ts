@@ -4,6 +4,7 @@ import { normalize, slugify, type Normalized } from "./normalize";
 import { strokesOnHole } from "../../src/lib/scoring";
 import type {
   BirdieListRow,
+  CourseDetail,
   HomeData,
   PlayerProfile,
   PlayerSummary,
@@ -28,6 +29,7 @@ export type Snapshot = {
   birdies: Record<string, BirdieListRow[]>;
   schedule: Record<string, ScheduleRound[]>;
   players: PlayerSummary[];
+  courses: Record<string, CourseDetail>;
   profiles: Record<string, PlayerProfile>;
   scorecards: Record<string, ScorecardView>;
   home: HomeData;
@@ -424,6 +426,30 @@ export function buildSnapshot(data: Normalized): Snapshot {
     };
   }
 
+  // Courses with their hole details, so the app can set up a round from a
+  // course and a tee without asking anyone to type eighteen pars in.
+  const courses: Record<string, CourseDetail> = {};
+  for (const course of data.courses) {
+    const holes = [...(holesByCourse.get(course.key)?.entries() ?? [])]
+      .map(([hole, spec]) => ({ hole, par: spec.par, strokeIndex: spec.strokeIndex }))
+      .sort((a, b) => a.hole - b.hole);
+    if (holes.length === 0) continue;
+    courses[course.key] = {
+      key: course.key,
+      name: course.name,
+      club: course.club,
+      tee: course.tee,
+      par: course.par,
+      lengthMeters: course.length_meters,
+      address: course.address,
+      holes,
+    };
+  }
+
+  // Courses typed in from a club scorecard win over the ones derived from the
+  // old site, because they carry hole lengths and a course rating.
+  for (const course of data.manualCourses) courses[course.key] = course;
+
   return {
     generatedAt: new Date().toISOString(),
     seasons,
@@ -431,6 +457,7 @@ export function buildSnapshot(data: Normalized): Snapshot {
     birdies,
     schedule,
     players,
+    courses,
     profiles,
     scorecards,
     home,

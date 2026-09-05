@@ -147,3 +147,24 @@ export type PlayerProfile = {
     averageRound: number | null;
   };
 };
+
+export type CourseHole = {
+  hole: number;
+  par: number;
+  strokeIndex: number;
+  /** Only known for courses typed in from a club scorecard. */
+  lengthMeters?: number | null;
+};
+
+export type CourseDetail = {
+  key: string;
+  name: string;
+  club: string | null;
+  tee: string | null;
+  par: number | null;
+  lengthMeters: number | null;
+  address: string | null;
+  courseRating?: number | null;
+  slope?: number | null;
+  holes: CourseHole[];
+};

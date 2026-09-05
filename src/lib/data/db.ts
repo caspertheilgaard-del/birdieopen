@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import type {
   BirdieListRow,
+  CourseDetail,
   HomeData,
   PlayerProfile,
   PlayerSummary,
@@ -488,4 +489,9 @@ export async function getHome(): Promise<HomeData> {
 /** Server-rendered on demand when a database is connected, so nothing to list. */
 export async function getScorecardKeys(): Promise<{ year: string; round: string; slug: string }[]> {
   return [];
+}
+
+/** Courses live in the database once it is connected; nothing to look up here yet. */
+export async function getCourse(_key: string): Promise<CourseDetail | null> {
+  return null;
 }
