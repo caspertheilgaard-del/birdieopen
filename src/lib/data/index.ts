@@ -9,6 +9,7 @@ import type {
   PlayerSummary,
   ScheduleRound,
   ScorecardView,
+  SampleRound,
   SeasonStandings,
   SeasonSummary,
 } from "./types";
@@ -72,4 +73,8 @@ export async function getScorecardKeys(): Promise<{ year: string; round: string;
 
 export async function getCourse(key: string): Promise<CourseDetail | null> {
   return source.getCourse(key);
+}
+
+export async function getSampleRound(): Promise<SampleRound | null> {
+  return source.getSampleRound();
 }

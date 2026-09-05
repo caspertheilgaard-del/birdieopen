@@ -27,7 +27,6 @@ const PAGES: Page[] = [
   { id: "scorekort", url: "/scorekort/2026/148/jon-fogh", title: "Scorekort", note: "Hul for hul med farvede scores. Ny side, som designet ikke dækkede." },
   { id: "ny-runde", url: "/design/runde", title: "Ny runde", note: "Opsætning før første slag: hvem du er, dine slag, og hvem du er markør for." },
   { id: "livescore", url: "/design/live", title: "Livescore", note: "Leaderboardet mens der spilles. Din egen række er markeret i venstre kant." },
-  { id: "indtastning", url: "/design/kort", title: "Indtastning", note: "Sådan taster man scores ind undervejs. Bygget til mobil, ét hul ad gangen." },
   { id: "regler", url: "/regler", title: "Regler", note: "Turneringsregler, baner og pris." },
 ];
 
@@ -45,8 +44,8 @@ const LINK_MAP: [RegExp, string][] = [
   [/^\/regler$/, fileFor("regler")],
   [/^\/design\/runde$/, fileFor("ny-runde")],
   [/^\/design\/live$/, fileFor("livescore")],
-  [/^\/design\/kort$/, fileFor("indtastning")],
-  [/^\/live\/[^/]+\/kort$/, fileFor("indtastning")],
+  [/^\/design\/kort$/, fileFor("ny-runde")],
+  [/^\/live\/[^/]+\/kort$/, fileFor("ny-runde")],
   [/^\/live.*$/, fileFor("livescore")],
   [/^\/sponsorer$/, "#"],
   [/^\/log-ind.*$/, "#"],

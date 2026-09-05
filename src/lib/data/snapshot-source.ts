@@ -6,6 +6,7 @@ import type {
   PlayerProfile,
   PlayerSummary,
   ScheduleRound,
+  SampleRound,
   ScorecardView,
   SeasonStandings,
   SeasonSummary,
@@ -62,4 +63,52 @@ export async function getScorecardKeys(): Promise<{ year: string; round: string;
 
 export async function getCourse(key: string): Promise<CourseDetail | null> {
   return (await loadSnapshot()).courses[key] ?? null;
+}
+
+/**
+ * A round frozen partway through, built from the scorecards of the last final
+ * round at Gut Apeldör. The leaders tee off last, so they are the fewest holes
+ * in, which is what makes a leaderboard worth watching.
+ */
+export async function getSampleRound(): Promise<SampleRound | null> {
+  const snapshot = await loadSnapshot();
+  const cards = Object.entries(snapshot.scorecards)
+    .filter(([key]) => key.startsWith("2026/158/"))
+    .map(([, card]) => card);
+  if (cards.length === 0) return null;
+
+  const course = snapshot.courses[`${cards[0].courseName}|${cards[0].tee ?? ""}`] ?? null;
+  const holes =
+    course?.holes ??
+    cards[0].holes.map((hole) => ({ hole: hole.hole, par: hole.par, strokeIndex: hole.strokeIndex }));
+
+  // Tee order for a final round: last placed out first, leaders out last.
+  const standings = snapshot.standings["2026"]?.final?.rows ?? [];
+  const rank = new Map(standings.map((row, position) => [row.playerSlug, position]));
+  const order = [...cards].sort(
+    (a, b) => (rank.get(b.playerSlug) ?? 0) - (rank.get(a.playerSlug) ?? 0),
+  );
+
+  return {
+    venue: cards[0].venue,
+    courseName: cards[0].courseName,
+    startsAt: cards[0].startsAt,
+    year: cards[0].year,
+    holes,
+    players: order.map((card, position) => {
+      const flight = Math.floor(position / 4) + 1;
+      const thru = flight === 1 ? 14 : flight === 2 ? 13 : 12;
+      return {
+        slug: card.playerSlug,
+        name: card.playerName,
+        handicap: card.handicap,
+        handicapStrokes: card.handicapStrokes,
+        flight,
+        thru,
+        gross: Object.fromEntries(
+          card.holes.filter((hole) => hole.hole <= thru).map((hole) => [hole.hole, hole.gross]),
+        ) as Record<number, number | null>,
+      };
+    }),
+  };
 }

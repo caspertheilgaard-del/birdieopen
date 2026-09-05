@@ -7,6 +7,7 @@ import type {
   PlayerSummary,
   ScheduleRound,
   ScorecardView,
+  SampleRound,
   SeasonStandings,
   SeasonSummary,
   StandingsRow,
@@ -493,5 +494,10 @@ export async function getScorecardKeys(): Promise<{ year: string; round: string;
 
 /** Courses live in the database once it is connected; nothing to look up here yet. */
 export async function getCourse(_key: string): Promise<CourseDetail | null> {
+  return null;
+}
+
+/** Only used by the preview screens, which read the snapshot. */
+export async function getSampleRound(): Promise<SampleRound | null> {
   return null;
 }

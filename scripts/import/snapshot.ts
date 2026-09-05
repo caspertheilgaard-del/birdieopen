@@ -285,13 +285,6 @@ export function buildSnapshot(data: Normalized): Snapshot {
     return out;
   };
 
-  const players: PlayerSummary[] = data.players.map((p) => ({
-    name: p.name,
-    slug: p.slug,
-    active: p.active,
-    badges: badgeFor(p.slug),
-  }));
-
   // ---- scorecards ----------------------------------------------------
   const holesByCourse = new Map<string, Map<number, { par: number; strokeIndex: number }>>();
   for (const hole of data.courseHoles) {
@@ -364,6 +357,26 @@ export function buildSnapshot(data: Normalized): Snapshot {
       summary,
     };
   }
+
+  // The handicap each player was last recorded off, so a new round can suggest
+  // their strokes instead of asking them to remember.
+  const latestHandicap = new Map<string, { at: string; handicap: number }>();
+  for (const card of Object.values(scorecards)) {
+    if (card.handicap === null) continue;
+    const at = card.startsAt ?? `${card.year}-01-01`;
+    const current = latestHandicap.get(card.playerSlug);
+    if (!current || at > current.at) {
+      latestHandicap.set(card.playerSlug, { at, handicap: card.handicap });
+    }
+  }
+
+  const players: PlayerSummary[] = data.players.map((p) => ({
+    name: p.name,
+    slug: p.slug,
+    active: p.active,
+    badges: badgeFor(p.slug),
+    handicapIndex: latestHandicap.get(p.slug)?.handicap ?? null,
+  }));
 
   // ---- player profiles -----------------------------------------------
   const profiles: Record<string, PlayerProfile> = {};

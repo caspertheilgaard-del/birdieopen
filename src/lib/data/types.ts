@@ -74,6 +74,8 @@ export type PlayerSummary = {
   slug: string;
   active: boolean;
   badges: string[];
+  /** From the most recent round we have a scorecard for. */
+  handicapIndex?: number | null;
 };
 
 export type HomeData = {
@@ -167,4 +169,21 @@ export type CourseDetail = {
   courseRating?: number | null;
   slope?: number | null;
   holes: CourseHole[];
+};
+
+export type SampleRound = {
+  venue: string;
+  courseName: string | null;
+  startsAt: string | null;
+  year: number;
+  holes: CourseHole[];
+  players: {
+    slug: string;
+    name: string;
+    handicap: number | null;
+    handicapStrokes: number;
+    flight: number;
+    thru: number;
+    gross: Record<number, number | null>;
+  }[];
 };

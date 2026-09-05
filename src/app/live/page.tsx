@@ -22,9 +22,6 @@ export default async function LiveIndex() {
           <Link href="/design/live" className="btn btn--dark">
             Se livescoren
           </Link>
-          <Link href="/design/kort" className="btn btn--dark">
-            Se indtastningen
-          </Link>
         </div>
       </main>
     );

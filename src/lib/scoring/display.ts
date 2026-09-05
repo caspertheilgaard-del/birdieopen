@@ -117,3 +117,31 @@ export function tiedPlaces(places: number[]): Set<number> {
 export function formatPlace(place: number, tied: Set<number>): string {
   return tied.has(place) ? `T${place}` : String(place);
 }
+
+/**
+ * Course handicap from a handicap index, the standard World Handicap System
+ * formula: index times slope over 113, plus the difference between the course
+ * rating and par. It is what decides how many strokes a player gets on the day,
+ * so it moves with the tee.
+ */
+export function courseHandicap(
+  handicapIndex: number,
+  slope: number,
+  courseRating: number,
+  par: number,
+): number {
+  return Math.max(0, Math.round(handicapIndex * (slope / 113) + (courseRating - par)));
+}
+
+/** True when a course carries the numbers the formula needs. */
+export function canComputeStrokes(course: {
+  slope?: number | null;
+  courseRating?: number | null;
+  par: number | null;
+}): course is { slope: number; courseRating: number; par: number } {
+  return (
+    typeof course.slope === "number" &&
+    typeof course.courseRating === "number" &&
+    typeof course.par === "number"
+  );
+}

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   absenceScore,
+  courseHandicap,
   carryoverPoints,
   computeFinalRound,
   finalRoundPoints,
@@ -209,5 +210,27 @@ describe("birdielisten", () => {
       { playerId: "b", key: 5, points: 4, type: "birdie" },
     ]);
     expect(onPoints[0].playerId).toBe("b");
+  });
+});
+
+describe("tildelte slag", () => {
+  // Lübker Sand/Sky off the white tee: slope 139, CR 72.8, par 72.
+  const white = { slope: 139, cr: 72.8, par: 72 };
+  const strokes = (index: number) => courseHandicap(index, white.slope, white.cr, white.par);
+
+  it("regner banehandicap efter slope og course rating", () => {
+    expect(strokes(3.7)).toBe(5);
+    expect(strokes(8)).toBe(11);
+    expect(strokes(6.9)).toBe(9);
+    expect(strokes(18.4)).toBe(23);
+  });
+
+  it("giver flere slag fra en sværere tee", () => {
+    // Same player, gold tee: slope 147, CR 76.3.
+    expect(courseHandicap(8, 147, 76.3, 72)).toBeGreaterThan(strokes(8));
+  });
+
+  it("går aldrig under nul", () => {
+    expect(courseHandicap(-5, 139, 72.8, 72)).toBe(0);
   });
 });

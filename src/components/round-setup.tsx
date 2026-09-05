@@ -1,10 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ScoreEntry } from "@/components/score-entry";
 import type { CourseDetail, PlayerSummary } from "@/lib/data";
 import type { LiveRound } from "@/lib/live/types";
 import { meters } from "@/lib/format";
+import { canComputeStrokes, courseHandicap } from "@/lib/scoring";
+import { recordDemoScore, saveDemoRound } from "@/lib/live/demo";
 
 /**
  * Setting up a round before the first tee shot: who you are, how many strokes
@@ -20,6 +23,68 @@ const STEPS: { id: Step; label: string }[] = [
   { id: "marking", label: "Markør" },
   { id: "confirm", label: "Bekræft" },
 ];
+
+/**
+ * Handicap in, strokes out. The strokes are computed the moment an index is
+ * typed, and can still be overruled by hand, because the number on the day is
+ * whatever the two players agree on.
+ */
+function HandicapFields({
+  index,
+  strokes,
+  onIndex,
+  onStrokes,
+  course,
+  label,
+}: {
+  index: number | null;
+  strokes: number;
+  onIndex: (next: number | null) => void;
+  onStrokes: (next: number) => void;
+  course: CourseDetail;
+  label: string;
+}) {
+  const computable = canComputeStrokes(course);
+  const suggested =
+    computable && index !== null ? courseHandicap(index, course.slope, course.courseRating, course.par) : null;
+
+  return (
+    <div className="handicap-fields">
+      {computable ? (
+        <label className="handicap-fields__field">
+          <span>Handicap</span>
+          <input
+            type="number"
+            step="0.1"
+            min={-10}
+            max={54}
+            inputMode="decimal"
+            value={index ?? ""}
+            aria-label={`Handicap for ${label}`}
+            onChange={(event) => {
+              const next = event.target.value === "" ? null : Number(event.target.value);
+              onIndex(next);
+              if (next !== null) onStrokes(courseHandicap(next, course.slope, course.courseRating, course.par));
+            }}
+          />
+        </label>
+      ) : null}
+
+      <label className="handicap-fields__field">
+        <span>Tildelte slag</span>
+        <StrokeInput value={strokes} onChange={onStrokes} label={label} />
+      </label>
+
+      {suggested !== null ? (
+        <p className="handicap-fields__note">
+          {suggested === strokes
+            ? `Regnet ud fra ${course.tee} tee: slope ${course.slope}, CR ${course.courseRating}, par ${course.par}.`
+            : `Formlen giver ${suggested}. Du har rettet det til ${strokes}.`}
+        </p>
+      ) : null}
+    </div>
+  );
+}
 
 function StrokeInput({
   value,
@@ -74,17 +139,32 @@ export function RoundSetup({
 }) {
   const [step, setStep] = useState<Step>("player");
   const [me, setMe] = useState<string | null>(null);
-  const [myStrokes, setMyStrokes] = useState(18);
   const [marking, setMarking] = useState<string[]>([]);
+  const [index, setIndex] = useState<Record<string, number | null>>({});
   const [strokes, setStrokes] = useState<Record<string, number>>({});
 
-  const nameOf = (slug: string) => players.find((p) => p.slug === slug)?.name ?? slug;
+  const playerOf = (slug: string) => players.find((p) => p.slug === slug);
+  const nameOf = (slug: string) => playerOf(slug)?.name ?? slug;
+
+  /** Seed a player from the handicap they were last recorded off. */
+  function seed(slug: string) {
+    const known = playerOf(slug)?.handicapIndex ?? null;
+    setIndex((current) => (slug in current ? current : { ...current, [slug]: known }));
+    setStrokes((current) => {
+      if (slug in current) return current;
+      const computed =
+        known !== null && canComputeStrokes(course)
+          ? courseHandicap(known, course.slope, course.courseRating, course.par)
+          : 18;
+      return { ...current, [slug]: computed };
+    });
+  }
 
   function toggleMarking(slug: string) {
     setMarking((current) =>
       current.includes(slug) ? current.filter((s) => s !== slug) : [...current, slug],
     );
-    setStrokes((current) => (slug in current ? current : { ...current, [slug]: 18 }));
+    seed(slug);
   }
 
   // The round the score entry works on, built from the choices above.
@@ -104,8 +184,8 @@ export function RoundSetup({
         playerId: `player-${slug}`,
         name: nameOf(slug),
         slug,
-        handicap: null,
-        handicapStrokes: slug === me ? myStrokes : (strokes[slug] ?? 18),
+        handicap: index[slug] ?? null,
+        handicapStrokes: strokes[slug] ?? 18,
         flight: 1,
         markerId: slug === me ? null : `player-${me}`,
         status: "playing",
@@ -113,10 +193,23 @@ export function RoundSetup({
       })),
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [me, marking, myStrokes, strokes, course, venue, startsAt]);
+  }, [me, marking, index, strokes, course, venue, startsAt]);
 
   if (step === "playing" && me) {
-    return <ScoreEntry round={round} viewerId={`player-${me}`} isAdmin={false} />;
+    return (
+      <>
+        <ScoreEntry
+          round={round}
+          viewerId={`player-${me}`}
+          isAdmin={false}
+          onScore={recordDemoScore}
+        />
+        <p className="preview-note">
+          Scorerne bliver gemt her på telefonen, så de også står på{" "}
+          <Link href="/design/live">livescoren</Link>.
+        </p>
+      </>
+    );
   }
 
   const stepIndex = STEPS.findIndex((s) => s.id === step);
@@ -163,6 +256,7 @@ export function RoundSetup({
                 onClick={() => {
                   setMe(player.slug);
                   setMarking((current) => current.filter((s) => s !== player.slug));
+                  seed(player.slug);
                   setStep("strokes");
                 }}
               >
@@ -177,10 +271,17 @@ export function RoundSetup({
         <section className="setup-step">
           <h2 className="setup-step__title">Hvor mange slag får du?</h2>
           <p className="setup-step__note">
-            Tildelte slag på {course.name} fra {course.tee} tee. De fordeles efter nøgle, sværeste
-            hul først.
+            Slagene regnes ud fra dit handicap og banen, og fordeles efter nøgle med det sværeste
+            hul først. Ret dem, hvis I er enige om noget andet.
           </p>
-          <StrokeInput value={myStrokes} onChange={setMyStrokes} label={nameOf(me ?? "")} />
+          <HandicapFields
+            course={course}
+            label={nameOf(me ?? "")}
+            index={index[me ?? ""] ?? null}
+            strokes={strokes[me ?? ""] ?? 18}
+            onIndex={(next) => setIndex((current) => ({ ...current, [me ?? ""]: next }))}
+            onStrokes={(next) => setStrokes((current) => ({ ...current, [me ?? ""]: next }))}
+          />
           <div className="setup-actions">
             <button type="button" className="btn btn--dark" onClick={() => setStep("player")}>
               Tilbage
@@ -218,7 +319,10 @@ export function RoundSetup({
             <button
               type="button"
               className="btn btn--primary"
-              onClick={() => setStep(marking.length > 0 ? "confirm" : "playing")}
+              onClick={() => {
+                if (marking.length === 0) saveDemoRound(round);
+                setStep(marking.length > 0 ? "confirm" : "playing");
+              }}
             >
               {marking.length > 0 ? "Videre" : "Spring over"}
             </button>
@@ -230,15 +334,19 @@ export function RoundSetup({
         <section className="setup-step">
           <h2 className="setup-step__title">Bekræft deres slag</h2>
           <p className="setup-step__note">
-            Spørg dem på første tee. Står det forkert, tæller runden forkert.
+            Regnet ud fra det handicap de sidst spillede på. Spørg dem på første tee, for står det
+            forkert, tæller runden forkert.
           </p>
           {marking.map((slug) => (
             <div key={slug} className="confirm-row">
               <span className="confirm-row__name">{nameOf(slug)}</span>
-              <StrokeInput
-                value={strokes[slug] ?? 18}
-                onChange={(next) => setStrokes((current) => ({ ...current, [slug]: next }))}
+              <HandicapFields
+                course={course}
                 label={nameOf(slug)}
+                index={index[slug] ?? null}
+                strokes={strokes[slug] ?? 18}
+                onIndex={(next) => setIndex((current) => ({ ...current, [slug]: next }))}
+                onStrokes={(next) => setStrokes((current) => ({ ...current, [slug]: next }))}
               />
             </div>
           ))}
@@ -246,7 +354,14 @@ export function RoundSetup({
             <button type="button" className="btn btn--dark" onClick={() => setStep("marking")}>
               Tilbage
             </button>
-            <button type="button" className="btn btn--primary" onClick={() => setStep("playing")}>
+            <button
+              type="button"
+              className="btn btn--primary"
+              onClick={() => {
+                saveDemoRound(round);
+                setStep("playing");
+              }}
+            >
               Start runden
             </button>
           </div>

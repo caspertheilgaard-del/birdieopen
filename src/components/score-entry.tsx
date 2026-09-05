@@ -15,10 +15,13 @@ export function ScoreEntry({
   round,
   viewerId,
   isAdmin,
+  onScore,
 }: {
   round: LiveRound;
   viewerId: string;
   isAdmin: boolean;
+  /** Called with every score, so a demo can keep its own copy. */
+  onScore?: (roundPlayerId: string, hole: number, gross: number | null) => void;
 }) {
   const editable = useMemo(
     () =>
@@ -80,6 +83,7 @@ export function ScoreEntry({
       ...current,
       [roundPlayerId]: { ...current[roundPlayerId], [hole]: gross },
     }));
+    onScore?.(roundPlayerId, hole, gross);
     queueScore({ roundPlayerId, hole, gross, enteredBy: viewerId });
     setPending(pendingScores().length);
     void sync();
